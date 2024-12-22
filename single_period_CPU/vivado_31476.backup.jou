@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Mon Dec  2 02:39:49 2024
+# Process ID: 31476
+# Current directory: E:/private/vivado_works/single_period_CPU
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent23864 E:\private\vivado_works\single_period_CPU\single_period_CPU.xpr
+# Log file: E:/private/vivado_works/single_period_CPU/vivado.log
+# Journal file: E:/private/vivado_works/single_period_CPU\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/private/vivado_works/single_period_CPU/single_period_CPU.xpr
+update_compile_order -fileset sources_1

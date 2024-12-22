@@ -1,0 +1,107 @@
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+| Date         : Wed Dec  4 19:39:09 2024
+| Host         : Victus9 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file CPU_control_sets_placed.rpt
+| Design       : CPU
+| Device       : xc7a35t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    42 |
+| Unused register locations in slices containing registers |    31 |
++----------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              50 |           26 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              31 |            8 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |            1032 |          509 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++------------------------+---------------------+----------------------+------------------+----------------+
+|      Clock Signal      |    Enable Signal    |   Set/Reset Signal   | Slice Load Count | Bel Load Count |
++------------------------+---------------------+----------------------+------------------+----------------+
+|  pc/REGs_reg[3][0]_7   |                     |                      |                1 |              1 |
+|  CLOCK_IBUF_BUFG       |                     |                      |                1 |              2 |
+|  clk_div/CLK           |                     |                      |                1 |              2 |
+|  pc/REGs_reg[18][0]    |                     |                      |                1 |              2 |
+|  pc/CURR_PC_reg[8]_3   |                     |                      |                3 |              5 |
+|  pc/REGs_reg[3][16][0] |                     |                      |                3 |              6 |
+|  MAIN_CLK_IBUF_BUFG    | ctrl_unit/E[0]      | PC_RST_IBUF          |                4 |              8 |
+|  CLOCK_IBUF_BUFG       |                     | clk_div/DIVed_CLOCK  |                8 |             31 |
+|  n_0_1760_BUFG         |                     |                      |               16 |             32 |
+|  MAIN_CLK_IBUF_BUFG    | pc/REGs_reg[17][31] | pc/REGs_reg[17][0]   |               11 |             32 |
+|  MAIN_CLK_IBUF_BUFG    | pc/REGs_reg[16][31] | pc/REGs_reg[16][0]   |                9 |             32 |
+|  MAIN_CLK_IBUF_BUFG    | pc/REGs_reg[11][31] | pc/REGs_reg[11][0]   |                9 |             32 |
+|  MAIN_CLK_IBUF_BUFG    | pc/REGs_reg[12][31] | pc/REGs_reg[12][0]_1 |                8 |             32 |
+|  MAIN_CLK_IBUF_BUFG    | pc/REGs_reg[13][31] | pc/REGs_reg[13][0]   |               15 |             32 |
+|  MAIN_CLK_IBUF_BUFG    | pc/REGs_reg[14][31] | pc/REGs_reg[14][0]   |               16 |             32 |
+|  MAIN_CLK_IBUF_BUFG    | pc/REGs_reg[10][31] | pc/REGs_reg[10][0]   |               10 |             32 |
+|  MAIN_CLK_IBUF_BUFG    | pc/REGs_reg[0][31]  | pc/REGs_reg[0][0]    |               11 |             32 |
+|  MAIN_CLK_IBUF_BUFG    | pc/REGs_reg[15][31] | pc/REGs_reg[15][0]   |               16 |             32 |
+|  MAIN_CLK_IBUF_BUFG    | pc/REGs_reg[20][31] | pc/REGs_reg[20][0]   |               12 |             32 |
+|  MAIN_CLK_IBUF_BUFG    | pc/REGs_reg[24][31] | pc/REGs_reg[24][0]   |               11 |             32 |
+|  MAIN_CLK_IBUF_BUFG    | pc/REGs_reg[29][31] | pc/REGs_reg[29][0]   |               17 |             32 |
+|  MAIN_CLK_IBUF_BUFG    | pc/REGs_reg[27][31] | pc/REGs_reg[27][0]   |               19 |             32 |
+|  MAIN_CLK_IBUF_BUFG    | pc/REGs_reg[18][31] | pc/REGs_reg[18][0]_0 |               11 |             32 |
+|  MAIN_CLK_IBUF_BUFG    | pc/REGs_reg[26][31] | pc/REGs_reg[26][0]   |               14 |             32 |
+|  MAIN_CLK_IBUF_BUFG    | pc/REGs_reg[23][31] | pc/REGs_reg[23][0]   |               14 |             32 |
+|  MAIN_CLK_IBUF_BUFG    | pc/REGs_reg[21][31] | pc/REGs_reg[21][0]   |               16 |             32 |
+|  MAIN_CLK_IBUF_BUFG    | pc/REGs_reg[22][31] | pc/REGs_reg[22][0]   |               17 |             32 |
+|  MAIN_CLK_IBUF_BUFG    | pc/REGs_reg[28][31] | pc/REGs_reg[28][0]   |               16 |             32 |
+|  MAIN_CLK_IBUF_BUFG    | pc/REGs_reg[19][31] | pc/REGs_reg[19][0]   |               20 |             32 |
+|  MAIN_CLK_IBUF_BUFG    | pc/REGs_reg[2][31]  | pc/REGs_reg[2][0]    |               16 |             32 |
+|  MAIN_CLK_IBUF_BUFG    | pc/REGs_reg[25][31] | pc/REGs_reg[25][0]   |               18 |             32 |
+|  MAIN_CLK_IBUF_BUFG    | pc/REGs_reg[1][31]  | pc/REGs_reg[1][0]    |               19 |             32 |
+|  MAIN_CLK_IBUF_BUFG    | pc/REGs_reg[30][31] | pc/REGs_reg[30][0]   |               20 |             32 |
+|  MAIN_CLK_IBUF_BUFG    | pc/REGs_reg[3][31]  | pc/REGs_reg[3][0]_3  |               19 |             32 |
+|  MAIN_CLK_IBUF_BUFG    | pc/REGs_reg[4][31]  | pc/REGs_reg[4][0]    |               16 |             32 |
+|  MAIN_CLK_IBUF_BUFG    | pc/REGs_reg[5][31]  | pc/REGs_reg[5][0]    |               18 |             32 |
+|  MAIN_CLK_IBUF_BUFG    | pc/REGs_reg[6][31]  | pc/REGs_reg[6][0]    |               19 |             32 |
+|  MAIN_CLK_IBUF_BUFG    | pc/REGs_reg[31][31] | pc/REGs_reg[31][0]_5 |               18 |             32 |
+|  MAIN_CLK_IBUF_BUFG    | pc/REGs_reg[8][31]  | pc/REGs_reg[8][0]    |               25 |             32 |
+|  MAIN_CLK_IBUF_BUFG    | pc/REGs_reg[7][31]  | pc/REGs_reg[7][0]    |               21 |             32 |
+|  MAIN_CLK_IBUF_BUFG    | pc/REGs_reg[9][31]  | pc/REGs_reg[9][0]    |               24 |             32 |
+|  MAIN_CLK_IBUF_BUFG    | ctrl_unit/DM_WR     |                      |               32 |            128 |
++------------------------+---------------------+----------------------+------------------+----------------+
+
+
++--------+-----------------------+
+| Fanout | Number of ControlSets |
++--------+-----------------------+
+| 1      |                     1 |
+| 2      |                     3 |
+| 5      |                     1 |
+| 6      |                     1 |
+| 8      |                     1 |
+| 16+    |                    35 |
++--------+-----------------------+
+
+

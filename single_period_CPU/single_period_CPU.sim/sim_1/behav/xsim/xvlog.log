@@ -1,0 +1,32 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/vivado_works/single_period_CPU/single_period_CPU.srcs/sources_1/new/4_TO_7SEG.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FOUR_TO_7SEG
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/vivado_works/single_period_CPU/single_period_CPU.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/vivado_works/single_period_CPU/single_period_CPU.srcs/sources_1/new/CLOCK_DIV.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CLOCK_DIV
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/vivado_works/single_period_CPU/single_period_CPU.srcs/sources_1/new/CPU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CPU
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/vivado_works/single_period_CPU/single_period_CPU.srcs/sources_1/new/CU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CU
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/vivado_works/single_period_CPU/single_period_CPU.srcs/sources_1/new/EXT.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EXT
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/vivado_works/single_period_CPU/single_period_CPU.srcs/sources_1/new/IM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IM
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/vivado_works/single_period_CPU/single_period_CPU.srcs/sources_1/new/MUX_1bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX_1bit_32
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/vivado_works/single_period_CPU/single_period_CPU.srcs/sources_1/new/MUX_1bit_5.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX_1bit_5
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/vivado_works/single_period_CPU/single_period_CPU.srcs/sources_1/new/MUX_2bits.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX_2bits
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/vivado_works/single_period_CPU/single_period_CPU.srcs/sources_1/new/PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/vivado_works/single_period_CPU/single_period_CPU.srcs/sources_1/new/RAM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DM
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/vivado_works/single_period_CPU/single_period_CPU.srcs/sources_1/new/RP.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RF
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/vivado_works/single_period_CPU/single_period_CPU.srcs/sources_1/new/adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/vivado_works/single_period_CPU/single_period_CPU.srcs/sim_1/new/CPU_sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CPU_sim
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/vivado_works/single_period_CPU/single_period_CPU.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

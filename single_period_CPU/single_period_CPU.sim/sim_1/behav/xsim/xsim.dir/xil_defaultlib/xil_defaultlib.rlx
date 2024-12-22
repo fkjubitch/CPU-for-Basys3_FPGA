@@ -1,0 +1,20 @@
+0.6
+2017.4
+Dec 15 2017
+21:07:18
+E:/private/vivado_works/single_period_CPU/single_period_CPU.sim/sim_1/behav/xsim/glbl.v,1513215259,verilog,,,,glbl,,,,,,,,
+E:/private/vivado_works/single_period_CPU/single_period_CPU.srcs/sim_1/new/CPU_sim.v,1733071581,verilog,,,,CPU_sim,,,,,,,,
+E:/private/vivado_works/single_period_CPU/single_period_CPU.srcs/sources_1/new/4_TO_7SEG.v,1732992023,verilog,,E:/private/vivado_works/single_period_CPU/single_period_CPU.srcs/sources_1/new/ALU.v,,FOUR_TO_7SEG,,,,,,,,
+E:/private/vivado_works/single_period_CPU/single_period_CPU.srcs/sources_1/new/ALU.v,1732991269,verilog,,E:/private/vivado_works/single_period_CPU/single_period_CPU.srcs/sources_1/new/CLOCK_DIV.v,,ALU,,,,,,,,
+E:/private/vivado_works/single_period_CPU/single_period_CPU.srcs/sources_1/new/CLOCK_DIV.v,1733313053,verilog,,E:/private/vivado_works/single_period_CPU/single_period_CPU.srcs/sources_1/new/CPU.v,,CLOCK_DIV,,,,,,,,
+E:/private/vivado_works/single_period_CPU/single_period_CPU.srcs/sources_1/new/CPU.v,1733312152,verilog,,E:/private/vivado_works/single_period_CPU/single_period_CPU.srcs/sources_1/new/CU.v,,CPU,,,,,,,,
+E:/private/vivado_works/single_period_CPU/single_period_CPU.srcs/sources_1/new/CU.v,1732997475,verilog,,E:/private/vivado_works/single_period_CPU/single_period_CPU.srcs/sources_1/new/EXT.v,,CU,,,,,,,,
+E:/private/vivado_works/single_period_CPU/single_period_CPU.srcs/sources_1/new/EXT.v,1732712061,verilog,,E:/private/vivado_works/single_period_CPU/single_period_CPU.srcs/sources_1/new/IM.v,,EXT,,,,,,,,
+E:/private/vivado_works/single_period_CPU/single_period_CPU.srcs/sources_1/new/IM.v,1733045617,verilog,,E:/private/vivado_works/single_period_CPU/single_period_CPU.srcs/sources_1/new/MUX_1bit.v,,IM,,,,,,,,
+E:/private/vivado_works/single_period_CPU/single_period_CPU.srcs/sources_1/new/MUX_1bit.v,1732712077,verilog,,E:/private/vivado_works/single_period_CPU/single_period_CPU.srcs/sources_1/new/MUX_1bit_5.v,,MUX_1bit_32,,,,,,,,
+E:/private/vivado_works/single_period_CPU/single_period_CPU.srcs/sources_1/new/MUX_1bit_5.v,1732711989,verilog,,E:/private/vivado_works/single_period_CPU/single_period_CPU.srcs/sources_1/new/MUX_2bits.v,,MUX_1bit_5,,,,,,,,
+E:/private/vivado_works/single_period_CPU/single_period_CPU.srcs/sources_1/new/MUX_2bits.v,1732712032,verilog,,E:/private/vivado_works/single_period_CPU/single_period_CPU.srcs/sources_1/new/PC.v,,MUX_2bits,,,,,,,,
+E:/private/vivado_works/single_period_CPU/single_period_CPU.srcs/sources_1/new/PC.v,1732997243,verilog,,E:/private/vivado_works/single_period_CPU/single_period_CPU.srcs/sources_1/new/RAM.v,,PC,,,,,,,,
+E:/private/vivado_works/single_period_CPU/single_period_CPU.srcs/sources_1/new/RAM.v,1732990394,verilog,,E:/private/vivado_works/single_period_CPU/single_period_CPU.srcs/sources_1/new/RP.v,,DM,,,,,,,,
+E:/private/vivado_works/single_period_CPU/single_period_CPU.srcs/sources_1/new/RP.v,1733312146,verilog,,E:/private/vivado_works/single_period_CPU/single_period_CPU.srcs/sources_1/new/adder.v,,RF,,,,,,,,
+E:/private/vivado_works/single_period_CPU/single_period_CPU.srcs/sources_1/new/adder.v,1730950179,verilog,,E:/private/vivado_works/single_period_CPU/single_period_CPU.srcs/sim_1/new/CPU_sim.v,,adder,,,,,,,,
