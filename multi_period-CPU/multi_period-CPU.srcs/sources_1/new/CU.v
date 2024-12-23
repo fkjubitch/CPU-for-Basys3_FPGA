@@ -72,7 +72,6 @@ module CU(
                     6'b000001: {ALUop,ALU_SRC_A} = 5'b0000_0; //addu
                     6'b000010: {ALUop,ALU_SRC_A} = 5'b1001_0; //sub
                     6'b000011: {ALUop,ALU_SRC_A} = 5'b0001_0; //subu
-                    6'b000100: {ALUop,ALU_SRC_A} = 5'b0010_1; //sll
                     6'b000110: {ALUop,ALU_SRC_A} = 5'b1110_0; //slt
                     6'b000111: {ALUop,ALU_SRC_A} = 5'b0101_0; //sltu
                     6'b001000: {ALUop,ALU_SRC_A} = 5'b0100_0; //and
@@ -88,7 +87,6 @@ module CU(
                     6'b000001: {ALUop,ALU_SRC_A} = 5'b0000_0; //addiu
                     6'b000010: {ALUop,ALU_SRC_A} = 5'b1001_0; //subi
                     6'b000011: {ALUop,ALU_SRC_A} = 5'b0001_0; //subiu
-                    6'b000100: {ALUop,ALU_SRC_A} = 5'b0010_1; //slli
                     6'b000110: {ALUop,ALU_SRC_A} = 5'b1110_0; //slti
                     6'b000111: {ALUop,ALU_SRC_A} = 5'b0101_0; //sltiu
                     6'b001000: {ALUop,ALU_SRC_A} = 5'b0100_0; //andi
@@ -135,6 +133,11 @@ module CU(
                 //jr
                 {DM_WR,PC_SRC} = 3'b0_10;
             end
+            6'b001010:begin
+                //sll
+                {PC_SRC,DM_WR,DB_SRC,RF_WR_DATA_SRC,RF_WR_REG_SRC,ALU_SRC_B} = 8'b00_0_0_1_10_0;
+                {ALUop,ALU_SRC_A} = 5'b0010_1;
+            end
             6'b111111:begin
                 //halt
                 DM_WR = 0;
@@ -150,8 +153,6 @@ module CU(
         000001: addu
         000010: sub
         000011: subu
-        000100: sll
-        000101: srl(暂时不实现)
         000110: slt
         000111: sltu
         001000: and
@@ -164,8 +165,6 @@ module CU(
         000001: addiu
         000010: subi
         000011: subiu
-        000100: slli
-        000101: srli(暂时不实现)
         000110: slti
         000111: sltiu
         001000: andi
@@ -180,6 +179,8 @@ module CU(
     OP:000111: j
     OP:001000: jal
     OP:001001: jr
+    OP:001010: sll
+    OP:001011: srl(暂时不实现)
     OP:111111: halt
     */
     

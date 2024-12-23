@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Mon Dec 23 13:19:24 2024
+# Process ID: 30956
+# Current directory: E:/private/GitHub/CPU_for_Basys3/multi_period-CPU
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent34524 E:\private\GitHub\CPU_for_Basys3\multi_period-CPU\multi_period-CPU.xpr
+# Log file: E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/vivado.log
+# Journal file: E:/private/GitHub/CPU_for_Basys3/multi_period-CPU\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.xpr
+update_compile_order -fileset sources_1

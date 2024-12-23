@@ -99,18 +99,6 @@ module CPU(
     wire [31:0] DB_MUX_DATA; //数据总线选择器输出
     wire [31:0] DB_DATA_DR; //数据总线数据暂存寄存器输出
     
-    // op IM_OUT_DATA[31:26]
-    // rs IM_OUT_DATA[25:21]
-    // rt IM_OUT_DATA[20:16]
-    // rd IM_OUT_DATA[15:11]
-    // shamt IM_OUT_DATA[10:6]
-    // funct IM_OUT_DATA[5:0]
-    // offset IM_OUT_DATA[15:0]
-    // j_offset IM_OUT_DATA[25:0]
-    
-    // J_OFFSET {PC[3:0],IM_OUT_DATA[25:0],2'b00}
-    // BRANCH_OFFSET {EXTed_DATA[29:0],2'b00} + PC4
-    
     //初始化
     initial begin
         //烧板相关
