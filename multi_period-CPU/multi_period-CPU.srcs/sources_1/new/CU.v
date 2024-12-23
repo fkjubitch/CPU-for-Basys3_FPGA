@@ -79,21 +79,6 @@ module CU(
                     6'b001000: {ALUop,ALU_SRC_A} = 5'b0111_0; //xor
                 endcase
             end
-            6'b000001:begin
-                //I-Type的运算部分
-                {PC_SRC,DM_WR,DB_SRC,RF_WR_DATA_SRC,RF_WR_REG_SRC,ALU_SRC_B,EXT_SEL} = 9'b00_0_0_1_01_1_1;
-                case(FUNCT)
-                    6'b000000: {ALUop,ALU_SRC_A} = 5'b1000_0; //addi
-                    6'b000001: {ALUop,ALU_SRC_A} = 5'b0000_0; //addiu
-                    6'b000010: {ALUop,ALU_SRC_A} = 5'b1001_0; //subi
-                    6'b000011: {ALUop,ALU_SRC_A} = 5'b0001_0; //subiu
-                    6'b000110: {ALUop,ALU_SRC_A} = 5'b1110_0; //slti
-                    6'b000111: {ALUop,ALU_SRC_A} = 5'b0101_0; //sltiu
-                    6'b001000: {ALUop,ALU_SRC_A} = 5'b0100_0; //andi
-                    6'b001001: {ALUop,ALU_SRC_A} = 5'b0011_0; //ori
-                    6'b001000: {ALUop,ALU_SRC_A} = 5'b0111_0; //xori
-                endcase
-            end
             6'b000010:begin
                 //beq
                 {DM_WR,ALU_SRC_A,ALU_SRC_B,EXT_SEL,ALUop} = 8'b0_0_0_1_1001;
@@ -138,6 +123,43 @@ module CU(
                 {PC_SRC,DM_WR,DB_SRC,RF_WR_DATA_SRC,RF_WR_REG_SRC,ALU_SRC_B} = 8'b00_0_0_1_10_0;
                 {ALUop,ALU_SRC_A} = 5'b0010_1;
             end
+            //I-Type的运算部分
+            6'b001011:begin
+                {PC_SRC,DM_WR,DB_SRC,RF_WR_DATA_SRC,RF_WR_REG_SRC,ALU_SRC_B,EXT_SEL} = 9'b00_0_0_1_01_1_1;
+                {ALUop,ALU_SRC_A} = 5'b1000_0; //addi
+            end
+            6'b001100:begin
+                {PC_SRC,DM_WR,DB_SRC,RF_WR_DATA_SRC,RF_WR_REG_SRC,ALU_SRC_B,EXT_SEL} = 9'b00_0_0_1_01_1_1;
+                {ALUop,ALU_SRC_A} = 5'b0000_0; //addiu
+            end
+            6'b001101:begin
+                {PC_SRC,DM_WR,DB_SRC,RF_WR_DATA_SRC,RF_WR_REG_SRC,ALU_SRC_B,EXT_SEL} = 9'b00_0_0_1_01_1_1;
+                {ALUop,ALU_SRC_A} = 5'b1001_0; //subi
+            end
+            6'b001110:begin
+                {PC_SRC,DM_WR,DB_SRC,RF_WR_DATA_SRC,RF_WR_REG_SRC,ALU_SRC_B,EXT_SEL} = 9'b00_0_0_1_01_1_1;
+                {ALUop,ALU_SRC_A} = 5'b0001_0; //subiu
+            end
+            6'b001111:begin
+                {PC_SRC,DM_WR,DB_SRC,RF_WR_DATA_SRC,RF_WR_REG_SRC,ALU_SRC_B,EXT_SEL} = 9'b00_0_0_1_01_1_1;
+                {ALUop,ALU_SRC_A} = 5'b1110_0; //slti
+            end
+            6'b010000:begin
+                {PC_SRC,DM_WR,DB_SRC,RF_WR_DATA_SRC,RF_WR_REG_SRC,ALU_SRC_B,EXT_SEL} = 9'b00_0_0_1_01_1_1;
+                {ALUop,ALU_SRC_A} = 5'b0101_0; //sltiu
+            end
+            6'b010001:begin
+                {PC_SRC,DM_WR,DB_SRC,RF_WR_DATA_SRC,RF_WR_REG_SRC,ALU_SRC_B,EXT_SEL} = 9'b00_0_0_1_01_1_1;
+                {ALUop,ALU_SRC_A} = 5'b0100_0; //andi
+            end
+            6'b010010:begin
+                {PC_SRC,DM_WR,DB_SRC,RF_WR_DATA_SRC,RF_WR_REG_SRC,ALU_SRC_B,EXT_SEL} = 9'b00_0_0_1_01_1_1;
+                {ALUop,ALU_SRC_A} = 5'b0011_0; //ori
+            end
+            6'b010011:begin
+                {PC_SRC,DM_WR,DB_SRC,RF_WR_DATA_SRC,RF_WR_REG_SRC,ALU_SRC_B,EXT_SEL} = 9'b00_0_0_1_01_1_1;
+                {ALUop,ALU_SRC_A} = 5'b0111_0; //xori
+            end
             6'b111111:begin
                 //halt
                 DM_WR = 0;
@@ -158,19 +180,6 @@ module CU(
         001000: and
         001001: or
         001010: xor
-        
-    OP:000001
-        FUNCT:
-        000000: addi
-        000001: addiu
-        000010: subi
-        000011: subiu
-        000110: slti
-        000111: sltiu
-        001000: andi
-        001001: ori
-        001010: xori
-        
     OP:000010: beq
     OP:000011: bne
     OP:000100: blex
@@ -180,7 +189,15 @@ module CU(
     OP:001000: jal
     OP:001001: jr
     OP:001010: sll
-    OP:001011: srl(暂时不实现)
+    OP:001011: addi
+    OP:001100: addiu
+    OP:001101: subi
+    OP:001110: subiu
+    OP:001111: slti
+    OP:010000: sltiu
+    OP:010001: andi
+    OP:010010: ori
+    OP:010011: xori
     OP:111111: halt
     */
     

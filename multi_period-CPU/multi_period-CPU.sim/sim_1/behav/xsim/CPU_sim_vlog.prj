@@ -1,0 +1,25 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../multi_period-CPU.srcs/sources_1/new/ALU.v" \
+"../../../../multi_period-CPU.srcs/sources_1/new/Adder.v" \
+"../../../../multi_period-CPU.srcs/sources_1/new/CLOCK_DIV.v" \
+"../../../../multi_period-CPU.srcs/sources_1/new/CPU.v" \
+"../../../../multi_period-CPU.srcs/sources_1/new/CU.v" \
+"../../../../multi_period-CPU.srcs/sources_1/new/DFF.v" \
+"../../../../multi_period-CPU.srcs/sources_1/new/DFF_FOR_CU.v" \
+"../../../../multi_period-CPU.srcs/sources_1/new/DM.v" \
+"../../../../multi_period-CPU.srcs/sources_1/new/EXT.v" \
+"../../../../multi_period-CPU.srcs/sources_1/new/FOUR_TO_7SEG.v" \
+"../../../../multi_period-CPU.srcs/sources_1/new/IM.v" \
+"../../../../multi_period-CPU.srcs/sources_1/new/MUX_1bit_32.v" \
+"../../../../multi_period-CPU.srcs/sources_1/new/MUX_2bits_32.v" \
+"../../../../multi_period-CPU.srcs/sources_1/new/MUX_2bits_5.v" \
+"../../../../multi_period-CPU.srcs/sources_1/new/PC.v" \
+"../../../../multi_period-CPU.srcs/sources_1/new/RF.v" \
+"../../../../multi_period-CPU.srcs/sim_1/new/CPU_sim.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

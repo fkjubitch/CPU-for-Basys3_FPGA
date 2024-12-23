@@ -1,0 +1,22 @@
+0.6
+2017.4
+Dec 15 2017
+21:07:18
+E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.sim/sim_1/behav/xsim/glbl.v,1513215259,verilog,,,,glbl,,,,,,,,
+E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sim_1/new/CPU_sim.v,1734957146,verilog,,,,CPU_sim,,,,,,,,
+E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/ALU.v,1734608123,verilog,,E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/Adder.v,,ALU,,,,,,,,
+E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/Adder.v,1733315681,verilog,,E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/CLOCK_DIV.v,,Adder,,,,,,,,
+E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/CLOCK_DIV.v,1734688465,verilog,,E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/CPU.v,,CLOCK_DIV,,,,,,,,
+E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/CPU.v,1734884748,verilog,,E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/CU.v,,CPU,,,,,,,,
+E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/CU.v,1734956280,verilog,,E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/DFF.v,,CU,,,,,,,,
+E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/DFF.v,1734689296,verilog,,E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/DFF_FOR_CU.v,,DFF,,,,,,,,
+E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/DFF_FOR_CU.v,1734614241,verilog,,E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/DM.v,,DFF_FOR_CU,,,,,,,,
+E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/DM.v,1734615145,verilog,,E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/EXT.v,,DM,,,,,,,,
+E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/EXT.v,1734609670,verilog,,E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/FOUR_TO_7SEG.v,,EXT,,,,,,,,
+E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/FOUR_TO_7SEG.v,1734614585,verilog,,E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/IM.v,,FOUR_TO_7SEG,,,,,,,,
+E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/IM.v,1734957035,verilog,,E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/MUX_1bit_32.v,,IM,,,,,,,,
+E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/MUX_1bit_32.v,1733316355,verilog,,E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/MUX_2bits_32.v,,MUX_1bit_32,,,,,,,,
+E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/MUX_2bits_32.v,1733316406,verilog,,E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/MUX_2bits_5.v,,MUX_2bits_32,,,,,,,,
+E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/MUX_2bits_5.v,1733316446,verilog,,E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/PC.v,,MUX_2bits_5,,,,,,,,
+E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/PC.v,1734612116,verilog,,E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/RF.v,,PC,,,,,,,,
+E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/RF.v,1734612036,verilog,,E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sim_1/new/CPU_sim.v,,RF,,,,,,,,
