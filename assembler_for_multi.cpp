@@ -173,5 +173,6 @@ int main(){
     }
     vector<string> bin(myAsm.getBinaryCode());
     printVec(bin,"\n");
+    while(1) cin.get();
     return 0;
 }

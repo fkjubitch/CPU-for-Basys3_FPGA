@@ -61,7 +61,7 @@ module IM(
     
     always @(*) begin
         if(RW_ENABLE == 1)  //¶Á
-            I_DATA_OUT = {I_STORAGE[I_ADDR+3],I_STORAGE[I_ADDR+2],I_STORAGE[I_ADDR+1],I_STORAGE[I_ADDR]};
+            {I_DATA_OUT[31:24],I_DATA_OUT[23:16],I_DATA_OUT[15:8],I_DATA_OUT[7:0]} = {I_STORAGE[I_ADDR+3],I_STORAGE[I_ADDR+2],I_STORAGE[I_ADDR+1],I_STORAGE[I_ADDR]};
         else  //Ð´ (·ÇW)
             {I_STORAGE[I_ADDR+3],I_STORAGE[I_ADDR+2],I_STORAGE[I_ADDR+1],I_STORAGE[I_ADDR]} = {I_DATA_IN[31:24],I_DATA_IN[23:16],I_DATA_IN[15:8],I_DATA_IN[7:0]};
     end

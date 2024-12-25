@@ -1,0 +1,366 @@
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+| Date         : Wed Dec 25 20:37:06 2024
+| Host         : Victus9 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file CPU_control_sets_placed.rpt
+| Design       : CPU
+| Device       : xc7a35t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |   301 |
+| Unused register locations in slices containing registers |    67 |
++----------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             235 |          120 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              32 |            8 |
+| Yes          | No                    | No                     |            2048 |         1300 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |            1082 |          626 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++-------------------------+------------------------------------------+----------------------+------------------+----------------+
+|       Clock Signal      |               Enable Signal              |   Set/Reset Signal   | Slice Load Count | Bel Load Count |
++-------------------------+------------------------------------------+----------------------+------------------+----------------+
+|  pc/CURR_PC_reg[20]_0   |                                          |                      |                1 |              1 |
+|  pc/D_OUT_reg[15]       |                                          |                      |                1 |              1 |
+|  pc/MEMORYs_reg[255][0] |                                          |                      |                1 |              1 |
+|  pc/D_OUT_reg[7]        |                                          |                      |                1 |              1 |
+|  CLOCK_IBUF_BUFG        |                                          |                      |                1 |              1 |
+|  clock_div/CLK          |                                          |                      |                1 |              2 |
+|  pc/CURR_PC_reg[0]_2[0] |                                          |                      |                1 |              2 |
+|  pc/REGs_reg[10][0][0]  |                                          |                      |                2 |              3 |
+|  pc/E[0]                |                                          |                      |                2 |              7 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[9][7][0]     |                      |                4 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/E[0]                     |                      |                5 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[101][7][0]   |                      |                4 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[100][7][0]   |                      |                5 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[106][7][0]   |                      |                5 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[103][0]_0[0] |                      |                5 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[104][7][0]   |                      |                5 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[102][7][0]   |                      |                4 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[105][7][0]   |                      |                6 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[107][0][0]   |                      |                4 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[108][7][0]   |                      |                4 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[116][7][0]   |                      |                4 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[109][7][0]   |                      |                4 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[111][0][0]   |                      |                6 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[115][0][0]   |                      |                3 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[118][7][0]   |                      |                4 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[117][7][0]   |                      |                6 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[10][7][0]    |                      |                5 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[110][7][0]   |                      |                5 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[113][7][0]   |                      |                5 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[114][7][0]   |                      |                8 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[112][7][0]   |                      |                5 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[121][7][0]   |                      |                4 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[127][0]_0[0] |                      |                7 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[128][7][0]   |                      |                6 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[120][7][0]   |                      |                6 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[131][0][0]   |                      |                6 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[130][7]_0[0] |                      |                5 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[132][7][0]   |                      |                5 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[122][7][0]   |                      |                5 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[123][0]_0[0] |                      |                5 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[124][7][0]   |                      |                6 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[125][7][0]   |                      |                5 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[12][7][0]    |                      |                4 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[129][7][0]   |                      |                4 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[119][0][0]   |                      |                5 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[134][7][0]   |                      |                3 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[126][7][0]   |                      |                4 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[11][0][0]    |                      |                4 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[133][7][0]   |                      |                4 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[140][7][0]   |                      |                4 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[141][7][0]   |                      |                3 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[137][7][0]   |                      |                4 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[142][7][0]   |                      |                3 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[139][0][0]   |                      |                4 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[136][7][0]   |                      |                5 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[138][7][0]   |                      |                4 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[143][0][0]   |                      |                4 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[135][0][0]   |                      |                5 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[13][7][0]    |                      |                4 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[154][7][0]   |                      |                4 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[145][7][0]   |                      |                3 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[144][7][0]   |                      |                3 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[150][7][0]   |                      |                2 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[152][7][0]   |                      |                3 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[149][7][0]   |                      |                2 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[148][7][0]   |                      |                5 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[146][7][0]   |                      |                8 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[151][0]_0[0] |                      |                4 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[153][7][0]   |                      |                3 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[14][7][0]    |                      |                4 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[147][0]_0[0] |                      |                6 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[158][7][0]   |                      |                3 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[162][7][0]   |                      |                7 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[163][0]_0[0] |                      |                7 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[165][7][0]   |                      |                5 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[169][7][0]   |                      |                6 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[156][7][0]   |                      |                3 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[159][0]_0[0] |                      |                8 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[161][7][0]   |                      |                2 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[155][0]_0[0] |                      |                4 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[166][7][0]   |                      |                5 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[164][7][0]   |                      |                6 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[16][7][0]    |                      |                4 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[15][0][0]    |                      |                4 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[167][0][0]   |                      |                8 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[168][7][0]   |                      |                6 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[157][7][0]   |                      |                3 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[160][7][0]   |                      |                8 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[174][7][0]   |                      |                5 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[172][7][0]   |                      |                6 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[175][0][0]   |                      |                4 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[170][7][0]   |                      |                5 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[179][0]_0[0] |                      |                7 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[171][0][0]   |                      |                6 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[176][7][0]   |                      |                5 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[177][7][0]   |                      |                4 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[180][7][0]   |                      |                6 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[181][7][0]   |                      |                4 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[173][7][0]   |                      |                4 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[178][7][0]   |                      |                6 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[17][7][0]    |                      |                3 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[183][0]_0[0] |                      |                7 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[187][0]_0[0] |                      |                6 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[191][0]_0[0] |                      |                8 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[190][7][0]   |                      |                3 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[192][7][0]   |                      |                8 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[193][7][0]   |                      |                5 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[186][7][0]   |                      |                6 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[189][7][0]   |                      |                4 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[194][7]_0[0] |                      |                3 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[185][7][0]   |                      |                4 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[195][0][0]   |                      |                4 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[196][7][0]   |                      |                5 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[184][7][0]   |                      |                7 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[182][7][0]   |                      |                2 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[188][7][0]   |                      |                6 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[18][7][0]    |                      |                6 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[206][7][0]   |                      |                4 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[199][0][0]   |                      |                4 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[200][7][0]   |                      |                2 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[204][7][0]   |                      |                4 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[205][7][0]   |                      |                3 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[197][7][0]   |                      |                3 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[198][7][0]   |                      |                3 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[201][7][0]   |                      |                2 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[203][0][0]   |                      |                3 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[1][7][0]     |                      |                4 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[202][7][0]   |                      |                3 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[19][0]_0[0]  |                      |                6 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[210][7][0]   |                      |                7 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[214][7][0]   |                      |                4 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[219][0]_0[0] |                      |                6 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[217][7][0]   |                      |                4 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[21][7][0]    |                      |                4 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[213][7][0]   |                      |                5 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[207][0][0]   |                      |                5 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[211][0]_0[0] |                      |                4 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[20][7][0]    |                      |                6 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[209][7][0]   |                      |                5 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[216][7][0]   |                      |                5 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[218][7][0]   |                      |                4 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[208][7][0]   |                      |                5 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[212][7][0]   |                      |                4 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[215][0]_0[0] |                      |                3 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[221][7][0]   |                      |                4 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[222][7][0]   |                      |                4 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[22][7][0]    |                      |                5 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[225][7][0]   |                      |                5 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[228][7][0]   |                      |                5 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[227][0][0]   |                      |                8 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[229][7][0]   |                      |                3 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[220][7][0]   |                      |                8 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[224][7][0]   |                      |                5 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[226][7][0]   |                      |                8 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[223][0]_0[0] |                      |                5 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[230][7][0]   |                      |                4 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[232][7][0]   |                      |                6 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[231][0][0]   |                      |                8 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[23][0]_0[0]  |                      |                8 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[234][7][0]   |                      |                5 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[240][7][0]   |                      |                6 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[241][7][0]   |                      |                4 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[238][7][0]   |                      |                4 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[242][7][0]   |                      |                8 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[239][0][0]   |                      |                6 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[233][7][0]   |                      |                5 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[236][7][0]   |                      |                5 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[235][0][0]   |                      |                5 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[237][7][0]   |                      |                4 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[243][0]_0[0] |                      |                6 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[255][0]_0[0] |                      |                8 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[248][7][0]   |                      |                7 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[245][7][0]   |                      |                5 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[249][7][0]   |                      |                4 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[24][7][0]    |                      |                7 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[254][7][0]   |                      |                5 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[247][0]_0[0] |                      |                7 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[25][7][0]    |                      |                3 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[246][7][0]   |                      |                4 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[251][0]_0[0] |                      |                4 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[252][7][0]   |                      |                7 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[253][7][0]   |                      |                4 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[244][7][0]   |                      |                6 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[250][7][0]   |                      |                5 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[35][0][0]    |                      |                4 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[27][0]_0[0]  |                      |                7 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[26][7][0]    |                      |                4 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[2][7]_1[0]   |                      |                3 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[29][7][0]    |                      |                6 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[34][7][0]    |                      |                8 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[28][7][0]    |                      |                3 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[30][7][0]    |                      |                4 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[31][0]_0[0]  |                      |                8 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[32][7][0]    |                      |                7 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[33][7][0]    |                      |                4 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[37][7][0]    |                      |                3 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[38][7][0]    |                      |                4 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[36][7][0]    |                      |                5 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[50][7][0]    |                      |                7 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[42][7][0]    |                      |                5 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[41][7][0]    |                      |                4 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[46][7][0]    |                      |                5 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[3][0]_0[0]   |                      |                5 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[48][7][0]    |                      |                7 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[49][7][0]    |                      |                5 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[39][0][0]    |                      |                5 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[44][7][0]    |                      |                8 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[45][7][0]    |                      |                6 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[47][0][0]    |                      |                8 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[4][7][0]     |                      |                7 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[51][0]_0[0]  |                      |                6 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[52][7][0]    |                      |                5 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[43][0][0]    |                      |                6 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[40][7][0]    |                      |                5 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[55][0]_0[0]  |                      |                8 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[59][0]_0[0]  |                      |                4 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[5][7][0]     |                      |                4 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[60][7][0]    |                      |                4 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[61][7][0]    |                      |                4 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[58][7][0]    |                      |                6 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[56][7][0]    |                      |                7 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[57][7][0]    |                      |                4 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[54][7][0]    |                      |                4 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[53][7][0]    |                      |                4 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[65][7][0]    |                      |                2 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[6][7][0]     |                      |                4 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[70][7][0]    |                      |                5 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[63][0]_0[0]  |                      |                6 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[69][7][0]    |                      |                5 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[66][7][0]    |                      |                4 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[64][7][0]    |                      |                8 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[68][7][0]    |                      |                6 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[62][7][0]    |                      |                4 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[67][0]_0[0]  |                      |                6 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[75][0][0]    |                      |                5 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[78][7][0]    |                      |                4 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[7][0][0]     |                      |                8 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[80][7][0]    |                      |                7 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[76][7][0]    |                      |                7 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[74][7][0]    |                      |                4 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[71][0]_0[0]  |                      |                8 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[82][7][0]    |                      |                7 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[83][0][0]    |                      |                5 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[84][7][0]    |                      |                7 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[85][7][0]    |                      |                6 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[81][7][0]    |                      |                4 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[72][7][0]    |                      |                8 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[77][7][0]    |                      |                4 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[79][0][0]    |                      |                6 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[73][7][0]    |                      |                4 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[90][7][0]    |                      |                4 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[95][0]_0[0]  |                      |                8 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[96][7][0]    |                      |                8 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[97][7][0]    |                      |                5 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[91][0]_0[0]  |                      |                7 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[94][7][0]    |                      |                5 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[89][7][0]    |                      |                4 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[86][7][0]    |                      |                6 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[88][7][0]    |                      |                6 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[93][7][0]    |                      |                5 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[8][7][0]     |                      |                8 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[87][0][0]    |                      |                5 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[92][7][0]    |                      |                5 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[98][7]_0[0]  |                      |                8 |              8 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | dff_for_alu_res/MEMORYs_reg[99][0]_0[0]  |                      |                8 |              8 |
+|  MAIN_CLK_RAW_IBUF_BUFG | ctrl_unit/dff/IR_WR_EN                   | ir/D_OUT[25]_i_1_n_0 |               17 |             25 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | ir/REGs_reg[10][31]                      | ir/REGs_reg[10][0]   |               18 |             32 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | ir/REGs_reg[19][31]                      | ir/REGs_reg[19][0]   |               19 |             32 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | ir/REGs_reg[11][31]                      | ir/REGs_reg[11][0]   |               18 |             32 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | ir/REGs_reg[14][31]                      | ir/REGs_reg[14][0]   |               15 |             32 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | ir/REGs_reg[1][31]                       | ir/REGs_reg[1][0]    |               16 |             32 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | ir/REGs_reg[12][31]                      | ir/REGs_reg[12][0]   |               19 |             32 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | ir/REGs_reg[20][31]                      | ir/REGs_reg[20][0]   |               13 |             32 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | ir/REGs_reg[17][31]                      | ir/REGs_reg[17][0]   |               19 |             32 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | ir/REGs_reg[0][31]                       | ir/REGs_reg[0][0]    |               16 |             32 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | ir/REGs_reg[18][31]                      | ir/REGs_reg[18][0]   |               16 |             32 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | ir/REGs_reg[13][31]                      | ir/REGs_reg[13][0]   |               22 |             32 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | ir/REGs_reg[15][31]                      | ir/REGs_reg[15][0]   |               20 |             32 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | ir/REGs_reg[16][31]                      | ir/REGs_reg[16][0]   |               14 |             32 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | ir/REGs_reg[21][31]                      | ir/REGs_reg[21][0]   |               18 |             32 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | ir/REGs_reg[27][31]                      | ir/REGs_reg[27][0]   |               17 |             32 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | ir/REGs_reg[28][31]                      | ir/REGs_reg[28][0]_0 |               17 |             32 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | ir/REGs_reg[30][31]                      | ir/REGs_reg[30][0]   |               23 |             32 |
+|  CLOCK_IBUF_BUFG        |                                          | clock_div/clear      |                8 |             32 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | ir/REGs_reg[26][31]                      | ir/REGs_reg[26][0]   |               14 |             32 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | ir/REGs_reg[2][31]                       | ir/REGs_reg[2][0]    |               15 |             32 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | ir/REGs_reg[25][31]                      | ir/REGs_reg[25][0]   |               16 |             32 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | ir/REGs_reg[8][31]                       | ir/REGs_reg[8][0]    |               21 |             32 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | ir/REGs_reg[24][31]                      | ir/REGs_reg[24][0]   |               15 |             32 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | ir/REGs_reg[9][31]                       | ir/REGs_reg[9][0]    |               23 |             32 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | ir/REGs_reg[22][31]                      | ir/REGs_reg[22][0]   |               24 |             32 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | ir/REGs_reg[4][31]                       | ir/REGs_reg[4][0]    |               20 |             32 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | ir/REGs_reg[7][31]                       | ir/REGs_reg[7][0]    |               26 |             32 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | ir/REGs_reg[29][31]                      | ir/REGs_reg[29][0]   |               20 |             32 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | ir/REGs_reg[6][31]                       | ir/REGs_reg[6][0]    |               20 |             32 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | ir/REGs_reg[31][31]                      | ir/REGs_reg[31][0]   |               17 |             32 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | ir/REGs_reg[23][31]                      | ir/REGs_reg[23][0]   |               22 |             32 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | ir/REGs_reg[5][31]                       | ir/REGs_reg[5][0]    |               22 |             32 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | ir/REGs_reg[3][31]                       | ir/REGs_reg[3][0]    |               20 |             32 |
+| ~MAIN_CLK_RAW_IBUF_BUFG | pc/PC_EN                                 | PC_RST_IBUF          |               14 |             33 |
+|  MAIN_CLK_RAW_IBUF_BUFG |                                          |                      |              109 |            216 |
++-------------------------+------------------------------------------+----------------------+------------------+----------------+
+
+
++--------+-----------------------+
+| Fanout | Number of ControlSets |
++--------+-----------------------+
+| 1      |                     5 |
+| 2      |                     2 |
+| 3      |                     1 |
+| 7      |                     1 |
+| 8      |                   256 |
+| 16+    |                    36 |
++--------+-----------------------+
+
+

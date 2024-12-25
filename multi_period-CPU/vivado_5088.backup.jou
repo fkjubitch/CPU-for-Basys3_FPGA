@@ -1,0 +1,188 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Wed Dec 25 15:11:18 2024
+# Process ID: 5088
+# Current directory: E:/private/GitHub/CPU_for_Basys3/multi_period-CPU
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent14288 E:\private\GitHub\CPU_for_Basys3\multi_period-CPU\multi_period-CPU.xpr
+# Log file: E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/vivado.log
+# Journal file: E:/private/GitHub/CPU_for_Basys3/multi_period-CPU\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+source CPU_sim.tcl
+add_wave {{/CPU_sim/cpu/pc/NEXT_PC}} {{/CPU_sim/cpu/pc/WR_ENABLE}} {{/CPU_sim/cpu/pc/CURR_PC}} 
+add_wave {{/CPU_sim/cpu/alu/OP1}} {{/CPU_sim/cpu/alu/OP2}} {{/CPU_sim/cpu/alu/ALUop}} {{/CPU_sim/cpu/alu/SIGN}} {{/CPU_sim/cpu/alu/ZERO}} {{/CPU_sim/cpu/alu/RESULT}} 
+restart
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+add_wave {{/CPU_sim/cpu/rf/WRITE_REG}} {{/CPU_sim/cpu/rf/WR_ENABLE}} {{/CPU_sim/cpu/rf/WRITE_DATA}} 
+restart
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+add_wave {{/CPU_sim/cpu/ctrl_unit/dff/CURR_STATUS}} 
+restart
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+close_sim
+launch_simulation
+source CPU_sim.tcl
+add_wave {{/CPU_sim/cpu/pc/NEXT_PC}} {{/CPU_sim/cpu/pc/WR_ENABLE}} {{/CPU_sim/cpu/pc/CURR_PC}} 
+add_wave {{/CPU_sim/cpu/rf/WRITE_REG}} {{/CPU_sim/cpu/rf/WR_ENABLE}} {{/CPU_sim/cpu/rf/WRITE_DATA}} 
+add_wave {{/CPU_sim/cpu/alu/OP1}} {{/CPU_sim/cpu/alu/OP2}} {{/CPU_sim/cpu/alu/ALUop}} {{/CPU_sim/cpu/alu/SIGN}} {{/CPU_sim/cpu/alu/ZERO}} {{/CPU_sim/cpu/alu/RESULT}} 
+restart
+run 1 ms
+add_wave {{/CPU_sim/cpu/ctrl_unit/dff/CURR_STATUS}} 
+restart
+run 1 ms
+add_wave {{/CPU_sim/cpu/adr/D_IN}} 
+restart
+run 1 ms
+add_wave {{/CPU_sim/cpu/ir}} 
+restart
+run 1 ms
+close_sim
+launch_simulation
+source CPU_sim.tcl
+add_wave {{/CPU_sim/cpu/alu/OP1}} {{/CPU_sim/cpu/alu/OP2}} {{/CPU_sim/cpu/alu/ALUop}} {{/CPU_sim/cpu/alu/SIGN}} {{/CPU_sim/cpu/alu/ZERO}} {{/CPU_sim/cpu/alu/RESULT}} 
+add_wave {{/CPU_sim/cpu/rf/WRITE_REG}} {{/CPU_sim/cpu/rf/WR_ENABLE}} {{/CPU_sim/cpu/rf/WRITE_DATA}} 
+add_wave {{/CPU_sim/cpu/ctrl_unit/dff/CURR_STATUS}} 
+restart
+run 1 ms
+close_sim
+launch_simulation
+source CPU_sim.tcl
+add_wave {{/CPU_sim/cpu/pc/NEXT_PC}} {{/CPU_sim/cpu/pc/CURR_PC}} 
+add_wave {{/CPU_sim/cpu/alu/OP1}} {{/CPU_sim/cpu/alu/OP2}} {{/CPU_sim/cpu/alu/ALUop}} {{/CPU_sim/cpu/alu/SIGN}} {{/CPU_sim/cpu/alu/ZERO}} {{/CPU_sim/cpu/alu/RESULT}} 
+add_wave {{/CPU_sim/cpu/ctrl_unit/dff/CURR_STATUS}} 
+add_wave {{/CPU_sim/cpu/rf/WRITE_REG}} {{/CPU_sim/cpu/rf/WR_ENABLE}} {{/CPU_sim/cpu/rf/WRITE_DATA}} 
+restart
+run 1 ms
+add_wave {{/CPU_sim/cpu/ir/D_IN}} {{/CPU_sim/cpu/ir/D_OUT}} 
+restart
+run 1 ms
+close_sim
+launch_simulation
+source CPU_sim.tcl
+add_wave {{/CPU_sim/cpu/pc/NEXT_PC}} {{/CPU_sim/cpu/pc/CURR_PC}} 
+add_wave {{/CPU_sim/cpu/alu/OP1}} {{/CPU_sim/cpu/alu/OP2}} {{/CPU_sim/cpu/alu/ALUop}} {{/CPU_sim/cpu/alu/SIGN}} {{/CPU_sim/cpu/alu/ZERO}} {{/CPU_sim/cpu/alu/RESULT}} 
+add_wave {{/CPU_sim/cpu/ctrl_unit/dff}} 
+add_wave {{/CPU_sim/cpu/ctrl_unit/dff/CURR_STATUS}} 
+add_wave {{/CPU_sim/cpu/rf/WRITE_REG}} {{/CPU_sim/cpu/rf/WR_ENABLE}} {{/CPU_sim/cpu/rf/WRITE_DATA}} 
+restart
+run 1 ms
+close_sim
+launch_simulation
+source CPU_sim.tcl
+add_wave {{/CPU_sim/cpu/alu/OP1}} {{/CPU_sim/cpu/alu/OP2}} {{/CPU_sim/cpu/alu/ALUop}} {{/CPU_sim/cpu/alu/SIGN}} {{/CPU_sim/cpu/alu/ZERO}} {{/CPU_sim/cpu/alu/RESULT}} 
+add_wave {{/CPU_sim/cpu/rf/WRITE_REG}} {{/CPU_sim/cpu/rf/WR_ENABLE}} {{/CPU_sim/cpu/rf/WRITE_DATA}} 
+restart
+run 1 ms
+close_sim
+launch_simulation
+source CPU_sim.tcl
+add_wave {{/CPU_sim/cpu/rf/WRITE_REG}} {{/CPU_sim/cpu/rf/WR_ENABLE}} {{/CPU_sim/cpu/rf/WRITE_DATA}} 
+add_wave {{/CPU_sim/cpu/alu/OP1}} {{/CPU_sim/cpu/alu/OP2}} {{/CPU_sim/cpu/alu/ALUop}} {{/CPU_sim/cpu/alu/SIGN}} {{/CPU_sim/cpu/alu/ZERO}} {{/CPU_sim/cpu/alu/RESULT}} 
+add_wave {{/CPU_sim/cpu/ctrl_unit/dff/CURR_STATUS}} 
+restart
+run 1 ms
+close_sim
+launch_simulation
+source CPU_sim.tcl
+add_wave {{/CPU_sim/cpu/alu/OP1}} {{/CPU_sim/cpu/alu/OP2}} {{/CPU_sim/cpu/alu/ALUop}} 
+add_wave {{/CPU_sim/cpu/alu/RESULT}} 
+add_wave {{/CPU_sim/cpu/rf/WRITE_REG}} {{/CPU_sim/cpu/rf/WR_ENABLE}} {{/CPU_sim/cpu/rf/WRITE_DATA}} 
+add_wave {{/CPU_sim/cpu/ctrl_unit/dff/CURR_STATUS}} 
+restart
+run 1 ms
+close_sim
+launch_simulation
+source CPU_sim.tcl
+add_wave {{/CPU_sim/cpu/rf/WRITE_REG}} {{/CPU_sim/cpu/rf/WR_ENABLE}} {{/CPU_sim/cpu/rf/WRITE_DATA}} 
+add_wave {{/CPU_sim/cpu/pc/NEXT_PC}} {{/CPU_sim/cpu/pc/CURR_PC}} 
+add_wave {{/CPU_sim/cpu/ctrl_unit/dff/CURR_STATUS}} 
+add_wave {{/CPU_sim/cpu/alu/OP1}} {{/CPU_sim/cpu/alu/OP2}} {{/CPU_sim/cpu/alu/ALUop}} {{/CPU_sim/cpu/alu/SIGN}} {{/CPU_sim/cpu/alu/ZERO}} {{/CPU_sim/cpu/alu/RESULT}} 
+restart
+run 1 ms
+close_sim
+launch_simulation
+source CPU_sim.tcl
+add_wave {{/CPU_sim/cpu/pc/NEXT_PC}} {{/CPU_sim/cpu/pc/CURR_PC}} 
+add_wave {{/CPU_sim/cpu/rf/WRITE_REG}} {{/CPU_sim/cpu/rf/WR_ENABLE}} {{/CPU_sim/cpu/rf/WRITE_DATA}} 
+add_wave {{/CPU_sim/cpu/alu/OP1}} {{/CPU_sim/cpu/alu/OP2}} {{/CPU_sim/cpu/alu/ALUop}} {{/CPU_sim/cpu/alu/SIGN}} {{/CPU_sim/cpu/alu/ZERO}} {{/CPU_sim/cpu/alu/RESULT}} 
+restart
+run 1 ms
+add_wave {{/CPU_sim/cpu/ctrl_unit/OP}} 
+add_wave {{/CPU_sim/cpu/ctrl_unit/dff/CURR_STATUS}} 
+restart
+run 1 ms
+close_sim
+launch_simulation
+source CPU_sim.tcl
+restart
+run 1 ms
+add_wave {{/CPU_sim/cpu/pc/NEXT_PC}} {{/CPU_sim/cpu/pc/CURR_PC}} 
+add_wave {{/CPU_sim/cpu/rf/WRITE_REG}} {{/CPU_sim/cpu/rf/WR_ENABLE}} {{/CPU_sim/cpu/rf/WRITE_DATA}} 
+add_wave {{/CPU_sim/cpu/alu/OP1}} {{/CPU_sim/cpu/alu/OP2}} {{/CPU_sim/cpu/alu/ALUop}} {{/CPU_sim/cpu/alu/RESULT}} 
+add_wave {{/CPU_sim/cpu/ctrl_unit/dff/CURR_STATUS}} 
+restart
+run 1 ms
+close_sim
+launch_simulation
+source CPU_sim.tcl
+add_wave {{/CPU_sim/cpu/pc/NEXT_PC}} {{/CPU_sim/cpu/pc/CURR_PC}} 
+add_wave {{/CPU_sim/cpu/rf/WRITE_REG}} {{/CPU_sim/cpu/rf/WR_ENABLE}} {{/CPU_sim/cpu/rf/WRITE_DATA}} 
+add_wave {{/CPU_sim/cpu/alu/OP1}} {{/CPU_sim/cpu/alu/OP2}} {{/CPU_sim/cpu/alu/ALUop}} 
+add_wave {{/CPU_sim/cpu/alu/RESULT}} 
+restart
+run 1 ms
+close_sim
+launch_simulation
+source CPU_sim.tcl
+add_wave {{/CPU_sim/cpu/pc/NEXT_PC}} {{/CPU_sim/cpu/pc/CURR_PC}} 
+add_wave {{/CPU_sim/cpu/rf/WRITE_REG}} {{/CPU_sim/cpu/rf/WR_ENABLE}} {{/CPU_sim/cpu/rf/WRITE_DATA}} 
+add_wave {{/CPU_sim/cpu/alu/OP1}} {{/CPU_sim/cpu/alu/OP2}} {{/CPU_sim/cpu/alu/ALUop}} 
+add_wave {{/CPU_sim/cpu/alu/SIGN}} {{/CPU_sim/cpu/alu/ZERO}} {{/CPU_sim/cpu/alu/RESULT}} 
+add_wave {{/CPU_sim/cpu/dm/ADDR}} {{/CPU_sim/cpu/dm/DATA}} {{/CPU_sim/cpu/dm/RD}} {{/CPU_sim/cpu/dm/WR}} {{/CPU_sim/cpu/dm/DATA_OUT}} 
+add_wave {{/CPU_sim/cpu/ctrl_unit/dff/CURR_STATUS}} 
+restart
+run 1 ms
+close_sim
+launch_simulation
+source CPU_sim.tcl
+restart
+run 1 ms
+add_wave {{/CPU_sim/cpu/pc/NEXT_PC}} {{/CPU_sim/cpu/pc/CURR_PC}} 
+restart
+run 1 ms
+close_sim
+launch_simulation
+source CPU_sim.tcl
+add_wave {{/CPU_sim/cpu/pc/NEXT_PC}} {{/CPU_sim/cpu/pc/CURR_PC}} 
+add_wave {{/CPU_sim/cpu/rf/WRITE_REG}} {{/CPU_sim/cpu/rf/WR_ENABLE}} {{/CPU_sim/cpu/rf/WRITE_DATA}} 
+add_wave {{/CPU_sim/cpu/alu/OP1}} {{/CPU_sim/cpu/alu/OP2}} {{/CPU_sim/cpu/alu/ALUop}} {{/CPU_sim/cpu/alu/SIGN}} {{/CPU_sim/cpu/alu/ZERO}} {{/CPU_sim/cpu/alu/RESULT}} 
+add_wave {{/CPU_sim/cpu/dm/ADDR}} {{/CPU_sim/cpu/dm/DATA}} {{/CPU_sim/cpu/dm/RD}} {{/CPU_sim/cpu/dm/WR}} {{/CPU_sim/cpu/dm/DATA_OUT}} 
+add_wave {{/CPU_sim/cpu/ctrl_unit/dff/CURR_STATUS}} 
+restart
+run 1 ms
+close_sim
+launch_simulation
+source CPU_sim.tcl
+add_wave {{/CPU_sim/cpu/pc/NEXT_PC}} {{/CPU_sim/cpu/pc/CURR_PC}} 
+add_wave {{/CPU_sim/cpu/rf/WRITE_REG}} {{/CPU_sim/cpu/rf/WR_ENABLE}} {{/CPU_sim/cpu/rf/WRITE_DATA}} 
+add_wave {{/CPU_sim/cpu/alu/OP1}} {{/CPU_sim/cpu/alu/OP2}} {{/CPU_sim/cpu/alu/ALUop}} {{/CPU_sim/cpu/alu/SIGN}} {{/CPU_sim/cpu/alu/ZERO}} {{/CPU_sim/cpu/alu/RESULT}} 
+add_wave {{/CPU_sim/cpu/dm/ADDR}} {{/CPU_sim/cpu/dm/DATA}} {{/CPU_sim/cpu/dm/RD}} {{/CPU_sim/cpu/dm/WR}} {{/CPU_sim/cpu/dm/DATA_OUT}} 
+add_wave {{/CPU_sim/cpu/ctrl_unit/dff/CURR_STATUS}} 
+restart
+run 1 ms
+close_sim

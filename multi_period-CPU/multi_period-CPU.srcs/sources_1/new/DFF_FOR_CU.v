@@ -34,13 +34,10 @@ module DFF_FOR_CU(
         DFF = 3'b001;
     end
     
-    always @(*) begin
+    always @(posedge CLOCK) begin
         if(RESET==1) begin
             DFF = 3'b101;
         end
-    end
-    
-    always @(posedge CLOCK) begin
         CURR_STATUS = DFF;
         case(CURR_STATUS) 
             3'b000:begin

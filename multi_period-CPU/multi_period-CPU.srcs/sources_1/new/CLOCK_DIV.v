@@ -34,9 +34,10 @@ module CLOCK_DIV(
     
     always @(posedge CLOCK) begin
         COUNT <= COUNT + 1;
-        if(COUNT >= 1) begin //仿真用
-//        if(COUNT >= 1000) begin
+//        if(COUNT >= 1) begin //仿真用
+        if(COUNT >= 1000) begin
             DIV_CLOCK = ~DIV_CLOCK;
+            COUNT<=0;
         end
     end
     

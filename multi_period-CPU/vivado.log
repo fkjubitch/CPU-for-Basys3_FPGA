@@ -2,10 +2,10 @@
 # Vivado v2017.4 (64-bit)
 # SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
 # IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
-# Start of session at: Wed Dec 25 15:11:18 2024
-# Process ID: 5088
+# Start of session at: Wed Dec 25 18:56:17 2024
+# Process ID: 24032
 # Current directory: E:/private/GitHub/CPU_for_Basys3/multi_period-CPU
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent14288 E:\private\GitHub\CPU_for_Basys3\multi_period-CPU\multi_period-CPU.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13780 E:\private\GitHub\CPU_for_Basys3\multi_period-CPU\multi_period-CPU.xpr
 # Log file: E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/vivado.log
 # Journal file: E:/private/GitHub/CPU_for_Basys3/multi_period-CPU\vivado.jou
 #-----------------------------------------------------------
@@ -16,1805 +16,268 @@ Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Vivado_2017.4/Vivado/2017.4/data/ip'.
+open_project: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 778.191 ; gain = 35.891
 update_compile_order -fileset sources_1
-launch_simulation
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.sim/sim_1/behav/xsim'
-INFO: [SIM-utils-51] Simulation object is 'sim_1'
-INFO: [SIM-utils-54] Inspecting design source files for 'CPU_sim' in fileset 'sim_1'...
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.sim/sim_1/behav/xsim'
-"xvlog --incr --relax -prj CPU_sim_vlog.prj"
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/ALU.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module ALU
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/Adder.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Adder
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/CLOCK_DIV.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module CLOCK_DIV
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/CPU.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module CPU
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/CU.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module CU
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/DFF.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module DFF
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/DFF_FOR_CU.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module DFF_FOR_CU
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/DM.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module DM
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/EXT.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module EXT
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/FOUR_TO_7SEG.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module FOUR_TO_7SEG
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/IM.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module IM
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/MUX_1bit_32.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module MUX_1bit_32
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/MUX_2bits_32.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module MUX_2bits_32
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/MUX_2bits_5.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module MUX_2bits_5
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/PC.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module PC
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/RF.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module RF
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sim_1/new/CPU_sim.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module CPU_sim
-INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.sim/sim_1/behav/xsim'
-Vivado Simulator 2017.4
-Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
-Running: E:/Vivado_2017.4/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto 08e4ebf56723422a933c2cde68228a46 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot CPU_sim_behav xil_defaultlib.CPU_sim xil_defaultlib.glbl -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 5 for port ZERO [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/CPU.v:142]
-WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port EN [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/CPU.v:145]
-WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port EN [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/CPU.v:146]
-WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port EN [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/CPU.v:153]
-WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port EN [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/CPU.v:157]
-Completed static elaboration
-Starting simulation data flow analysis
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling module xil_defaultlib.CLOCK_DIV
-Compiling module xil_defaultlib.PC
-Compiling module xil_defaultlib.Adder
-Compiling module xil_defaultlib.MUX_2bits_32
-Compiling module xil_defaultlib.IM
-Compiling module xil_defaultlib.DFF
-Compiling module xil_defaultlib.MUX_2bits_5
-Compiling module xil_defaultlib.MUX_1bit_32
-Compiling module xil_defaultlib.RF
-Compiling module xil_defaultlib.EXT
-Compiling module xil_defaultlib.ALU
-Compiling module xil_defaultlib.DM
-Compiling module xil_defaultlib.DFF_FOR_CU
-Compiling module xil_defaultlib.CU
-Compiling module xil_defaultlib.FOUR_TO_7SEG
-Compiling module xil_defaultlib.CPU
-Compiling module xil_defaultlib.CPU_sim
-Compiling module xil_defaultlib.glbl
-Built simulation snapshot CPU_sim_behav
-INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
-INFO: [USF-XSim-4] XSim::Simulate design
-INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.sim/sim_1/behav/xsim'
-INFO: [USF-XSim-98] *** Running xsim
-   with args "CPU_sim_behav -key {Behavioral:sim_1:Functional:CPU_sim} -tclbatch {CPU_sim.tcl} -log {simulate.log}"
-INFO: [USF-XSim-8] Loading simulator feature
-Vivado Simulator 2017.4
-Time resolution is 1 ps
-source CPU_sim.tcl
-# set curr_wave [current_wave_config]
-# if { [string length $curr_wave] == 0 } {
-#   if { [llength [get_objects]] > 0} {
-#     add_wave /
-#     set_property needs_save false [current_wave_config]
-#   } else {
-#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
-#   }
-# }
-# run 1000ns
-INFO: [USF-XSim-96] XSim completed. Design snapshot 'CPU_sim_behav' loaded.
-INFO: [USF-XSim-97] XSim simulation ran for 1000ns
-launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 832.434 ; gain = 0.000
-add_wave {{/CPU_sim/cpu/pc/NEXT_PC}} {{/CPU_sim/cpu/pc/WR_ENABLE}} {{/CPU_sim/cpu/pc/CURR_PC}} 
-add_wave {{/CPU_sim/cpu/alu/OP1}} {{/CPU_sim/cpu/alu/OP2}} {{/CPU_sim/cpu/alu/ALUop}} {{/CPU_sim/cpu/alu/SIGN}} {{/CPU_sim/cpu/alu/ZERO}} {{/CPU_sim/cpu/alu/RESULT}} 
-restart
-INFO: [Simtcl 6-17] Simulation restarted
-run 1 us
-run 1 us
-run 1 us
-run 1 us
-run 1 us
-add_wave {{/CPU_sim/cpu/rf/WRITE_REG}} {{/CPU_sim/cpu/rf/WR_ENABLE}} {{/CPU_sim/cpu/rf/WRITE_DATA}} 
-restart
-INFO: [Simtcl 6-17] Simulation restarted
-run 1 us
-run 1 us
-run 1 us
-run 1 us
-add_wave {{/CPU_sim/cpu/ctrl_unit/dff/CURR_STATUS}} 
-restart
-INFO: [Simtcl 6-17] Simulation restarted
-run 1 us
-run 1 us
-run 1 us
-run 1 us
-close_sim
-INFO: [Simtcl 6-16] Simulation closed
-launch_simulation
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.sim/sim_1/behav/xsim'
-INFO: [SIM-utils-51] Simulation object is 'sim_1'
-INFO: [SIM-utils-54] Inspecting design source files for 'CPU_sim' in fileset 'sim_1'...
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.sim/sim_1/behav/xsim'
-"xvlog --incr --relax -prj CPU_sim_vlog.prj"
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/ALU.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module ALU
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/Adder.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Adder
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/CLOCK_DIV.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module CLOCK_DIV
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/CPU.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module CPU
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/CU.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module CU
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/DFF.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module DFF
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/DFF_FOR_CU.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module DFF_FOR_CU
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/DM.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module DM
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/EXT.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module EXT
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/FOUR_TO_7SEG.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module FOUR_TO_7SEG
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/IM.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module IM
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/MUX_1bit_32.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module MUX_1bit_32
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/MUX_2bits_32.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module MUX_2bits_32
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/MUX_2bits_5.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module MUX_2bits_5
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/PC.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module PC
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/RF.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module RF
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sim_1/new/CPU_sim.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module CPU_sim
-INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.sim/sim_1/behav/xsim'
-Vivado Simulator 2017.4
-Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
-Running: E:/Vivado_2017.4/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto 08e4ebf56723422a933c2cde68228a46 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot CPU_sim_behav xil_defaultlib.CPU_sim xil_defaultlib.glbl -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 5 for port ZERO [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/CPU.v:142]
-WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port EN [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/CPU.v:145]
-WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port EN [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/CPU.v:146]
-WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port EN [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/CPU.v:153]
-WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port EN [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/CPU.v:157]
-Completed static elaboration
-Starting simulation data flow analysis
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling module xil_defaultlib.CLOCK_DIV
-Compiling module xil_defaultlib.PC
-Compiling module xil_defaultlib.Adder
-Compiling module xil_defaultlib.MUX_2bits_32
-Compiling module xil_defaultlib.IM
-Compiling module xil_defaultlib.DFF
-Compiling module xil_defaultlib.MUX_2bits_5
-Compiling module xil_defaultlib.MUX_1bit_32
-Compiling module xil_defaultlib.RF
-Compiling module xil_defaultlib.EXT
-Compiling module xil_defaultlib.ALU
-Compiling module xil_defaultlib.DM
-Compiling module xil_defaultlib.DFF_FOR_CU
-Compiling module xil_defaultlib.CU
-Compiling module xil_defaultlib.FOUR_TO_7SEG
-Compiling module xil_defaultlib.CPU
-Compiling module xil_defaultlib.CPU_sim
-Compiling module xil_defaultlib.glbl
-Built simulation snapshot CPU_sim_behav
-INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
-INFO: [USF-XSim-4] XSim::Simulate design
-INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.sim/sim_1/behav/xsim'
-INFO: [USF-XSim-98] *** Running xsim
-   with args "CPU_sim_behav -key {Behavioral:sim_1:Functional:CPU_sim} -tclbatch {CPU_sim.tcl} -log {simulate.log}"
-INFO: [USF-XSim-8] Loading simulator feature
-Vivado Simulator 2017.4
-Time resolution is 1 ps
-source CPU_sim.tcl
-# set curr_wave [current_wave_config]
-# if { [string length $curr_wave] == 0 } {
-#   if { [llength [get_objects]] > 0} {
-#     add_wave /
-#     set_property needs_save false [current_wave_config]
-#   } else {
-#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
-#   }
-# }
-# run 1000ns
-INFO: [USF-XSim-96] XSim completed. Design snapshot 'CPU_sim_behav' loaded.
-INFO: [USF-XSim-97] XSim simulation ran for 1000ns
-launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 872.172 ; gain = 0.000
-add_wave {{/CPU_sim/cpu/pc/NEXT_PC}} {{/CPU_sim/cpu/pc/WR_ENABLE}} {{/CPU_sim/cpu/pc/CURR_PC}} 
-add_wave {{/CPU_sim/cpu/rf/WRITE_REG}} {{/CPU_sim/cpu/rf/WR_ENABLE}} {{/CPU_sim/cpu/rf/WRITE_DATA}} 
-add_wave {{/CPU_sim/cpu/alu/OP1}} {{/CPU_sim/cpu/alu/OP2}} {{/CPU_sim/cpu/alu/ALUop}} {{/CPU_sim/cpu/alu/SIGN}} {{/CPU_sim/cpu/alu/ZERO}} {{/CPU_sim/cpu/alu/RESULT}} 
-restart
-INFO: [Simtcl 6-17] Simulation restarted
-run 1 ms
-add_wave {{/CPU_sim/cpu/ctrl_unit/dff/CURR_STATUS}} 
-restart
-INFO: [Simtcl 6-17] Simulation restarted
-run 1 ms
-add_wave {{/CPU_sim/cpu/adr/D_IN}} 
-restart
-INFO: [Simtcl 6-17] Simulation restarted
-run 1 ms
-add_wave {{/CPU_sim/cpu/ir}} 
-restart
-INFO: [Simtcl 6-17] Simulation restarted
-run 1 ms
-close_sim
-INFO: [Simtcl 6-16] Simulation closed
-launch_simulation
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.sim/sim_1/behav/xsim'
-INFO: [SIM-utils-51] Simulation object is 'sim_1'
-INFO: [SIM-utils-54] Inspecting design source files for 'CPU_sim' in fileset 'sim_1'...
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.sim/sim_1/behav/xsim'
-"xvlog --incr --relax -prj CPU_sim_vlog.prj"
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/ALU.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module ALU
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/Adder.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Adder
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/CLOCK_DIV.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module CLOCK_DIV
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/CPU.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module CPU
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/CU.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module CU
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/DFF.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module DFF
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/DFF_FOR_CU.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module DFF_FOR_CU
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/DM.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module DM
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/EXT.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module EXT
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/FOUR_TO_7SEG.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module FOUR_TO_7SEG
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/IM.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module IM
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/MUX_1bit_32.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module MUX_1bit_32
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/MUX_2bits_32.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module MUX_2bits_32
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/MUX_2bits_5.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module MUX_2bits_5
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/PC.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module PC
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/RF.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module RF
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sim_1/new/CPU_sim.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module CPU_sim
-INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.sim/sim_1/behav/xsim'
-Vivado Simulator 2017.4
-Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
-Running: E:/Vivado_2017.4/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto 08e4ebf56723422a933c2cde68228a46 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot CPU_sim_behav xil_defaultlib.CPU_sim xil_defaultlib.glbl -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 5 for port ZERO [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/CPU.v:142]
-WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port EN [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/CPU.v:145]
-WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port EN [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/CPU.v:146]
-WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port EN [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/CPU.v:153]
-WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port EN [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/CPU.v:157]
-Completed static elaboration
-Starting simulation data flow analysis
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling module xil_defaultlib.CLOCK_DIV
-Compiling module xil_defaultlib.PC
-Compiling module xil_defaultlib.Adder
-Compiling module xil_defaultlib.MUX_2bits_32
-Compiling module xil_defaultlib.IM
-Compiling module xil_defaultlib.DFF
-Compiling module xil_defaultlib.MUX_2bits_5
-Compiling module xil_defaultlib.MUX_1bit_32
-Compiling module xil_defaultlib.RF
-Compiling module xil_defaultlib.EXT
-Compiling module xil_defaultlib.ALU
-Compiling module xil_defaultlib.DM
-Compiling module xil_defaultlib.DFF_FOR_CU
-Compiling module xil_defaultlib.CU
-Compiling module xil_defaultlib.FOUR_TO_7SEG
-Compiling module xil_defaultlib.CPU
-Compiling module xil_defaultlib.CPU_sim
-Compiling module xil_defaultlib.glbl
-Built simulation snapshot CPU_sim_behav
-INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
-INFO: [USF-XSim-4] XSim::Simulate design
-INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.sim/sim_1/behav/xsim'
-INFO: [USF-XSim-98] *** Running xsim
-   with args "CPU_sim_behav -key {Behavioral:sim_1:Functional:CPU_sim} -tclbatch {CPU_sim.tcl} -log {simulate.log}"
-INFO: [USF-XSim-8] Loading simulator feature
-Vivado Simulator 2017.4
-Time resolution is 1 ps
-source CPU_sim.tcl
-# set curr_wave [current_wave_config]
-# if { [string length $curr_wave] == 0 } {
-#   if { [llength [get_objects]] > 0} {
-#     add_wave /
-#     set_property needs_save false [current_wave_config]
-#   } else {
-#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
-#   }
-# }
-# run 1000ns
-INFO: [USF-XSim-96] XSim completed. Design snapshot 'CPU_sim_behav' loaded.
-INFO: [USF-XSim-97] XSim simulation ran for 1000ns
-launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 890.969 ; gain = 0.000
-add_wave {{/CPU_sim/cpu/alu/OP1}} {{/CPU_sim/cpu/alu/OP2}} {{/CPU_sim/cpu/alu/ALUop}} {{/CPU_sim/cpu/alu/SIGN}} {{/CPU_sim/cpu/alu/ZERO}} {{/CPU_sim/cpu/alu/RESULT}} 
-add_wave {{/CPU_sim/cpu/rf/WRITE_REG}} {{/CPU_sim/cpu/rf/WR_ENABLE}} {{/CPU_sim/cpu/rf/WRITE_DATA}} 
-add_wave {{/CPU_sim/cpu/ctrl_unit/dff/CURR_STATUS}} 
-restart
-INFO: [Simtcl 6-17] Simulation restarted
-run 1 ms
-close_sim
-INFO: [Simtcl 6-16] Simulation closed
-launch_simulation
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.sim/sim_1/behav/xsim'
-INFO: [SIM-utils-51] Simulation object is 'sim_1'
-INFO: [SIM-utils-54] Inspecting design source files for 'CPU_sim' in fileset 'sim_1'...
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.sim/sim_1/behav/xsim'
-"xvlog --incr --relax -prj CPU_sim_vlog.prj"
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/ALU.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module ALU
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/Adder.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Adder
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/CLOCK_DIV.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module CLOCK_DIV
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/CPU.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module CPU
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/CU.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module CU
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/DFF.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module DFF
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/DFF_FOR_CU.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module DFF_FOR_CU
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/DM.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module DM
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/EXT.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module EXT
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/FOUR_TO_7SEG.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module FOUR_TO_7SEG
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/IM.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module IM
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/MUX_1bit_32.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module MUX_1bit_32
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/MUX_2bits_32.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module MUX_2bits_32
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/MUX_2bits_5.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module MUX_2bits_5
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/PC.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module PC
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/RF.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module RF
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sim_1/new/CPU_sim.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module CPU_sim
-INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.sim/sim_1/behav/xsim'
-Vivado Simulator 2017.4
-Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
-Running: E:/Vivado_2017.4/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto 08e4ebf56723422a933c2cde68228a46 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot CPU_sim_behav xil_defaultlib.CPU_sim xil_defaultlib.glbl -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 5 for port ZERO [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/CPU.v:142]
-WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port EN [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/CPU.v:145]
-WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port EN [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/CPU.v:146]
-WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port EN [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/CPU.v:153]
-WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port EN [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/CPU.v:157]
-Completed static elaboration
-Starting simulation data flow analysis
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling module xil_defaultlib.CLOCK_DIV
-Compiling module xil_defaultlib.PC
-Compiling module xil_defaultlib.Adder
-Compiling module xil_defaultlib.MUX_2bits_32
-Compiling module xil_defaultlib.IM
-Compiling module xil_defaultlib.DFF
-Compiling module xil_defaultlib.MUX_2bits_5
-Compiling module xil_defaultlib.MUX_1bit_32
-Compiling module xil_defaultlib.RF
-Compiling module xil_defaultlib.EXT
-Compiling module xil_defaultlib.ALU
-Compiling module xil_defaultlib.DM
-Compiling module xil_defaultlib.DFF_FOR_CU
-Compiling module xil_defaultlib.CU
-Compiling module xil_defaultlib.FOUR_TO_7SEG
-Compiling module xil_defaultlib.CPU
-Compiling module xil_defaultlib.CPU_sim
-Compiling module xil_defaultlib.glbl
-Built simulation snapshot CPU_sim_behav
-INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
-INFO: [USF-XSim-4] XSim::Simulate design
-INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.sim/sim_1/behav/xsim'
-INFO: [USF-XSim-98] *** Running xsim
-   with args "CPU_sim_behav -key {Behavioral:sim_1:Functional:CPU_sim} -tclbatch {CPU_sim.tcl} -log {simulate.log}"
-INFO: [USF-XSim-8] Loading simulator feature
-Vivado Simulator 2017.4
-Time resolution is 1 ps
-source CPU_sim.tcl
-# set curr_wave [current_wave_config]
-# if { [string length $curr_wave] == 0 } {
-#   if { [llength [get_objects]] > 0} {
-#     add_wave /
-#     set_property needs_save false [current_wave_config]
-#   } else {
-#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
-#   }
-# }
-# run 1000ns
-INFO: [USF-XSim-96] XSim completed. Design snapshot 'CPU_sim_behav' loaded.
-INFO: [USF-XSim-97] XSim simulation ran for 1000ns
-launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 890.969 ; gain = 0.000
-add_wave {{/CPU_sim/cpu/pc/NEXT_PC}} {{/CPU_sim/cpu/pc/CURR_PC}} 
-add_wave {{/CPU_sim/cpu/alu/OP1}} {{/CPU_sim/cpu/alu/OP2}} {{/CPU_sim/cpu/alu/ALUop}} {{/CPU_sim/cpu/alu/SIGN}} {{/CPU_sim/cpu/alu/ZERO}} {{/CPU_sim/cpu/alu/RESULT}} 
-add_wave {{/CPU_sim/cpu/ctrl_unit/dff/CURR_STATUS}} 
-add_wave {{/CPU_sim/cpu/rf/WRITE_REG}} {{/CPU_sim/cpu/rf/WR_ENABLE}} {{/CPU_sim/cpu/rf/WRITE_DATA}} 
-restart
-INFO: [Simtcl 6-17] Simulation restarted
-run 1 ms
-add_wave {{/CPU_sim/cpu/ir/D_IN}} {{/CPU_sim/cpu/ir/D_OUT}} 
-restart
-INFO: [Simtcl 6-17] Simulation restarted
-run 1 ms
-close_sim
-INFO: [Simtcl 6-16] Simulation closed
-launch_simulation
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.sim/sim_1/behav/xsim'
-INFO: [SIM-utils-51] Simulation object is 'sim_1'
-INFO: [SIM-utils-54] Inspecting design source files for 'CPU_sim' in fileset 'sim_1'...
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.sim/sim_1/behav/xsim'
-"xvlog --incr --relax -prj CPU_sim_vlog.prj"
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/ALU.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module ALU
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/Adder.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Adder
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/CLOCK_DIV.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module CLOCK_DIV
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/CPU.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module CPU
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/CU.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module CU
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/DFF.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module DFF
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/DFF_FOR_CU.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module DFF_FOR_CU
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/DM.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module DM
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/EXT.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module EXT
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/FOUR_TO_7SEG.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module FOUR_TO_7SEG
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/IM.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module IM
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/MUX_1bit_32.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module MUX_1bit_32
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/MUX_2bits_32.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module MUX_2bits_32
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/MUX_2bits_5.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module MUX_2bits_5
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/PC.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module PC
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/RF.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module RF
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sim_1/new/CPU_sim.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module CPU_sim
-INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.sim/sim_1/behav/xsim'
-Vivado Simulator 2017.4
-Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
-Running: E:/Vivado_2017.4/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto 08e4ebf56723422a933c2cde68228a46 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot CPU_sim_behav xil_defaultlib.CPU_sim xil_defaultlib.glbl -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 5 for port ZERO [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/CPU.v:142]
-WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port EN [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/CPU.v:145]
-WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port EN [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/CPU.v:146]
-WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port EN [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/CPU.v:153]
-WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port EN [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/CPU.v:157]
-Completed static elaboration
-Starting simulation data flow analysis
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling module xil_defaultlib.CLOCK_DIV
-Compiling module xil_defaultlib.PC
-Compiling module xil_defaultlib.Adder
-Compiling module xil_defaultlib.MUX_2bits_32
-Compiling module xil_defaultlib.IM
-Compiling module xil_defaultlib.DFF
-Compiling module xil_defaultlib.MUX_2bits_5
-Compiling module xil_defaultlib.MUX_1bit_32
-Compiling module xil_defaultlib.RF
-Compiling module xil_defaultlib.EXT
-Compiling module xil_defaultlib.ALU
-Compiling module xil_defaultlib.DM
-Compiling module xil_defaultlib.DFF_FOR_CU
-Compiling module xil_defaultlib.CU
-Compiling module xil_defaultlib.FOUR_TO_7SEG
-Compiling module xil_defaultlib.CPU
-Compiling module xil_defaultlib.CPU_sim
-Compiling module xil_defaultlib.glbl
-Built simulation snapshot CPU_sim_behav
-INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
-INFO: [USF-XSim-4] XSim::Simulate design
-INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.sim/sim_1/behav/xsim'
-INFO: [USF-XSim-98] *** Running xsim
-   with args "CPU_sim_behav -key {Behavioral:sim_1:Functional:CPU_sim} -tclbatch {CPU_sim.tcl} -log {simulate.log}"
-INFO: [USF-XSim-8] Loading simulator feature
-Vivado Simulator 2017.4
-Time resolution is 1 ps
-source CPU_sim.tcl
-# set curr_wave [current_wave_config]
-# if { [string length $curr_wave] == 0 } {
-#   if { [llength [get_objects]] > 0} {
-#     add_wave /
-#     set_property needs_save false [current_wave_config]
-#   } else {
-#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
-#   }
-# }
-# run 1000ns
-INFO: [USF-XSim-96] XSim completed. Design snapshot 'CPU_sim_behav' loaded.
-INFO: [USF-XSim-97] XSim simulation ran for 1000ns
-launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 896.336 ; gain = 0.000
-add_wave {{/CPU_sim/cpu/pc/NEXT_PC}} {{/CPU_sim/cpu/pc/CURR_PC}} 
-add_wave {{/CPU_sim/cpu/alu/OP1}} {{/CPU_sim/cpu/alu/OP2}} {{/CPU_sim/cpu/alu/ALUop}} {{/CPU_sim/cpu/alu/SIGN}} {{/CPU_sim/cpu/alu/ZERO}} {{/CPU_sim/cpu/alu/RESULT}} 
-add_wave {{/CPU_sim/cpu/ctrl_unit/dff}} 
-add_wave {{/CPU_sim/cpu/ctrl_unit/dff/CURR_STATUS}} 
-add_wave {{/CPU_sim/cpu/rf/WRITE_REG}} {{/CPU_sim/cpu/rf/WR_ENABLE}} {{/CPU_sim/cpu/rf/WRITE_DATA}} 
-restart
-INFO: [Simtcl 6-17] Simulation restarted
-run 1 ms
-close_sim
-INFO: [Simtcl 6-16] Simulation closed
-launch_simulation
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.sim/sim_1/behav/xsim'
-INFO: [SIM-utils-51] Simulation object is 'sim_1'
-INFO: [SIM-utils-54] Inspecting design source files for 'CPU_sim' in fileset 'sim_1'...
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.sim/sim_1/behav/xsim'
-"xvlog --incr --relax -prj CPU_sim_vlog.prj"
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/ALU.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module ALU
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/Adder.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Adder
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/CLOCK_DIV.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module CLOCK_DIV
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/CPU.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module CPU
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/CU.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module CU
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/DFF.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module DFF
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/DFF_FOR_CU.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module DFF_FOR_CU
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/DM.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module DM
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/EXT.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module EXT
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/FOUR_TO_7SEG.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module FOUR_TO_7SEG
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/IM.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module IM
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/MUX_1bit_32.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module MUX_1bit_32
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/MUX_2bits_32.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module MUX_2bits_32
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/MUX_2bits_5.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module MUX_2bits_5
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/PC.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module PC
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/RF.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module RF
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sim_1/new/CPU_sim.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module CPU_sim
-INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.sim/sim_1/behav/xsim'
-Vivado Simulator 2017.4
-Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
-Running: E:/Vivado_2017.4/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto 08e4ebf56723422a933c2cde68228a46 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot CPU_sim_behav xil_defaultlib.CPU_sim xil_defaultlib.glbl -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 5 for port ZERO [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/CPU.v:142]
-WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port EN [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/CPU.v:145]
-WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port EN [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/CPU.v:146]
-WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port EN [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/CPU.v:153]
-WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port EN [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/CPU.v:157]
-Completed static elaboration
-Starting simulation data flow analysis
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling module xil_defaultlib.CLOCK_DIV
-Compiling module xil_defaultlib.PC
-Compiling module xil_defaultlib.Adder
-Compiling module xil_defaultlib.MUX_2bits_32
-Compiling module xil_defaultlib.IM
-Compiling module xil_defaultlib.DFF
-Compiling module xil_defaultlib.MUX_2bits_5
-Compiling module xil_defaultlib.MUX_1bit_32
-Compiling module xil_defaultlib.RF
-Compiling module xil_defaultlib.EXT
-Compiling module xil_defaultlib.ALU
-Compiling module xil_defaultlib.DM
-Compiling module xil_defaultlib.DFF_FOR_CU
-Compiling module xil_defaultlib.CU
-Compiling module xil_defaultlib.FOUR_TO_7SEG
-Compiling module xil_defaultlib.CPU
-Compiling module xil_defaultlib.CPU_sim
-Compiling module xil_defaultlib.glbl
-Built simulation snapshot CPU_sim_behav
-INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
-INFO: [USF-XSim-4] XSim::Simulate design
-INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.sim/sim_1/behav/xsim'
-INFO: [USF-XSim-98] *** Running xsim
-   with args "CPU_sim_behav -key {Behavioral:sim_1:Functional:CPU_sim} -tclbatch {CPU_sim.tcl} -log {simulate.log}"
-INFO: [USF-XSim-8] Loading simulator feature
-Vivado Simulator 2017.4
-Time resolution is 1 ps
-source CPU_sim.tcl
-# set curr_wave [current_wave_config]
-# if { [string length $curr_wave] == 0 } {
-#   if { [llength [get_objects]] > 0} {
-#     add_wave /
-#     set_property needs_save false [current_wave_config]
-#   } else {
-#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
-#   }
-# }
-# run 1000ns
-INFO: [USF-XSim-96] XSim completed. Design snapshot 'CPU_sim_behav' loaded.
-INFO: [USF-XSim-97] XSim simulation ran for 1000ns
-launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 903.703 ; gain = 3.930
-add_wave {{/CPU_sim/cpu/alu/OP1}} {{/CPU_sim/cpu/alu/OP2}} {{/CPU_sim/cpu/alu/ALUop}} {{/CPU_sim/cpu/alu/SIGN}} {{/CPU_sim/cpu/alu/ZERO}} {{/CPU_sim/cpu/alu/RESULT}} 
-add_wave {{/CPU_sim/cpu/rf/WRITE_REG}} {{/CPU_sim/cpu/rf/WR_ENABLE}} {{/CPU_sim/cpu/rf/WRITE_DATA}} 
-restart
-INFO: [Simtcl 6-17] Simulation restarted
-run 1 ms
-close_sim
-INFO: [Simtcl 6-16] Simulation closed
-launch_simulation
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.sim/sim_1/behav/xsim'
-INFO: [SIM-utils-51] Simulation object is 'sim_1'
-INFO: [SIM-utils-54] Inspecting design source files for 'CPU_sim' in fileset 'sim_1'...
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.sim/sim_1/behav/xsim'
-"xvlog --incr --relax -prj CPU_sim_vlog.prj"
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/ALU.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module ALU
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/Adder.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Adder
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/CLOCK_DIV.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module CLOCK_DIV
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/CPU.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module CPU
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/CU.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module CU
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/DFF.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module DFF
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/DFF_FOR_CU.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module DFF_FOR_CU
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/DM.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module DM
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/EXT.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module EXT
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/FOUR_TO_7SEG.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module FOUR_TO_7SEG
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/IM.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module IM
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/MUX_1bit_32.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module MUX_1bit_32
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/MUX_2bits_32.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module MUX_2bits_32
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/MUX_2bits_5.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module MUX_2bits_5
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/PC.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module PC
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/RF.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module RF
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sim_1/new/CPU_sim.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module CPU_sim
-INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.sim/sim_1/behav/xsim'
-Vivado Simulator 2017.4
-Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
-Running: E:/Vivado_2017.4/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto 08e4ebf56723422a933c2cde68228a46 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot CPU_sim_behav xil_defaultlib.CPU_sim xil_defaultlib.glbl -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 5 for port ZERO [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/CPU.v:142]
-WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port EN [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/CPU.v:145]
-WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port EN [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/CPU.v:146]
-WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port EN [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/CPU.v:153]
-WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port EN [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/CPU.v:157]
-Completed static elaboration
-Starting simulation data flow analysis
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling module xil_defaultlib.CLOCK_DIV
-Compiling module xil_defaultlib.PC
-Compiling module xil_defaultlib.Adder
-Compiling module xil_defaultlib.MUX_2bits_32
-Compiling module xil_defaultlib.IM
-Compiling module xil_defaultlib.DFF
-Compiling module xil_defaultlib.MUX_2bits_5
-Compiling module xil_defaultlib.MUX_1bit_32
-Compiling module xil_defaultlib.RF
-Compiling module xil_defaultlib.EXT
-Compiling module xil_defaultlib.ALU
-Compiling module xil_defaultlib.DM
-Compiling module xil_defaultlib.DFF_FOR_CU
-Compiling module xil_defaultlib.CU
-Compiling module xil_defaultlib.FOUR_TO_7SEG
-Compiling module xil_defaultlib.CPU
-Compiling module xil_defaultlib.CPU_sim
-Compiling module xil_defaultlib.glbl
-Built simulation snapshot CPU_sim_behav
-INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
-INFO: [USF-XSim-4] XSim::Simulate design
-INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.sim/sim_1/behav/xsim'
-INFO: [USF-XSim-98] *** Running xsim
-   with args "CPU_sim_behav -key {Behavioral:sim_1:Functional:CPU_sim} -tclbatch {CPU_sim.tcl} -log {simulate.log}"
-INFO: [USF-XSim-8] Loading simulator feature
-Vivado Simulator 2017.4
-Time resolution is 1 ps
-source CPU_sim.tcl
-# set curr_wave [current_wave_config]
-# if { [string length $curr_wave] == 0 } {
-#   if { [llength [get_objects]] > 0} {
-#     add_wave /
-#     set_property needs_save false [current_wave_config]
-#   } else {
-#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
-#   }
-# }
-# run 1000ns
-INFO: [USF-XSim-96] XSim completed. Design snapshot 'CPU_sim_behav' loaded.
-INFO: [USF-XSim-97] XSim simulation ran for 1000ns
-launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 905.137 ; gain = 0.141
-add_wave {{/CPU_sim/cpu/rf/WRITE_REG}} {{/CPU_sim/cpu/rf/WR_ENABLE}} {{/CPU_sim/cpu/rf/WRITE_DATA}} 
-add_wave {{/CPU_sim/cpu/alu/OP1}} {{/CPU_sim/cpu/alu/OP2}} {{/CPU_sim/cpu/alu/ALUop}} {{/CPU_sim/cpu/alu/SIGN}} {{/CPU_sim/cpu/alu/ZERO}} {{/CPU_sim/cpu/alu/RESULT}} 
-add_wave {{/CPU_sim/cpu/ctrl_unit/dff/CURR_STATUS}} 
-restart
-INFO: [Simtcl 6-17] Simulation restarted
-run 1 ms
-close_sim
-INFO: [Simtcl 6-16] Simulation closed
-launch_simulation
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.sim/sim_1/behav/xsim'
-INFO: [SIM-utils-51] Simulation object is 'sim_1'
-INFO: [SIM-utils-54] Inspecting design source files for 'CPU_sim' in fileset 'sim_1'...
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.sim/sim_1/behav/xsim'
-"xvlog --incr --relax -prj CPU_sim_vlog.prj"
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/ALU.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module ALU
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/Adder.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Adder
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/CLOCK_DIV.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module CLOCK_DIV
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/CPU.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module CPU
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/CU.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module CU
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/DFF.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module DFF
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/DFF_FOR_CU.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module DFF_FOR_CU
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/DM.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module DM
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/EXT.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module EXT
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/FOUR_TO_7SEG.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module FOUR_TO_7SEG
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/IM.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module IM
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/MUX_1bit_32.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module MUX_1bit_32
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/MUX_2bits_32.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module MUX_2bits_32
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/MUX_2bits_5.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module MUX_2bits_5
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/PC.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module PC
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/RF.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module RF
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sim_1/new/CPU_sim.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module CPU_sim
-INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.sim/sim_1/behav/xsim'
-Vivado Simulator 2017.4
-Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
-Running: E:/Vivado_2017.4/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto 08e4ebf56723422a933c2cde68228a46 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot CPU_sim_behav xil_defaultlib.CPU_sim xil_defaultlib.glbl -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 5 for port ZERO [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/CPU.v:142]
-WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port EN [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/CPU.v:145]
-WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port EN [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/CPU.v:146]
-WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port EN [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/CPU.v:153]
-WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port EN [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/CPU.v:157]
-Completed static elaboration
-Starting simulation data flow analysis
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling module xil_defaultlib.CLOCK_DIV
-Compiling module xil_defaultlib.PC
-Compiling module xil_defaultlib.Adder
-Compiling module xil_defaultlib.MUX_2bits_32
-Compiling module xil_defaultlib.IM
-Compiling module xil_defaultlib.DFF
-Compiling module xil_defaultlib.MUX_2bits_5
-Compiling module xil_defaultlib.MUX_1bit_32
-Compiling module xil_defaultlib.RF
-Compiling module xil_defaultlib.EXT
-Compiling module xil_defaultlib.ALU
-Compiling module xil_defaultlib.DM
-Compiling module xil_defaultlib.DFF_FOR_CU
-Compiling module xil_defaultlib.CU
-Compiling module xil_defaultlib.FOUR_TO_7SEG
-Compiling module xil_defaultlib.CPU
-Compiling module xil_defaultlib.CPU_sim
-Compiling module xil_defaultlib.glbl
-Built simulation snapshot CPU_sim_behav
-INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
-INFO: [USF-XSim-4] XSim::Simulate design
-INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.sim/sim_1/behav/xsim'
-INFO: [USF-XSim-98] *** Running xsim
-   with args "CPU_sim_behav -key {Behavioral:sim_1:Functional:CPU_sim} -tclbatch {CPU_sim.tcl} -log {simulate.log}"
-INFO: [USF-XSim-8] Loading simulator feature
-Vivado Simulator 2017.4
-Time resolution is 1 ps
-source CPU_sim.tcl
-# set curr_wave [current_wave_config]
-# if { [string length $curr_wave] == 0 } {
-#   if { [llength [get_objects]] > 0} {
-#     add_wave /
-#     set_property needs_save false [current_wave_config]
-#   } else {
-#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
-#   }
-# }
-# run 1000ns
-INFO: [USF-XSim-96] XSim completed. Design snapshot 'CPU_sim_behav' loaded.
-INFO: [USF-XSim-97] XSim simulation ran for 1000ns
-launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 908.289 ; gain = 0.582
-add_wave {{/CPU_sim/cpu/alu/OP1}} {{/CPU_sim/cpu/alu/OP2}} {{/CPU_sim/cpu/alu/ALUop}} 
-add_wave {{/CPU_sim/cpu/alu/RESULT}} 
-add_wave {{/CPU_sim/cpu/rf/WRITE_REG}} {{/CPU_sim/cpu/rf/WR_ENABLE}} {{/CPU_sim/cpu/rf/WRITE_DATA}} 
-add_wave {{/CPU_sim/cpu/ctrl_unit/dff/CURR_STATUS}} 
-restart
-INFO: [Simtcl 6-17] Simulation restarted
-run 1 ms
-close_sim
-INFO: [Simtcl 6-16] Simulation closed
-launch_simulation
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.sim/sim_1/behav/xsim'
-INFO: [SIM-utils-51] Simulation object is 'sim_1'
-INFO: [SIM-utils-54] Inspecting design source files for 'CPU_sim' in fileset 'sim_1'...
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.sim/sim_1/behav/xsim'
-"xvlog --incr --relax -prj CPU_sim_vlog.prj"
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/ALU.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module ALU
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/Adder.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Adder
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/CLOCK_DIV.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module CLOCK_DIV
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/CPU.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module CPU
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/CU.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module CU
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/DFF.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module DFF
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/DFF_FOR_CU.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module DFF_FOR_CU
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/DM.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module DM
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/EXT.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module EXT
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/FOUR_TO_7SEG.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module FOUR_TO_7SEG
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/IM.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module IM
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/MUX_1bit_32.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module MUX_1bit_32
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/MUX_2bits_32.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module MUX_2bits_32
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/MUX_2bits_5.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module MUX_2bits_5
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/PC.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module PC
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/RF.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module RF
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sim_1/new/CPU_sim.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module CPU_sim
-INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.sim/sim_1/behav/xsim'
-Vivado Simulator 2017.4
-Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
-Running: E:/Vivado_2017.4/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto 08e4ebf56723422a933c2cde68228a46 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot CPU_sim_behav xil_defaultlib.CPU_sim xil_defaultlib.glbl -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 5 for port ZERO [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/CPU.v:142]
-WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port EN [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/CPU.v:145]
-WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port EN [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/CPU.v:146]
-WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port EN [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/CPU.v:153]
-WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port EN [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/CPU.v:157]
-Completed static elaboration
-Starting simulation data flow analysis
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling module xil_defaultlib.CLOCK_DIV
-Compiling module xil_defaultlib.PC
-Compiling module xil_defaultlib.Adder
-Compiling module xil_defaultlib.MUX_2bits_32
-Compiling module xil_defaultlib.IM
-Compiling module xil_defaultlib.DFF
-Compiling module xil_defaultlib.MUX_2bits_5
-Compiling module xil_defaultlib.MUX_1bit_32
-Compiling module xil_defaultlib.RF
-Compiling module xil_defaultlib.EXT
-Compiling module xil_defaultlib.ALU
-Compiling module xil_defaultlib.DM
-Compiling module xil_defaultlib.DFF_FOR_CU
-Compiling module xil_defaultlib.CU
-Compiling module xil_defaultlib.FOUR_TO_7SEG
-Compiling module xil_defaultlib.CPU
-Compiling module xil_defaultlib.CPU_sim
-Compiling module xil_defaultlib.glbl
-Built simulation snapshot CPU_sim_behav
-INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
-INFO: [USF-XSim-4] XSim::Simulate design
-INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.sim/sim_1/behav/xsim'
-INFO: [USF-XSim-98] *** Running xsim
-   with args "CPU_sim_behav -key {Behavioral:sim_1:Functional:CPU_sim} -tclbatch {CPU_sim.tcl} -log {simulate.log}"
-INFO: [USF-XSim-8] Loading simulator feature
-Vivado Simulator 2017.4
-Time resolution is 1 ps
-source CPU_sim.tcl
-# set curr_wave [current_wave_config]
-# if { [string length $curr_wave] == 0 } {
-#   if { [llength [get_objects]] > 0} {
-#     add_wave /
-#     set_property needs_save false [current_wave_config]
-#   } else {
-#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
-#   }
-# }
-# run 1000ns
-INFO: [USF-XSim-96] XSim completed. Design snapshot 'CPU_sim_behav' loaded.
-INFO: [USF-XSim-97] XSim simulation ran for 1000ns
-launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 916.562 ; gain = 0.000
-add_wave {{/CPU_sim/cpu/rf/WRITE_REG}} {{/CPU_sim/cpu/rf/WR_ENABLE}} {{/CPU_sim/cpu/rf/WRITE_DATA}} 
-add_wave {{/CPU_sim/cpu/pc/NEXT_PC}} {{/CPU_sim/cpu/pc/CURR_PC}} 
-add_wave {{/CPU_sim/cpu/ctrl_unit/dff/CURR_STATUS}} 
-add_wave {{/CPU_sim/cpu/alu/OP1}} {{/CPU_sim/cpu/alu/OP2}} {{/CPU_sim/cpu/alu/ALUop}} {{/CPU_sim/cpu/alu/SIGN}} {{/CPU_sim/cpu/alu/ZERO}} {{/CPU_sim/cpu/alu/RESULT}} 
-restart
-INFO: [Simtcl 6-17] Simulation restarted
-run 1 ms
-close_sim
-INFO: [Simtcl 6-16] Simulation closed
-launch_simulation
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.sim/sim_1/behav/xsim'
-INFO: [SIM-utils-51] Simulation object is 'sim_1'
-INFO: [SIM-utils-54] Inspecting design source files for 'CPU_sim' in fileset 'sim_1'...
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.sim/sim_1/behav/xsim'
-"xvlog --incr --relax -prj CPU_sim_vlog.prj"
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/ALU.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module ALU
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/Adder.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Adder
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/CLOCK_DIV.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module CLOCK_DIV
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/CPU.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module CPU
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/CU.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module CU
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/DFF.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module DFF
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/DFF_FOR_CU.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module DFF_FOR_CU
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/DM.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module DM
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/EXT.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module EXT
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/FOUR_TO_7SEG.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module FOUR_TO_7SEG
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/IM.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module IM
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/MUX_1bit_32.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module MUX_1bit_32
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/MUX_2bits_32.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module MUX_2bits_32
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/MUX_2bits_5.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module MUX_2bits_5
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/PC.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module PC
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/RF.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module RF
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sim_1/new/CPU_sim.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module CPU_sim
-INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.sim/sim_1/behav/xsim'
-Vivado Simulator 2017.4
-Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
-Running: E:/Vivado_2017.4/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto 08e4ebf56723422a933c2cde68228a46 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot CPU_sim_behav xil_defaultlib.CPU_sim xil_defaultlib.glbl -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 5 for port ZERO [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/CPU.v:142]
-WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port EN [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/CPU.v:145]
-WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port EN [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/CPU.v:146]
-WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port EN [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/CPU.v:153]
-WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port EN [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/CPU.v:157]
-Completed static elaboration
-Starting simulation data flow analysis
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling module xil_defaultlib.CLOCK_DIV
-Compiling module xil_defaultlib.PC
-Compiling module xil_defaultlib.Adder
-Compiling module xil_defaultlib.MUX_2bits_32
-Compiling module xil_defaultlib.IM
-Compiling module xil_defaultlib.DFF
-Compiling module xil_defaultlib.MUX_2bits_5
-Compiling module xil_defaultlib.MUX_1bit_32
-Compiling module xil_defaultlib.RF
-Compiling module xil_defaultlib.EXT
-Compiling module xil_defaultlib.ALU
-Compiling module xil_defaultlib.DM
-Compiling module xil_defaultlib.DFF_FOR_CU
-Compiling module xil_defaultlib.CU
-Compiling module xil_defaultlib.FOUR_TO_7SEG
-Compiling module xil_defaultlib.CPU
-Compiling module xil_defaultlib.CPU_sim
-Compiling module xil_defaultlib.glbl
-Built simulation snapshot CPU_sim_behav
-INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
-INFO: [USF-XSim-4] XSim::Simulate design
-INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.sim/sim_1/behav/xsim'
-INFO: [USF-XSim-98] *** Running xsim
-   with args "CPU_sim_behav -key {Behavioral:sim_1:Functional:CPU_sim} -tclbatch {CPU_sim.tcl} -log {simulate.log}"
-INFO: [USF-XSim-8] Loading simulator feature
-Vivado Simulator 2017.4
-Time resolution is 1 ps
-source CPU_sim.tcl
-# set curr_wave [current_wave_config]
-# if { [string length $curr_wave] == 0 } {
-#   if { [llength [get_objects]] > 0} {
-#     add_wave /
-#     set_property needs_save false [current_wave_config]
-#   } else {
-#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
-#   }
-# }
-# run 1000ns
-INFO: [USF-XSim-96] XSim completed. Design snapshot 'CPU_sim_behav' loaded.
-INFO: [USF-XSim-97] XSim simulation ran for 1000ns
-launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 916.562 ; gain = 0.000
-add_wave {{/CPU_sim/cpu/pc/NEXT_PC}} {{/CPU_sim/cpu/pc/CURR_PC}} 
-add_wave {{/CPU_sim/cpu/rf/WRITE_REG}} {{/CPU_sim/cpu/rf/WR_ENABLE}} {{/CPU_sim/cpu/rf/WRITE_DATA}} 
-add_wave {{/CPU_sim/cpu/alu/OP1}} {{/CPU_sim/cpu/alu/OP2}} {{/CPU_sim/cpu/alu/ALUop}} {{/CPU_sim/cpu/alu/SIGN}} {{/CPU_sim/cpu/alu/ZERO}} {{/CPU_sim/cpu/alu/RESULT}} 
-restart
-INFO: [Simtcl 6-17] Simulation restarted
-run 1 ms
-add_wave {{/CPU_sim/cpu/ctrl_unit/OP}} 
-add_wave {{/CPU_sim/cpu/ctrl_unit/dff/CURR_STATUS}} 
-restart
-INFO: [Simtcl 6-17] Simulation restarted
-run 1 ms
-close_sim
-INFO: [Simtcl 6-16] Simulation closed
-launch_simulation
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.sim/sim_1/behav/xsim'
-INFO: [SIM-utils-51] Simulation object is 'sim_1'
-INFO: [SIM-utils-54] Inspecting design source files for 'CPU_sim' in fileset 'sim_1'...
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.sim/sim_1/behav/xsim'
-"xvlog --incr --relax -prj CPU_sim_vlog.prj"
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/ALU.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module ALU
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/Adder.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Adder
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/CLOCK_DIV.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module CLOCK_DIV
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/CPU.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module CPU
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/CU.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module CU
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/DFF.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module DFF
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/DFF_FOR_CU.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module DFF_FOR_CU
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/DM.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module DM
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/EXT.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module EXT
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/FOUR_TO_7SEG.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module FOUR_TO_7SEG
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/IM.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module IM
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/MUX_1bit_32.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module MUX_1bit_32
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/MUX_2bits_32.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module MUX_2bits_32
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/MUX_2bits_5.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module MUX_2bits_5
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/PC.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module PC
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/RF.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module RF
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sim_1/new/CPU_sim.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module CPU_sim
-INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.sim/sim_1/behav/xsim'
-Vivado Simulator 2017.4
-Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
-Running: E:/Vivado_2017.4/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto 08e4ebf56723422a933c2cde68228a46 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot CPU_sim_behav xil_defaultlib.CPU_sim xil_defaultlib.glbl -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 5 for port ZERO [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/CPU.v:142]
-WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port EN [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/CPU.v:145]
-WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port EN [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/CPU.v:146]
-WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port EN [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/CPU.v:153]
-WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port EN [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/CPU.v:157]
-Completed static elaboration
-Starting simulation data flow analysis
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling module xil_defaultlib.CLOCK_DIV
-Compiling module xil_defaultlib.PC
-Compiling module xil_defaultlib.Adder
-Compiling module xil_defaultlib.MUX_2bits_32
-Compiling module xil_defaultlib.IM
-Compiling module xil_defaultlib.DFF
-Compiling module xil_defaultlib.MUX_2bits_5
-Compiling module xil_defaultlib.MUX_1bit_32
-Compiling module xil_defaultlib.RF
-Compiling module xil_defaultlib.EXT
-Compiling module xil_defaultlib.ALU
-Compiling module xil_defaultlib.DM
-Compiling module xil_defaultlib.DFF_FOR_CU
-Compiling module xil_defaultlib.CU
-Compiling module xil_defaultlib.FOUR_TO_7SEG
-Compiling module xil_defaultlib.CPU
-Compiling module xil_defaultlib.CPU_sim
-Compiling module xil_defaultlib.glbl
-Built simulation snapshot CPU_sim_behav
-INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
-INFO: [USF-XSim-4] XSim::Simulate design
-INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.sim/sim_1/behav/xsim'
-INFO: [USF-XSim-98] *** Running xsim
-   with args "CPU_sim_behav -key {Behavioral:sim_1:Functional:CPU_sim} -tclbatch {CPU_sim.tcl} -log {simulate.log}"
-INFO: [USF-XSim-8] Loading simulator feature
-Vivado Simulator 2017.4
-Time resolution is 1 ps
-source CPU_sim.tcl
-# set curr_wave [current_wave_config]
-# if { [string length $curr_wave] == 0 } {
-#   if { [llength [get_objects]] > 0} {
-#     add_wave /
-#     set_property needs_save false [current_wave_config]
-#   } else {
-#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
-#   }
-# }
-# run 1000ns
-INFO: [USF-XSim-96] XSim completed. Design snapshot 'CPU_sim_behav' loaded.
-INFO: [USF-XSim-97] XSim simulation ran for 1000ns
-launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 922.324 ; gain = 0.000
-restart
-INFO: [Simtcl 6-17] Simulation restarted
-run 1 ms
-add_wave {{/CPU_sim/cpu/pc/NEXT_PC}} {{/CPU_sim/cpu/pc/CURR_PC}} 
-add_wave {{/CPU_sim/cpu/rf/WRITE_REG}} {{/CPU_sim/cpu/rf/WR_ENABLE}} {{/CPU_sim/cpu/rf/WRITE_DATA}} 
-add_wave {{/CPU_sim/cpu/alu/OP1}} {{/CPU_sim/cpu/alu/OP2}} {{/CPU_sim/cpu/alu/ALUop}} {{/CPU_sim/cpu/alu/RESULT}} 
-add_wave {{/CPU_sim/cpu/ctrl_unit/dff/CURR_STATUS}} 
-restart
-INFO: [Simtcl 6-17] Simulation restarted
-run 1 ms
-close_sim
-INFO: [Simtcl 6-16] Simulation closed
-launch_simulation
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.sim/sim_1/behav/xsim'
-INFO: [SIM-utils-51] Simulation object is 'sim_1'
-INFO: [SIM-utils-54] Inspecting design source files for 'CPU_sim' in fileset 'sim_1'...
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.sim/sim_1/behav/xsim'
-"xvlog --incr --relax -prj CPU_sim_vlog.prj"
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/ALU.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module ALU
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/Adder.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Adder
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/CLOCK_DIV.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module CLOCK_DIV
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/CPU.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module CPU
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/CU.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module CU
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/DFF.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module DFF
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/DFF_FOR_CU.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module DFF_FOR_CU
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/DM.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module DM
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/EXT.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module EXT
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/FOUR_TO_7SEG.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module FOUR_TO_7SEG
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/IM.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module IM
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/MUX_1bit_32.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module MUX_1bit_32
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/MUX_2bits_32.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module MUX_2bits_32
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/MUX_2bits_5.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module MUX_2bits_5
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/PC.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module PC
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/RF.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module RF
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sim_1/new/CPU_sim.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module CPU_sim
-INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.sim/sim_1/behav/xsim'
-Vivado Simulator 2017.4
-Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
-Running: E:/Vivado_2017.4/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto 08e4ebf56723422a933c2cde68228a46 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot CPU_sim_behav xil_defaultlib.CPU_sim xil_defaultlib.glbl -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 5 for port ZERO [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/CPU.v:142]
-WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port EN [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/CPU.v:145]
-WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port EN [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/CPU.v:146]
-WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port EN [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/CPU.v:153]
-WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port EN [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/CPU.v:157]
-Completed static elaboration
-Starting simulation data flow analysis
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling module xil_defaultlib.CLOCK_DIV
-Compiling module xil_defaultlib.PC
-Compiling module xil_defaultlib.Adder
-Compiling module xil_defaultlib.MUX_2bits_32
-Compiling module xil_defaultlib.IM
-Compiling module xil_defaultlib.DFF
-Compiling module xil_defaultlib.MUX_2bits_5
-Compiling module xil_defaultlib.MUX_1bit_32
-Compiling module xil_defaultlib.RF
-Compiling module xil_defaultlib.EXT
-Compiling module xil_defaultlib.ALU
-Compiling module xil_defaultlib.DM
-Compiling module xil_defaultlib.DFF_FOR_CU
-Compiling module xil_defaultlib.CU
-Compiling module xil_defaultlib.FOUR_TO_7SEG
-Compiling module xil_defaultlib.CPU
-Compiling module xil_defaultlib.CPU_sim
-Compiling module xil_defaultlib.glbl
-Built simulation snapshot CPU_sim_behav
-INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
-INFO: [USF-XSim-4] XSim::Simulate design
-INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.sim/sim_1/behav/xsim'
-INFO: [USF-XSim-98] *** Running xsim
-   with args "CPU_sim_behav -key {Behavioral:sim_1:Functional:CPU_sim} -tclbatch {CPU_sim.tcl} -log {simulate.log}"
-INFO: [USF-XSim-8] Loading simulator feature
-Vivado Simulator 2017.4
-Time resolution is 1 ps
-source CPU_sim.tcl
-# set curr_wave [current_wave_config]
-# if { [string length $curr_wave] == 0 } {
-#   if { [llength [get_objects]] > 0} {
-#     add_wave /
-#     set_property needs_save false [current_wave_config]
-#   } else {
-#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
-#   }
-# }
-# run 1000ns
-INFO: [USF-XSim-96] XSim completed. Design snapshot 'CPU_sim_behav' loaded.
-INFO: [USF-XSim-97] XSim simulation ran for 1000ns
-launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 925.223 ; gain = 0.000
-add_wave {{/CPU_sim/cpu/pc/NEXT_PC}} {{/CPU_sim/cpu/pc/CURR_PC}} 
-add_wave {{/CPU_sim/cpu/rf/WRITE_REG}} {{/CPU_sim/cpu/rf/WR_ENABLE}} {{/CPU_sim/cpu/rf/WRITE_DATA}} 
-add_wave {{/CPU_sim/cpu/alu/OP1}} {{/CPU_sim/cpu/alu/OP2}} {{/CPU_sim/cpu/alu/ALUop}} 
-add_wave {{/CPU_sim/cpu/alu/RESULT}} 
-restart
-INFO: [Simtcl 6-17] Simulation restarted
-run 1 ms
-close_sim
-INFO: [Simtcl 6-16] Simulation closed
-launch_simulation
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.sim/sim_1/behav/xsim'
-INFO: [SIM-utils-51] Simulation object is 'sim_1'
-INFO: [SIM-utils-54] Inspecting design source files for 'CPU_sim' in fileset 'sim_1'...
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.sim/sim_1/behav/xsim'
-"xvlog --incr --relax -prj CPU_sim_vlog.prj"
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/ALU.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module ALU
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/Adder.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Adder
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/CLOCK_DIV.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module CLOCK_DIV
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/CPU.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module CPU
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/CU.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module CU
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/DFF.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module DFF
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/DFF_FOR_CU.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module DFF_FOR_CU
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/DM.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module DM
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/EXT.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module EXT
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/FOUR_TO_7SEG.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module FOUR_TO_7SEG
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/IM.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module IM
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/MUX_1bit_32.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module MUX_1bit_32
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/MUX_2bits_32.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module MUX_2bits_32
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/MUX_2bits_5.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module MUX_2bits_5
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/PC.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module PC
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/RF.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module RF
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sim_1/new/CPU_sim.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module CPU_sim
-INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.sim/sim_1/behav/xsim'
-Vivado Simulator 2017.4
-Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
-Running: E:/Vivado_2017.4/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto 08e4ebf56723422a933c2cde68228a46 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot CPU_sim_behav xil_defaultlib.CPU_sim xil_defaultlib.glbl -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 5 for port ZERO [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/CPU.v:142]
-WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port EN [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/CPU.v:145]
-WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port EN [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/CPU.v:146]
-WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port EN [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/CPU.v:153]
-WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port EN [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/CPU.v:157]
-Completed static elaboration
-Starting simulation data flow analysis
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling module xil_defaultlib.CLOCK_DIV
-Compiling module xil_defaultlib.PC
-Compiling module xil_defaultlib.Adder
-Compiling module xil_defaultlib.MUX_2bits_32
-Compiling module xil_defaultlib.IM
-Compiling module xil_defaultlib.DFF
-Compiling module xil_defaultlib.MUX_2bits_5
-Compiling module xil_defaultlib.MUX_1bit_32
-Compiling module xil_defaultlib.RF
-Compiling module xil_defaultlib.EXT
-Compiling module xil_defaultlib.ALU
-Compiling module xil_defaultlib.DM
-Compiling module xil_defaultlib.DFF_FOR_CU
-Compiling module xil_defaultlib.CU
-Compiling module xil_defaultlib.FOUR_TO_7SEG
-Compiling module xil_defaultlib.CPU
-Compiling module xil_defaultlib.CPU_sim
-Compiling module xil_defaultlib.glbl
-Built simulation snapshot CPU_sim_behav
-INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
-INFO: [USF-XSim-4] XSim::Simulate design
-INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.sim/sim_1/behav/xsim'
-INFO: [USF-XSim-98] *** Running xsim
-   with args "CPU_sim_behav -key {Behavioral:sim_1:Functional:CPU_sim} -tclbatch {CPU_sim.tcl} -log {simulate.log}"
-INFO: [USF-XSim-8] Loading simulator feature
-Vivado Simulator 2017.4
-Time resolution is 1 ps
-source CPU_sim.tcl
-# set curr_wave [current_wave_config]
-# if { [string length $curr_wave] == 0 } {
-#   if { [llength [get_objects]] > 0} {
-#     add_wave /
-#     set_property needs_save false [current_wave_config]
-#   } else {
-#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
-#   }
-# }
-# run 1000ns
-INFO: [USF-XSim-96] XSim completed. Design snapshot 'CPU_sim_behav' loaded.
-INFO: [USF-XSim-97] XSim simulation ran for 1000ns
-launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 930.539 ; gain = 0.000
-add_wave {{/CPU_sim/cpu/pc/NEXT_PC}} {{/CPU_sim/cpu/pc/CURR_PC}} 
-add_wave {{/CPU_sim/cpu/rf/WRITE_REG}} {{/CPU_sim/cpu/rf/WR_ENABLE}} {{/CPU_sim/cpu/rf/WRITE_DATA}} 
-add_wave {{/CPU_sim/cpu/alu/OP1}} {{/CPU_sim/cpu/alu/OP2}} {{/CPU_sim/cpu/alu/ALUop}} 
-add_wave {{/CPU_sim/cpu/alu/SIGN}} {{/CPU_sim/cpu/alu/ZERO}} {{/CPU_sim/cpu/alu/RESULT}} 
-add_wave {{/CPU_sim/cpu/dm/ADDR}} {{/CPU_sim/cpu/dm/DATA}} {{/CPU_sim/cpu/dm/RD}} {{/CPU_sim/cpu/dm/WR}} {{/CPU_sim/cpu/dm/DATA_OUT}} 
-add_wave {{/CPU_sim/cpu/ctrl_unit/dff/CURR_STATUS}} 
-restart
-INFO: [Simtcl 6-17] Simulation restarted
-run 1 ms
-close_sim
-INFO: [Simtcl 6-16] Simulation closed
-launch_simulation
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.sim/sim_1/behav/xsim'
-INFO: [SIM-utils-51] Simulation object is 'sim_1'
-INFO: [SIM-utils-54] Inspecting design source files for 'CPU_sim' in fileset 'sim_1'...
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.sim/sim_1/behav/xsim'
-"xvlog --incr --relax -prj CPU_sim_vlog.prj"
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/ALU.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module ALU
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/Adder.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Adder
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/CLOCK_DIV.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module CLOCK_DIV
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/CPU.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module CPU
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/CU.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module CU
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/DFF.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module DFF
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/DFF_FOR_CU.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module DFF_FOR_CU
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/DM.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module DM
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/EXT.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module EXT
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/FOUR_TO_7SEG.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module FOUR_TO_7SEG
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/IM.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module IM
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/MUX_1bit_32.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module MUX_1bit_32
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/MUX_2bits_32.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module MUX_2bits_32
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/MUX_2bits_5.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module MUX_2bits_5
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/PC.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module PC
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/RF.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module RF
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sim_1/new/CPU_sim.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module CPU_sim
-INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.sim/sim_1/behav/xsim'
-Vivado Simulator 2017.4
-Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
-Running: E:/Vivado_2017.4/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto 08e4ebf56723422a933c2cde68228a46 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot CPU_sim_behav xil_defaultlib.CPU_sim xil_defaultlib.glbl -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 5 for port ZERO [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/CPU.v:142]
-WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port EN [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/CPU.v:145]
-WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port EN [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/CPU.v:146]
-WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port EN [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/CPU.v:153]
-WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port EN [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/CPU.v:157]
-Completed static elaboration
-Starting simulation data flow analysis
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling module xil_defaultlib.CLOCK_DIV
-Compiling module xil_defaultlib.PC
-Compiling module xil_defaultlib.Adder
-Compiling module xil_defaultlib.MUX_2bits_32
-Compiling module xil_defaultlib.IM
-Compiling module xil_defaultlib.DFF
-Compiling module xil_defaultlib.MUX_2bits_5
-Compiling module xil_defaultlib.MUX_1bit_32
-Compiling module xil_defaultlib.RF
-Compiling module xil_defaultlib.EXT
-Compiling module xil_defaultlib.ALU
-Compiling module xil_defaultlib.DM
-Compiling module xil_defaultlib.DFF_FOR_CU
-Compiling module xil_defaultlib.CU
-Compiling module xil_defaultlib.FOUR_TO_7SEG
-Compiling module xil_defaultlib.CPU
-Compiling module xil_defaultlib.CPU_sim
-Compiling module xil_defaultlib.glbl
-Built simulation snapshot CPU_sim_behav
-INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
-INFO: [USF-XSim-4] XSim::Simulate design
-INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.sim/sim_1/behav/xsim'
-INFO: [USF-XSim-98] *** Running xsim
-   with args "CPU_sim_behav -key {Behavioral:sim_1:Functional:CPU_sim} -tclbatch {CPU_sim.tcl} -log {simulate.log}"
-INFO: [USF-XSim-8] Loading simulator feature
-Vivado Simulator 2017.4
-Time resolution is 1 ps
-source CPU_sim.tcl
-# set curr_wave [current_wave_config]
-# if { [string length $curr_wave] == 0 } {
-#   if { [llength [get_objects]] > 0} {
-#     add_wave /
-#     set_property needs_save false [current_wave_config]
-#   } else {
-#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
-#   }
-# }
-# run 1000ns
-INFO: [USF-XSim-96] XSim completed. Design snapshot 'CPU_sim_behav' loaded.
-INFO: [USF-XSim-97] XSim simulation ran for 1000ns
-launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 938.266 ; gain = 0.000
-restart
-INFO: [Simtcl 6-17] Simulation restarted
-run 1 ms
-add_wave {{/CPU_sim/cpu/pc/NEXT_PC}} {{/CPU_sim/cpu/pc/CURR_PC}} 
-restart
-INFO: [Simtcl 6-17] Simulation restarted
-run 1 ms
-close_sim
-INFO: [Simtcl 6-16] Simulation closed
-launch_simulation
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.sim/sim_1/behav/xsim'
-INFO: [SIM-utils-51] Simulation object is 'sim_1'
-INFO: [SIM-utils-54] Inspecting design source files for 'CPU_sim' in fileset 'sim_1'...
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.sim/sim_1/behav/xsim'
-"xvlog --incr --relax -prj CPU_sim_vlog.prj"
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/ALU.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module ALU
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/Adder.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Adder
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/CLOCK_DIV.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module CLOCK_DIV
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/CPU.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module CPU
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/CU.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module CU
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/DFF.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module DFF
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/DFF_FOR_CU.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module DFF_FOR_CU
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/DM.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module DM
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/EXT.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module EXT
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/FOUR_TO_7SEG.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module FOUR_TO_7SEG
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/IM.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module IM
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/MUX_1bit_32.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module MUX_1bit_32
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/MUX_2bits_32.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module MUX_2bits_32
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/MUX_2bits_5.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module MUX_2bits_5
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/PC.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module PC
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/RF.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module RF
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sim_1/new/CPU_sim.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module CPU_sim
-INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.sim/sim_1/behav/xsim'
-Vivado Simulator 2017.4
-Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
-Running: E:/Vivado_2017.4/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto 08e4ebf56723422a933c2cde68228a46 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot CPU_sim_behav xil_defaultlib.CPU_sim xil_defaultlib.glbl -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 5 for port ZERO [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/CPU.v:142]
-WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port EN [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/CPU.v:145]
-WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port EN [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/CPU.v:146]
-WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port EN [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/CPU.v:153]
-WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port EN [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/CPU.v:157]
-Completed static elaboration
-Starting simulation data flow analysis
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling module xil_defaultlib.CLOCK_DIV
-Compiling module xil_defaultlib.PC
-Compiling module xil_defaultlib.Adder
-Compiling module xil_defaultlib.MUX_2bits_32
-Compiling module xil_defaultlib.IM
-Compiling module xil_defaultlib.DFF
-Compiling module xil_defaultlib.MUX_2bits_5
-Compiling module xil_defaultlib.MUX_1bit_32
-Compiling module xil_defaultlib.RF
-Compiling module xil_defaultlib.EXT
-Compiling module xil_defaultlib.ALU
-Compiling module xil_defaultlib.DM
-Compiling module xil_defaultlib.DFF_FOR_CU
-Compiling module xil_defaultlib.CU
-Compiling module xil_defaultlib.FOUR_TO_7SEG
-Compiling module xil_defaultlib.CPU
-Compiling module xil_defaultlib.CPU_sim
-Compiling module xil_defaultlib.glbl
-Built simulation snapshot CPU_sim_behav
-INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
-INFO: [USF-XSim-4] XSim::Simulate design
-INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.sim/sim_1/behav/xsim'
-INFO: [USF-XSim-98] *** Running xsim
-   with args "CPU_sim_behav -key {Behavioral:sim_1:Functional:CPU_sim} -tclbatch {CPU_sim.tcl} -log {simulate.log}"
-INFO: [USF-XSim-8] Loading simulator feature
-Vivado Simulator 2017.4
-Time resolution is 1 ps
-source CPU_sim.tcl
-# set curr_wave [current_wave_config]
-# if { [string length $curr_wave] == 0 } {
-#   if { [llength [get_objects]] > 0} {
-#     add_wave /
-#     set_property needs_save false [current_wave_config]
-#   } else {
-#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
-#   }
-# }
-# run 1000ns
-INFO: [USF-XSim-96] XSim completed. Design snapshot 'CPU_sim_behav' loaded.
-INFO: [USF-XSim-97] XSim simulation ran for 1000ns
-launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 938.266 ; gain = 0.000
-add_wave {{/CPU_sim/cpu/pc/NEXT_PC}} {{/CPU_sim/cpu/pc/CURR_PC}} 
-add_wave {{/CPU_sim/cpu/rf/WRITE_REG}} {{/CPU_sim/cpu/rf/WR_ENABLE}} {{/CPU_sim/cpu/rf/WRITE_DATA}} 
-add_wave {{/CPU_sim/cpu/alu/OP1}} {{/CPU_sim/cpu/alu/OP2}} {{/CPU_sim/cpu/alu/ALUop}} {{/CPU_sim/cpu/alu/SIGN}} {{/CPU_sim/cpu/alu/ZERO}} {{/CPU_sim/cpu/alu/RESULT}} 
-add_wave {{/CPU_sim/cpu/dm/ADDR}} {{/CPU_sim/cpu/dm/DATA}} {{/CPU_sim/cpu/dm/RD}} {{/CPU_sim/cpu/dm/WR}} {{/CPU_sim/cpu/dm/DATA_OUT}} 
-add_wave {{/CPU_sim/cpu/ctrl_unit/dff/CURR_STATUS}} 
-restart
-INFO: [Simtcl 6-17] Simulation restarted
-run 1 ms
-close_sim
-INFO: [Simtcl 6-16] Simulation closed
-launch_simulation
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.sim/sim_1/behav/xsim'
-INFO: [SIM-utils-51] Simulation object is 'sim_1'
-INFO: [SIM-utils-54] Inspecting design source files for 'CPU_sim' in fileset 'sim_1'...
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.sim/sim_1/behav/xsim'
-"xvlog --incr --relax -prj CPU_sim_vlog.prj"
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/ALU.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module ALU
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/Adder.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Adder
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/CLOCK_DIV.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module CLOCK_DIV
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/CPU.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module CPU
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/CU.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module CU
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/DFF.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module DFF
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/DFF_FOR_CU.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module DFF_FOR_CU
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/DM.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module DM
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/EXT.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module EXT
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/FOUR_TO_7SEG.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module FOUR_TO_7SEG
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/IM.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module IM
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/MUX_1bit_32.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module MUX_1bit_32
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/MUX_2bits_32.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module MUX_2bits_32
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/MUX_2bits_5.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module MUX_2bits_5
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/PC.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module PC
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/RF.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module RF
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sim_1/new/CPU_sim.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module CPU_sim
-INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.sim/sim_1/behav/xsim'
-Vivado Simulator 2017.4
-Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
-Running: E:/Vivado_2017.4/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto 08e4ebf56723422a933c2cde68228a46 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot CPU_sim_behav xil_defaultlib.CPU_sim xil_defaultlib.glbl -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 5 for port ZERO [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/CPU.v:142]
-WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port EN [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/CPU.v:145]
-WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port EN [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/CPU.v:146]
-WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port EN [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/CPU.v:153]
-WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port EN [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/CPU.v:157]
-Completed static elaboration
-Starting simulation data flow analysis
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling module xil_defaultlib.CLOCK_DIV
-Compiling module xil_defaultlib.PC
-Compiling module xil_defaultlib.Adder
-Compiling module xil_defaultlib.MUX_2bits_32
-Compiling module xil_defaultlib.IM
-Compiling module xil_defaultlib.DFF
-Compiling module xil_defaultlib.MUX_2bits_5
-Compiling module xil_defaultlib.MUX_1bit_32
-Compiling module xil_defaultlib.RF
-Compiling module xil_defaultlib.EXT
-Compiling module xil_defaultlib.ALU
-Compiling module xil_defaultlib.DM
-Compiling module xil_defaultlib.DFF_FOR_CU
-Compiling module xil_defaultlib.CU
-Compiling module xil_defaultlib.FOUR_TO_7SEG
-Compiling module xil_defaultlib.CPU
-Compiling module xil_defaultlib.CPU_sim
-Compiling module xil_defaultlib.glbl
-Built simulation snapshot CPU_sim_behav
-INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
-INFO: [USF-XSim-4] XSim::Simulate design
-INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.sim/sim_1/behav/xsim'
-INFO: [USF-XSim-98] *** Running xsim
-   with args "CPU_sim_behav -key {Behavioral:sim_1:Functional:CPU_sim} -tclbatch {CPU_sim.tcl} -log {simulate.log}"
-INFO: [USF-XSim-8] Loading simulator feature
-Vivado Simulator 2017.4
-Time resolution is 1 ps
-source CPU_sim.tcl
-# set curr_wave [current_wave_config]
-# if { [string length $curr_wave] == 0 } {
-#   if { [llength [get_objects]] > 0} {
-#     add_wave /
-#     set_property needs_save false [current_wave_config]
-#   } else {
-#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
-#   }
-# }
-# run 1000ns
-INFO: [USF-XSim-96] XSim completed. Design snapshot 'CPU_sim_behav' loaded.
-INFO: [USF-XSim-97] XSim simulation ran for 1000ns
-launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 947.020 ; gain = 0.000
-add_wave {{/CPU_sim/cpu/pc/NEXT_PC}} {{/CPU_sim/cpu/pc/CURR_PC}} 
-add_wave {{/CPU_sim/cpu/rf/WRITE_REG}} {{/CPU_sim/cpu/rf/WR_ENABLE}} {{/CPU_sim/cpu/rf/WRITE_DATA}} 
-add_wave {{/CPU_sim/cpu/alu/OP1}} {{/CPU_sim/cpu/alu/OP2}} {{/CPU_sim/cpu/alu/ALUop}} {{/CPU_sim/cpu/alu/SIGN}} {{/CPU_sim/cpu/alu/ZERO}} {{/CPU_sim/cpu/alu/RESULT}} 
-add_wave {{/CPU_sim/cpu/dm/ADDR}} {{/CPU_sim/cpu/dm/DATA}} {{/CPU_sim/cpu/dm/RD}} {{/CPU_sim/cpu/dm/WR}} {{/CPU_sim/cpu/dm/DATA_OUT}} 
-add_wave {{/CPU_sim/cpu/ctrl_unit/dff/CURR_STATUS}} 
-restart
-INFO: [Simtcl 6-17] Simulation restarted
-run 1 ms
-close_sim
-INFO: [Simtcl 6-16] Simulation closed
+launch_runs synth_1 -jobs 24
+[Wed Dec 25 18:59:29 2024] Launched synth_1...
+Run output will be captured here: E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 24
+[Wed Dec 25 19:01:39 2024] Launched impl_1...
+Run output will be captured here: E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 24
+[Wed Dec 25 19:15:47 2024] Launched synth_1...
+Run output will be captured here: E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 24
+[Wed Dec 25 19:26:40 2024] Launched synth_1...
+Run output will be captured here: E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 12
+[Wed Dec 25 19:31:30 2024] Launched synth_1...
+Run output will be captured here: E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 12
+[Wed Dec 25 19:33:31 2024] Launched impl_1...
+Run output will be captured here: E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Netlist 29-17] Analyzing 2016 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2017.4
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.633 . Memory (MB): peak = 1202.934 ; gain = 14.637
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.634 . Memory (MB): peak = 1202.934 ; gain = 14.637
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1342.422 ; gain = 478.484
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+set_property IOSTANDARD LVCMOS33 [get_ports [list {DATA_SEL[1]} {DATA_SEL[0]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {POS[3]} {POS[2]} {POS[1]} {POS[0]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {SEG7[7]} {SEG7[6]} {SEG7[5]} {SEG7[4]} {SEG7[3]} {SEG7[2]} {SEG7[1]} {SEG7[0]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list CLOCK]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list MAIN_CLK]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list PC_RST]]
+place_ports {DATA_SEL[1]} R2
+place_ports {DATA_SEL[0]} T1
+place_ports {POS[3]} W4
+place_ports {POS[2]} V4
+place_ports {POS[1]} U4
+place_ports {POS[0]} U2
+place_ports {SEG7[7]} V7
+place_ports {SEG7[6]} U7
+place_ports {SEG7[5]} V5
+place_ports {SEG7[4]} U5
+place_ports {SEG7[3]} V8
+place_ports {SEG7[2]} U8
+place_ports {SEG7[1]} W6
+place_ports {SEG7[0]} W7
+place_ports CLOCK W5
+place_ports MAIN_CLK T17
+place_ports PC_RST V17
+file mkdir E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/constrs_1/new
+close [ open E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/constrs_1/new/CPU_cons.xdc w ]
+add_files -fileset constrs_1 E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/constrs_1/new/CPU_cons.xdc
+set_property target_constrs_file E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/constrs_1/new/CPU_cons.xdc [current_fileset -constrset]
+save_constraints -force
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+[Wed Dec 25 19:41:21 2024] Launched synth_1...
+Run output will be captured here: E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.runs/synth_1/runme.log
+[Wed Dec 25 19:41:21 2024] Launched impl_1...
+Run output will be captured here: E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2017.4
+  **** Build date : Dec 15 2017-21:08:27
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183756873A
+set_property PROGRAM.FILE {E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.runs/impl_1/CPU.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.runs/impl_1/CPU.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.runs/impl_1/CPU.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.runs/impl_1/CPU.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+close [ open E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/DEBOUNCER.v w ]
+add_files E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/DEBOUNCER.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+[Wed Dec 25 20:24:46 2024] Launched synth_1...
+Run output will be captured here: E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.runs/synth_1/runme.log
+[Wed Dec 25 20:24:46 2024] Launched impl_1...
+Run output will be captured here: E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+[Wed Dec 25 20:26:00 2024] Launched synth_1...
+Run output will be captured here: E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.runs/synth_1/runme.log
+[Wed Dec 25 20:26:01 2024] Launched impl_1...
+Run output will be captured here: E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.runs/impl_1/runme.log
+reset_run impl_1 -prev_step 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+[Wed Dec 25 20:29:25 2024] Launched synth_1...
+Run output will be captured here: E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.runs/synth_1/runme.log
+[Wed Dec 25 20:29:25 2024] Launched impl_1...
+Run output will be captured here: E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+[Wed Dec 25 20:33:33 2024] Launched synth_1...
+Run output will be captured here: E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.runs/synth_1/runme.log
+[Wed Dec 25 20:33:33 2024] Launched impl_1...
+Run output will be captured here: E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -jobs 12
+[Wed Dec 25 20:34:13 2024] Launched synth_1...
+Run output will be captured here: E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.runs/synth_1/runme.log
+[Wed Dec 25 20:34:13 2024] Launched impl_1...
+Run output will be captured here: E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.runs/impl_1/runme.log
+refresh_design
+INFO: [Netlist 29-17] Analyzing 2016 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2017.4
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/.Xil/Vivado-24032-Victus9/dcp5/CPU.xdc]
+Finished Parsing XDC File [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/.Xil/Vivado-24032-Victus9/dcp5/CPU.xdc]
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.606 . Memory (MB): peak = 2469.871 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.606 . Memory (MB): peak = 2469.871 ; gain = 0.000
+refresh_design: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2479.141 ; gain = 33.688
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+[Wed Dec 25 20:38:05 2024] Launched impl_1...
+Run output will be captured here: E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.runs/impl_1/CPU.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.runs/impl_1/CPU.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property STEPS.WRITE_BITSTREAM.ARGS.BIN_FILE true [get_runs impl_1]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/DFF_FOR_CU.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/DEBOUNCER.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/DFF.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/CU.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/CPU.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/DM.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/IM.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/CLOCK_DIV.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/DFF_FOR_CU.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/DEBOUNCER.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/DFF.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/CU.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/CPU.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/DM.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/IM.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/CLOCK_DIV.v:]
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+[Wed Dec 25 21:01:08 2024] Launched impl_1...
+Run output will be captured here: E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.runs/impl_1/runme.log
+create_hw_cfgmem -hw_device [lindex [get_hw_devices xc7a35t_0] 0] [lindex [get_cfgmem_parts {s25fl032p-spi-x1_x2_x4}] 0]
+set_property PROGRAM.BLANK_CHECK  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]]
+set_property PROGRAM.ERASE  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]]
+set_property PROGRAM.CFG_PROGRAM  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]]
+set_property PROGRAM.VERIFY  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]]
+set_property PROGRAM.CHECKSUM  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROGRAM.ADDRESS_RANGE  {use_file} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]]
+set_property PROGRAM.FILES [list "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.runs/impl_1/CPU.bin" ] [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]]
+set_property PROGRAM.PRM_FILE {} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]]
+set_property PROGRAM.UNUSED_PIN_TERMINATION {pull-none} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]]
+set_property PROGRAM.BLANK_CHECK  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]]
+set_property PROGRAM.ERASE  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]]
+set_property PROGRAM.CFG_PROGRAM  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]]
+set_property PROGRAM.VERIFY  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]]
+set_property PROGRAM.CHECKSUM  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]]
+startgroup 
+if {![string equal [get_property PROGRAM.HW_CFGMEM_TYPE  [lindex [get_hw_devices xc7a35t_0] 0]] [get_property MEM_TYPE [get_property CFGMEM_PART [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]]]]] }  { create_hw_bitstream -hw_device [lindex [get_hw_devices xc7a35t_0] 0] [get_property PROGRAM.HW_CFGMEM_BITFILE [ lindex [get_hw_devices xc7a35t_0] 0]]; program_hw_devices [lindex [get_hw_devices xc7a35t_0] 0]; }; 
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_cfgmem -hw_cfgmem [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]]
+Mfg ID : 1   Memory Type : 2   Memory Capacity : 15   Device ID 1 : 0   Device ID 2 : 0
+Performing Erase Operation...
+Erase Operation successful.
+Performing Program and Verify Operations...
+Program/Verify Operation successful.
+INFO: [Labtoolstcl 44-377] Flash programming completed successfully
+program_hw_cfgmem: Time (s): cpu = 00:00:00 ; elapsed = 00:00:57 . Memory (MB): peak = 2656.023 ; gain = 0.000
+endgroup
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183756873A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183756873A
+INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
 exit
-INFO: [Common 17-206] Exiting Vivado at Wed Dec 25 18:04:11 2024...
+INFO: [Common 17-206] Exiting Vivado at Wed Dec 25 21:04:29 2024...

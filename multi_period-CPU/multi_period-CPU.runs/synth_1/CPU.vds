@@ -1,0 +1,871 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Wed Dec 25 20:34:17 2024
+# Process ID: 10808
+# Current directory: E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.runs/synth_1
+# Command line: vivado.exe -log CPU.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source CPU.tcl
+# Log file: E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.runs/synth_1/CPU.vds
+# Journal file: E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source CPU.tcl -notrace
+Command: synth_design -top CPU -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 1716 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 344.598 ; gain = 101.121
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'CPU' [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/CPU.v:23]
+INFO: [Synth 8-638] synthesizing module 'CLOCK_DIV' [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/CLOCK_DIV.v:23]
+INFO: [Synth 8-256] done synthesizing module 'CLOCK_DIV' (1#1) [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/CLOCK_DIV.v:23]
+INFO: [Synth 8-638] synthesizing module 'DEBOUNCER' [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/DEBOUNCER.v:23]
+INFO: [Synth 8-256] done synthesizing module 'DEBOUNCER' (2#1) [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/DEBOUNCER.v:23]
+INFO: [Synth 8-638] synthesizing module 'PC' [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/PC.v:22]
+INFO: [Synth 8-256] done synthesizing module 'PC' (3#1) [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/PC.v:22]
+INFO: [Synth 8-638] synthesizing module 'Adder' [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/Adder.v:22]
+INFO: [Synth 8-256] done synthesizing module 'Adder' (4#1) [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/Adder.v:22]
+INFO: [Synth 8-638] synthesizing module 'MUX_2bits_32' [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/MUX_2bits_32.v:23]
+INFO: [Synth 8-256] done synthesizing module 'MUX_2bits_32' (5#1) [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/MUX_2bits_32.v:23]
+INFO: [Synth 8-638] synthesizing module 'IM' [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/IM.v:23]
+INFO: [Synth 8-256] done synthesizing module 'IM' (6#1) [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/IM.v:23]
+INFO: [Synth 8-638] synthesizing module 'DFF' [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/DFF.v:23]
+INFO: [Synth 8-256] done synthesizing module 'DFF' (7#1) [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/DFF.v:23]
+INFO: [Synth 8-638] synthesizing module 'MUX_2bits_5' [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/MUX_2bits_5.v:23]
+INFO: [Synth 8-256] done synthesizing module 'MUX_2bits_5' (8#1) [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/MUX_2bits_5.v:23]
+INFO: [Synth 8-638] synthesizing module 'MUX_1bit_32' [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/MUX_1bit_32.v:23]
+INFO: [Synth 8-256] done synthesizing module 'MUX_1bit_32' (9#1) [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/MUX_1bit_32.v:23]
+INFO: [Synth 8-638] synthesizing module 'RF' [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/RF.v:22]
+INFO: [Synth 8-256] done synthesizing module 'RF' (10#1) [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/RF.v:22]
+INFO: [Synth 8-638] synthesizing module 'EXT' [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/EXT.v:23]
+INFO: [Synth 8-256] done synthesizing module 'EXT' (11#1) [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/EXT.v:23]
+INFO: [Synth 8-638] synthesizing module 'ALU' [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/ALU.v:22]
+INFO: [Synth 8-256] done synthesizing module 'ALU' (12#1) [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/ALU.v:22]
+INFO: [Synth 8-638] synthesizing module 'DM' [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/DM.v:23]
+WARNING: [Synth 8-4767] Trying to implement RAM 'MEMORYs_reg' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+Reason is one or more of the following :
+	1: RAM has multiple writes via different ports in same process. If RAM inferencing intended, write to one port per process. 
+	2: Unable to determine number of words or word size in RAM. 
+	3: No valid read/write found for RAM. 
+RAM "MEMORYs_reg" dissolved into registers
+INFO: [Synth 8-256] done synthesizing module 'DM' (13#1) [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/DM.v:23]
+INFO: [Synth 8-638] synthesizing module 'CU' [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/CU.v:23]
+INFO: [Synth 8-638] synthesizing module 'DFF_FOR_CU' [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/DFF_FOR_CU.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/DFF_FOR_CU.v:42]
+INFO: [Synth 8-256] done synthesizing module 'DFF_FOR_CU' (14#1) [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/DFF_FOR_CU.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/CU.v:70]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/CU.v:66]
+INFO: [Synth 8-256] done synthesizing module 'CU' (15#1) [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/CU.v:23]
+WARNING: [Synth 8-567] referenced signal 'PC_' should be on the sensitivity list [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/CPU.v:169]
+WARNING: [Synth 8-567] referenced signal 'NEXT_PC' should be on the sensitivity list [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/CPU.v:169]
+WARNING: [Synth 8-567] referenced signal 'IM_OUT_DATA' should be on the sensitivity list [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/CPU.v:169]
+WARNING: [Synth 8-567] referenced signal 'RF_RD1' should be on the sensitivity list [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/CPU.v:169]
+WARNING: [Synth 8-567] referenced signal 'RF_RD2' should be on the sensitivity list [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/CPU.v:169]
+WARNING: [Synth 8-567] referenced signal 'ALU_RES' should be on the sensitivity list [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/CPU.v:169]
+WARNING: [Synth 8-567] referenced signal 'RF_WR_DATA' should be on the sensitivity list [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/CPU.v:169]
+WARNING: [Synth 8-567] referenced signal 'RIGHT' should be on the sensitivity list [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/CPU.v:177]
+WARNING: [Synth 8-567] referenced signal 'LEFT' should be on the sensitivity list [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/CPU.v:177]
+INFO: [Synth 8-638] synthesizing module 'FOUR_TO_7SEG' [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/FOUR_TO_7SEG.v:23]
+INFO: [Synth 8-226] default block is never used [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/FOUR_TO_7SEG.v:29]
+INFO: [Synth 8-256] done synthesizing module 'FOUR_TO_7SEG' (16#1) [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/FOUR_TO_7SEG.v:23]
+INFO: [Synth 8-256] done synthesizing module 'CPU' (17#1) [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/CPU.v:23]
+WARNING: [Synth 8-3331] design DEBOUNCER has unconnected port CLOCK
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 495.133 ; gain = 251.656
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 495.133 ; gain = 251.656
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/constrs_1/new/CPU_cons.xdc]
+Finished Parsing XDC File [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/constrs_1/new/CPU_cons.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/constrs_1/new/CPU_cons.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/CPU_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/CPU_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 830.527 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:17 . Memory (MB): peak = 830.527 ; gain = 587.051
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:17 . Memory (MB): peak = 830.527 ; gain = 587.051
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:17 . Memory (MB): peak = 830.527 ; gain = 587.051
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-6014] Unused sequential element COUNT_reg was removed.  [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/CLOCK_DIV.v:36]
+INFO: [Synth 8-5545] ROM "ZERO" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "DFF" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ALU_SRC_B" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5587] ROM size for "RF_WR_REG_SRC" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "DB_SRC" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5546] ROM "DM_WR" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "PC_SRC" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ALU_SRC_A" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5587] ROM size for "EXT_SEL" is below threshold of ROM address width. It will be mapped to LUTs
+WARNING: [Synth 8-327] inferring latch for variable 'I_DATA_OUT_reg' [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/IM.v:64]
+WARNING: [Synth 8-327] inferring latch for variable 'I_STORAGE_reg[255]' [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/IM.v:64]
+WARNING: [Synth 8-327] inferring latch for variable 'I_STORAGE_reg[254]' [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/IM.v:64]
+WARNING: [Synth 8-327] inferring latch for variable 'I_STORAGE_reg[253]' [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/IM.v:64]
+WARNING: [Synth 8-327] inferring latch for variable 'I_STORAGE_reg[252]' [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/IM.v:64]
+WARNING: [Synth 8-327] inferring latch for variable 'I_STORAGE_reg[251]' [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/IM.v:64]
+WARNING: [Synth 8-327] inferring latch for variable 'I_STORAGE_reg[250]' [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/IM.v:64]
+WARNING: [Synth 8-327] inferring latch for variable 'I_STORAGE_reg[249]' [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/IM.v:64]
+WARNING: [Synth 8-327] inferring latch for variable 'I_STORAGE_reg[248]' [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/IM.v:64]
+WARNING: [Synth 8-327] inferring latch for variable 'I_STORAGE_reg[247]' [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/IM.v:64]
+WARNING: [Synth 8-327] inferring latch for variable 'I_STORAGE_reg[246]' [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/IM.v:64]
+WARNING: [Synth 8-327] inferring latch for variable 'I_STORAGE_reg[245]' [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/IM.v:64]
+WARNING: [Synth 8-327] inferring latch for variable 'I_STORAGE_reg[244]' [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/IM.v:64]
+WARNING: [Synth 8-327] inferring latch for variable 'I_STORAGE_reg[243]' [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/IM.v:64]
+WARNING: [Synth 8-327] inferring latch for variable 'I_STORAGE_reg[242]' [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/IM.v:64]
+WARNING: [Synth 8-327] inferring latch for variable 'I_STORAGE_reg[241]' [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/IM.v:64]
+WARNING: [Synth 8-327] inferring latch for variable 'I_STORAGE_reg[240]' [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/IM.v:64]
+WARNING: [Synth 8-327] inferring latch for variable 'I_STORAGE_reg[239]' [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/IM.v:64]
+WARNING: [Synth 8-327] inferring latch for variable 'I_STORAGE_reg[238]' [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/IM.v:64]
+WARNING: [Synth 8-327] inferring latch for variable 'I_STORAGE_reg[237]' [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/IM.v:64]
+WARNING: [Synth 8-327] inferring latch for variable 'I_STORAGE_reg[236]' [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/IM.v:64]
+WARNING: [Synth 8-327] inferring latch for variable 'I_STORAGE_reg[235]' [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/IM.v:64]
+WARNING: [Synth 8-327] inferring latch for variable 'I_STORAGE_reg[234]' [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/IM.v:64]
+WARNING: [Synth 8-327] inferring latch for variable 'I_STORAGE_reg[233]' [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/IM.v:64]
+WARNING: [Synth 8-327] inferring latch for variable 'I_STORAGE_reg[232]' [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/IM.v:64]
+WARNING: [Synth 8-327] inferring latch for variable 'I_STORAGE_reg[231]' [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/IM.v:64]
+WARNING: [Synth 8-327] inferring latch for variable 'I_STORAGE_reg[230]' [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/IM.v:64]
+WARNING: [Synth 8-327] inferring latch for variable 'I_STORAGE_reg[229]' [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/IM.v:64]
+WARNING: [Synth 8-327] inferring latch for variable 'I_STORAGE_reg[228]' [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/IM.v:64]
+WARNING: [Synth 8-327] inferring latch for variable 'I_STORAGE_reg[227]' [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/IM.v:64]
+WARNING: [Synth 8-327] inferring latch for variable 'I_STORAGE_reg[226]' [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/IM.v:64]
+WARNING: [Synth 8-327] inferring latch for variable 'I_STORAGE_reg[225]' [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/IM.v:64]
+WARNING: [Synth 8-327] inferring latch for variable 'I_STORAGE_reg[224]' [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/IM.v:64]
+WARNING: [Synth 8-327] inferring latch for variable 'I_STORAGE_reg[223]' [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/IM.v:64]
+WARNING: [Synth 8-327] inferring latch for variable 'I_STORAGE_reg[222]' [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/IM.v:64]
+WARNING: [Synth 8-327] inferring latch for variable 'I_STORAGE_reg[221]' [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/IM.v:64]
+WARNING: [Synth 8-327] inferring latch for variable 'I_STORAGE_reg[220]' [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/IM.v:64]
+WARNING: [Synth 8-327] inferring latch for variable 'I_STORAGE_reg[219]' [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/IM.v:64]
+WARNING: [Synth 8-327] inferring latch for variable 'I_STORAGE_reg[218]' [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/IM.v:64]
+WARNING: [Synth 8-327] inferring latch for variable 'I_STORAGE_reg[217]' [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/IM.v:64]
+WARNING: [Synth 8-327] inferring latch for variable 'I_STORAGE_reg[216]' [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/IM.v:64]
+WARNING: [Synth 8-327] inferring latch for variable 'I_STORAGE_reg[215]' [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/IM.v:64]
+WARNING: [Synth 8-327] inferring latch for variable 'I_STORAGE_reg[214]' [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/IM.v:64]
+WARNING: [Synth 8-327] inferring latch for variable 'I_STORAGE_reg[213]' [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/IM.v:64]
+WARNING: [Synth 8-327] inferring latch for variable 'I_STORAGE_reg[212]' [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/IM.v:64]
+WARNING: [Synth 8-327] inferring latch for variable 'I_STORAGE_reg[211]' [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/IM.v:64]
+WARNING: [Synth 8-327] inferring latch for variable 'I_STORAGE_reg[210]' [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/IM.v:64]
+WARNING: [Synth 8-327] inferring latch for variable 'I_STORAGE_reg[209]' [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/IM.v:64]
+WARNING: [Synth 8-327] inferring latch for variable 'I_STORAGE_reg[208]' [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/IM.v:64]
+WARNING: [Synth 8-327] inferring latch for variable 'I_STORAGE_reg[207]' [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/IM.v:64]
+WARNING: [Synth 8-327] inferring latch for variable 'I_STORAGE_reg[206]' [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/IM.v:64]
+WARNING: [Synth 8-327] inferring latch for variable 'I_STORAGE_reg[205]' [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/IM.v:64]
+WARNING: [Synth 8-327] inferring latch for variable 'I_STORAGE_reg[204]' [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/IM.v:64]
+WARNING: [Synth 8-327] inferring latch for variable 'I_STORAGE_reg[203]' [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/IM.v:64]
+WARNING: [Synth 8-327] inferring latch for variable 'I_STORAGE_reg[202]' [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/IM.v:64]
+WARNING: [Synth 8-327] inferring latch for variable 'I_STORAGE_reg[201]' [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/IM.v:64]
+WARNING: [Synth 8-327] inferring latch for variable 'I_STORAGE_reg[200]' [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/IM.v:64]
+WARNING: [Synth 8-327] inferring latch for variable 'I_STORAGE_reg[199]' [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/IM.v:64]
+WARNING: [Synth 8-327] inferring latch for variable 'I_STORAGE_reg[198]' [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/IM.v:64]
+WARNING: [Synth 8-327] inferring latch for variable 'I_STORAGE_reg[197]' [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/IM.v:64]
+WARNING: [Synth 8-327] inferring latch for variable 'I_STORAGE_reg[196]' [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/IM.v:64]
+WARNING: [Synth 8-327] inferring latch for variable 'I_STORAGE_reg[195]' [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/IM.v:64]
+WARNING: [Synth 8-327] inferring latch for variable 'I_STORAGE_reg[194]' [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/IM.v:64]
+WARNING: [Synth 8-327] inferring latch for variable 'I_STORAGE_reg[193]' [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/IM.v:64]
+WARNING: [Synth 8-327] inferring latch for variable 'I_STORAGE_reg[192]' [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/IM.v:64]
+WARNING: [Synth 8-327] inferring latch for variable 'I_STORAGE_reg[191]' [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/IM.v:64]
+WARNING: [Synth 8-327] inferring latch for variable 'I_STORAGE_reg[190]' [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/IM.v:64]
+WARNING: [Synth 8-327] inferring latch for variable 'I_STORAGE_reg[189]' [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/IM.v:64]
+WARNING: [Synth 8-327] inferring latch for variable 'I_STORAGE_reg[188]' [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/IM.v:64]
+WARNING: [Synth 8-327] inferring latch for variable 'I_STORAGE_reg[187]' [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/IM.v:64]
+WARNING: [Synth 8-327] inferring latch for variable 'I_STORAGE_reg[186]' [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/IM.v:64]
+WARNING: [Synth 8-327] inferring latch for variable 'I_STORAGE_reg[185]' [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/IM.v:64]
+WARNING: [Synth 8-327] inferring latch for variable 'I_STORAGE_reg[184]' [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/IM.v:64]
+WARNING: [Synth 8-327] inferring latch for variable 'I_STORAGE_reg[183]' [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/IM.v:64]
+WARNING: [Synth 8-327] inferring latch for variable 'I_STORAGE_reg[182]' [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/IM.v:64]
+WARNING: [Synth 8-327] inferring latch for variable 'I_STORAGE_reg[181]' [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/IM.v:64]
+WARNING: [Synth 8-327] inferring latch for variable 'I_STORAGE_reg[180]' [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/IM.v:64]
+WARNING: [Synth 8-327] inferring latch for variable 'I_STORAGE_reg[179]' [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/IM.v:64]
+WARNING: [Synth 8-327] inferring latch for variable 'I_STORAGE_reg[178]' [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/IM.v:64]
+WARNING: [Synth 8-327] inferring latch for variable 'I_STORAGE_reg[177]' [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/IM.v:64]
+WARNING: [Synth 8-327] inferring latch for variable 'I_STORAGE_reg[176]' [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/IM.v:64]
+WARNING: [Synth 8-327] inferring latch for variable 'I_STORAGE_reg[175]' [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/IM.v:64]
+WARNING: [Synth 8-327] inferring latch for variable 'I_STORAGE_reg[174]' [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/IM.v:64]
+WARNING: [Synth 8-327] inferring latch for variable 'I_STORAGE_reg[173]' [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/IM.v:64]
+WARNING: [Synth 8-327] inferring latch for variable 'I_STORAGE_reg[172]' [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/IM.v:64]
+WARNING: [Synth 8-327] inferring latch for variable 'I_STORAGE_reg[171]' [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/IM.v:64]
+WARNING: [Synth 8-327] inferring latch for variable 'I_STORAGE_reg[170]' [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/IM.v:64]
+WARNING: [Synth 8-327] inferring latch for variable 'I_STORAGE_reg[169]' [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/IM.v:64]
+WARNING: [Synth 8-327] inferring latch for variable 'I_STORAGE_reg[168]' [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/IM.v:64]
+WARNING: [Synth 8-327] inferring latch for variable 'I_STORAGE_reg[167]' [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/IM.v:64]
+WARNING: [Synth 8-327] inferring latch for variable 'I_STORAGE_reg[166]' [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/IM.v:64]
+WARNING: [Synth 8-327] inferring latch for variable 'I_STORAGE_reg[165]' [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/IM.v:64]
+WARNING: [Synth 8-327] inferring latch for variable 'I_STORAGE_reg[164]' [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/IM.v:64]
+WARNING: [Synth 8-327] inferring latch for variable 'I_STORAGE_reg[163]' [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/IM.v:64]
+WARNING: [Synth 8-327] inferring latch for variable 'I_STORAGE_reg[162]' [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/IM.v:64]
+WARNING: [Synth 8-327] inferring latch for variable 'I_STORAGE_reg[161]' [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/IM.v:64]
+WARNING: [Synth 8-327] inferring latch for variable 'I_STORAGE_reg[160]' [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/IM.v:64]
+WARNING: [Synth 8-327] inferring latch for variable 'I_STORAGE_reg[159]' [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/IM.v:64]
+WARNING: [Synth 8-327] inferring latch for variable 'I_STORAGE_reg[158]' [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/IM.v:64]
+WARNING: [Synth 8-327] inferring latch for variable 'I_STORAGE_reg[157]' [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/IM.v:64]
+INFO: [Common 17-14] Message 'Synth 8-327' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:22 ; elapsed = 00:00:33 . Memory (MB): peak = 830.527 ; gain = 587.051
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+--------------+------------+----------+
+|      |RTL Partition |Replication |Instances |
++------+--------------+------------+----------+
+|1     |IM__GB0       |           1|     41981|
+|2     |IM__GB1       |           1|     14165|
+|3     |IM__GB2       |           1|     19799|
+|4     |IM__GB3       |           1|     23884|
+|5     |IM__GB4       |           1|     30251|
+|6     |IM__GB5       |           1|     37677|
+|7     |IM__GB6       |           1|     47025|
+|8     |IM__GB7       |           1|     58770|
+|9     |IM__GB8       |           1|     48468|
+|10    |IM__GB9       |           1|     25053|
+|11    |IM__GB10      |           1|     48367|
+|12    |IM__GB11      |           1|     43581|
+|13    |CPU__GCB0     |           1|     41702|
+|14    |CPU__GCB1     |           1|     12350|
++------+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 3     
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 6     
+	                3 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 69    
+	   2 Input      8 Bit        Muxes := 506   
+	   4 Input      8 Bit        Muxes := 290   
+	   4 Input      5 Bit        Muxes := 1     
+	  21 Input      4 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 2     
+	   3 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 4     
+	   4 Input      2 Bit        Muxes := 32    
+	   2 Input      2 Bit        Muxes := 1     
+	  21 Input      2 Bit        Muxes := 2     
+	   5 Input      1 Bit        Muxes := 384   
+	   2 Input      1 Bit        Muxes := 571   
+	   4 Input      1 Bit        Muxes := 128   
+	  21 Input      1 Bit        Muxes := 13    
+	  10 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module CPU 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   4 Input      8 Bit        Muxes := 2     
+	   4 Input      4 Bit        Muxes := 2     
+Module IM 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 254   
+	   4 Input      8 Bit        Muxes := 144   
+	   4 Input      2 Bit        Muxes := 16    
+	   5 Input      1 Bit        Muxes := 192   
+	   2 Input      1 Bit        Muxes := 253   
+	   4 Input      1 Bit        Muxes := 64    
+Module DM 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
++---Muxes : 
+	   4 Input      8 Bit        Muxes := 144   
+	   2 Input      8 Bit        Muxes := 252   
+	   4 Input      2 Bit        Muxes := 16    
+	   5 Input      1 Bit        Muxes := 192   
+	   2 Input      1 Bit        Muxes := 250   
+	   4 Input      1 Bit        Muxes := 64    
+Module Adder__1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module Adder 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module MUX_2bits_32 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 1     
+Module DFF__1 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module MUX_2bits_5 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      5 Bit        Muxes := 1     
+Module MUX_1bit_32__1 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module RF 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 64    
+	   2 Input      1 Bit        Muxes := 64    
+Module DFF__2 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module DFF__3 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module EXT 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module MUX_1bit_32__2 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module MUX_1bit_32__3 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module ALU 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   3 Input     32 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 3     
+Module DFF__4 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module MUX_1bit_32 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module DFF 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module DFF_FOR_CU 
+Detailed RTL Component Info : 
++---Registers : 
+	                3 Bit    Registers := 2     
++---Muxes : 
+	   3 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 4     
+	   2 Input      2 Bit        Muxes := 1     
+Module CU 
+Detailed RTL Component Info : 
++---Muxes : 
+	  21 Input      4 Bit        Muxes := 1     
+	  21 Input      2 Bit        Muxes := 2     
+	  21 Input      1 Bit        Muxes := 13    
+	   2 Input      1 Bit        Muxes := 1     
+	  10 Input      1 Bit        Muxes := 1     
+Module CLOCK_DIV 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5580] Multithreading enabled for synth_design using a maximum of 2 processes.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5545] ROM "p_0_out" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "p_0_out" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "p_0_out" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-3331] design DM has unconnected port ADDR[31]
+WARNING: [Synth 8-3331] design DM has unconnected port ADDR[30]
+WARNING: [Synth 8-3331] design DM has unconnected port ADDR[29]
+WARNING: [Synth 8-3331] design DM has unconnected port ADDR[28]
+WARNING: [Synth 8-3331] design DM has unconnected port ADDR[27]
+WARNING: [Synth 8-3331] design DM has unconnected port ADDR[26]
+WARNING: [Synth 8-3331] design DM has unconnected port ADDR[25]
+WARNING: [Synth 8-3331] design DM has unconnected port ADDR[24]
+WARNING: [Synth 8-3331] design DM has unconnected port ADDR[23]
+WARNING: [Synth 8-3331] design DM has unconnected port ADDR[22]
+WARNING: [Synth 8-3331] design DM has unconnected port ADDR[21]
+WARNING: [Synth 8-3331] design DM has unconnected port ADDR[20]
+WARNING: [Synth 8-3331] design DM has unconnected port ADDR[19]
+WARNING: [Synth 8-3331] design DM has unconnected port ADDR[18]
+WARNING: [Synth 8-3331] design DM has unconnected port ADDR[17]
+WARNING: [Synth 8-3331] design DM has unconnected port ADDR[16]
+WARNING: [Synth 8-3331] design DM has unconnected port ADDR[15]
+WARNING: [Synth 8-3331] design DM has unconnected port ADDR[14]
+WARNING: [Synth 8-3331] design DM has unconnected port ADDR[13]
+WARNING: [Synth 8-3331] design DM has unconnected port ADDR[12]
+WARNING: [Synth 8-3331] design DM has unconnected port ADDR[11]
+WARNING: [Synth 8-3331] design DM has unconnected port ADDR[10]
+WARNING: [Synth 8-3331] design DM has unconnected port ADDR[9]
+WARNING: [Synth 8-3331] design DM has unconnected port ADDR[8]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ir/D_OUT_reg' and it is trimmed from '32' to '26' bits. [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/DFF.v:33]
+INFO: [Synth 8-5545] ROM "alu/ZERO" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+WARNING: [Synth 8-6014] Unused sequential element clock_div/COUNT_reg was removed.  [E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/CLOCK_DIV.v:36]
+WARNING: [Synth 8-3917] design CPU__GCB1 has port O773 driven by constant 1
+WARNING: [Synth 8-3917] design CPU__GCB1 has port DM_RD driven by constant 1
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:00 ; elapsed = 00:01:41 . Memory (MB): peak = 830.527 ; gain = 587.051
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+--------------+------------+----------+
+|      |RTL Partition |Replication |Instances |
++------+--------------+------------+----------+
+|1     |IM__GB0       |           1|     15625|
+|2     |IM__GB1       |           1|       252|
+|3     |IM__GB2       |           1|        96|
+|4     |IM__GB3       |           1|       114|
+|5     |IM__GB4       |           1|       148|
+|6     |IM__GB5       |           1|       161|
+|7     |IM__GB6       |           1|       183|
+|8     |IM__GB7       |           1|       291|
+|9     |IM__GB8       |           1|       149|
+|10    |IM__GB9       |           1|       156|
+|11    |IM__GB10      |           1|       126|
+|12    |IM__GB11      |           1|       222|
+|13    |CPU__GCB0     |           1|     15333|
+|14    |CPU__GCB1     |           1|      6463|
++------+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:04 ; elapsed = 00:01:48 . Memory (MB): peak = 861.180 ; gain = 617.703
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ins_memi_0/\I_STORAGE_reg[1][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ins_memi_0/\I_STORAGE_reg[0][0] )
+INFO: [Synth 8-3886] merging instance 'ins_memi_0/I_STORAGE_reg[255][0]' (LD) to 'ins_memi_0/I_STORAGE_reg[255][1]'
+INFO: [Synth 8-3886] merging instance 'ins_memi_0/I_STORAGE_reg[254][0]' (LD) to 'ins_memi_0/I_STORAGE_reg[254][1]'
+INFO: [Synth 8-3886] merging instance 'ins_memi_0/I_STORAGE_reg[253][0]' (LD) to 'ins_memi_0/I_STORAGE_reg[253][1]'
+INFO: [Synth 8-3886] merging instance 'ins_memi_0/I_STORAGE_reg[252][0]' (LD) to 'ins_memi_0/I_STORAGE_reg[252][1]'
+INFO: [Synth 8-3886] merging instance 'ins_memi_0/I_STORAGE_reg[251][0]' (LD) to 'ins_memi_0/I_STORAGE_reg[251][1]'
+INFO: [Synth 8-3886] merging instance 'ins_memi_0/I_STORAGE_reg[250][0]' (LD) to 'ins_memi_0/I_STORAGE_reg[250][1]'
+INFO: [Synth 8-3886] merging instance 'ins_memi_0/I_STORAGE_reg[249][0]' (LD) to 'ins_memi_0/I_STORAGE_reg[249][1]'
+INFO: [Synth 8-3886] merging instance 'ins_memi_0/I_STORAGE_reg[248][0]' (LD) to 'ins_memi_0/I_STORAGE_reg[248][1]'
+INFO: [Synth 8-3886] merging instance 'ins_memi_0/I_STORAGE_reg[247][0]' (LD) to 'ins_memi_0/I_STORAGE_reg[247][1]'
+INFO: [Synth 8-3886] merging instance 'ins_memi_0/I_STORAGE_reg[246][0]' (LD) to 'ins_memi_0/I_STORAGE_reg[246][1]'
+INFO: [Synth 8-3886] merging instance 'ins_memi_0/I_STORAGE_reg[245][0]' (LD) to 'ins_memi_0/I_STORAGE_reg[245][1]'
+INFO: [Synth 8-3886] merging instance 'ins_memi_0/I_STORAGE_reg[244][0]' (LD) to 'ins_memi_0/I_STORAGE_reg[244][1]'
+INFO: [Synth 8-3886] merging instance 'ins_memi_0/I_STORAGE_reg[243][0]' (LD) to 'ins_memi_0/I_STORAGE_reg[243][1]'
+INFO: [Synth 8-3886] merging instance 'ins_memi_0/I_STORAGE_reg[242][0]' (LD) to 'ins_memi_0/I_STORAGE_reg[242][1]'
+INFO: [Synth 8-3886] merging instance 'ins_memi_0/I_STORAGE_reg[241][0]' (LD) to 'ins_memi_0/I_STORAGE_reg[241][1]'
+INFO: [Synth 8-3886] merging instance 'ins_memi_0/I_STORAGE_reg[240][0]' (LD) to 'ins_memi_0/I_STORAGE_reg[240][1]'
+INFO: [Synth 8-3886] merging instance 'ins_memi_0/I_STORAGE_reg[239][0]' (LD) to 'ins_memi_0/I_STORAGE_reg[239][1]'
+INFO: [Synth 8-3886] merging instance 'ins_memi_0/I_STORAGE_reg[238][0]' (LD) to 'ins_memi_0/I_STORAGE_reg[238][1]'
+INFO: [Synth 8-3886] merging instance 'ins_memi_0/I_STORAGE_reg[237][0]' (LD) to 'ins_memi_0/I_STORAGE_reg[237][1]'
+INFO: [Synth 8-3886] merging instance 'ins_memi_0/I_STORAGE_reg[236][0]' (LD) to 'ins_memi_0/I_STORAGE_reg[236][1]'
+INFO: [Synth 8-3886] merging instance 'ins_memi_0/I_STORAGE_reg[235][0]' (LD) to 'ins_memi_0/I_STORAGE_reg[235][1]'
+INFO: [Synth 8-3886] merging instance 'ins_memi_0/I_STORAGE_reg[234][0]' (LD) to 'ins_memi_0/I_STORAGE_reg[234][1]'
+INFO: [Synth 8-3886] merging instance 'ins_memi_0/I_STORAGE_reg[233][0]' (LD) to 'ins_memi_0/I_STORAGE_reg[233][1]'
+INFO: [Synth 8-3886] merging instance 'ins_memi_0/I_STORAGE_reg[232][0]' (LD) to 'ins_memi_0/I_STORAGE_reg[232][1]'
+INFO: [Synth 8-3886] merging instance 'ins_memi_0/I_STORAGE_reg[231][0]' (LD) to 'ins_memi_0/I_STORAGE_reg[231][1]'
+INFO: [Synth 8-3886] merging instance 'ins_memi_0/I_STORAGE_reg[230][0]' (LD) to 'ins_memi_0/I_STORAGE_reg[230][1]'
+INFO: [Synth 8-3886] merging instance 'ins_memi_0/I_STORAGE_reg[229][0]' (LD) to 'ins_memi_0/I_STORAGE_reg[229][1]'
+INFO: [Synth 8-3886] merging instance 'ins_memi_0/I_STORAGE_reg[228][0]' (LD) to 'ins_memi_0/I_STORAGE_reg[228][1]'
+INFO: [Synth 8-3886] merging instance 'ins_memi_0/I_STORAGE_reg[227][0]' (LD) to 'ins_memi_0/I_STORAGE_reg[227][1]'
+INFO: [Synth 8-3886] merging instance 'ins_memi_0/I_STORAGE_reg[226][0]' (LD) to 'ins_memi_0/I_STORAGE_reg[226][1]'
+INFO: [Synth 8-3886] merging instance 'ins_memi_0/I_STORAGE_reg[225][0]' (LD) to 'ins_memi_0/I_STORAGE_reg[225][1]'
+INFO: [Synth 8-3886] merging instance 'ins_memi_0/I_STORAGE_reg[224][0]' (LD) to 'ins_memi_0/I_STORAGE_reg[224][1]'
+INFO: [Synth 8-3886] merging instance 'ins_memi_0/I_STORAGE_reg[223][0]' (LD) to 'ins_memi_0/I_STORAGE_reg[223][1]'
+INFO: [Synth 8-3886] merging instance 'ins_memi_0/I_STORAGE_reg[222][0]' (LD) to 'ins_memi_0/I_STORAGE_reg[222][1]'
+INFO: [Synth 8-3886] merging instance 'ins_memi_0/I_STORAGE_reg[221][0]' (LD) to 'ins_memi_0/I_STORAGE_reg[221][1]'
+INFO: [Synth 8-3886] merging instance 'ins_memi_0/I_STORAGE_reg[220][0]' (LD) to 'ins_memi_0/I_STORAGE_reg[220][1]'
+INFO: [Synth 8-3886] merging instance 'ins_memi_0/I_STORAGE_reg[219][0]' (LD) to 'ins_memi_0/I_STORAGE_reg[219][1]'
+INFO: [Synth 8-3886] merging instance 'ins_memi_0/I_STORAGE_reg[218][0]' (LD) to 'ins_memi_0/I_STORAGE_reg[218][1]'
+INFO: [Synth 8-3886] merging instance 'ins_memi_0/I_STORAGE_reg[217][0]' (LD) to 'ins_memi_0/I_STORAGE_reg[217][1]'
+INFO: [Synth 8-3886] merging instance 'ins_memi_0/I_STORAGE_reg[216][0]' (LD) to 'ins_memi_0/I_STORAGE_reg[216][1]'
+INFO: [Synth 8-3886] merging instance 'ins_memi_0/I_STORAGE_reg[215][0]' (LD) to 'ins_memi_0/I_STORAGE_reg[215][1]'
+INFO: [Synth 8-3886] merging instance 'ins_memi_0/I_STORAGE_reg[214][0]' (LD) to 'ins_memi_0/I_STORAGE_reg[214][1]'
+INFO: [Synth 8-3886] merging instance 'ins_memi_0/I_STORAGE_reg[213][0]' (LD) to 'ins_memi_0/I_STORAGE_reg[213][1]'
+INFO: [Synth 8-3886] merging instance 'ins_memi_0/I_STORAGE_reg[212][0]' (LD) to 'ins_memi_0/I_STORAGE_reg[212][1]'
+INFO: [Synth 8-3886] merging instance 'ins_memi_0/I_STORAGE_reg[211][0]' (LD) to 'ins_memi_0/I_STORAGE_reg[211][1]'
+INFO: [Synth 8-3886] merging instance 'ins_memi_0/I_STORAGE_reg[210][0]' (LD) to 'ins_memi_0/I_STORAGE_reg[210][1]'
+INFO: [Synth 8-3886] merging instance 'ins_memi_0/I_STORAGE_reg[209][0]' (LD) to 'ins_memi_0/I_STORAGE_reg[209][1]'
+INFO: [Synth 8-3886] merging instance 'ins_memi_0/I_STORAGE_reg[208][0]' (LD) to 'ins_memi_0/I_STORAGE_reg[208][1]'
+INFO: [Synth 8-3886] merging instance 'ins_memi_0/I_STORAGE_reg[207][0]' (LD) to 'ins_memi_0/I_STORAGE_reg[207][1]'
+INFO: [Synth 8-3886] merging instance 'ins_memi_0/I_STORAGE_reg[206][0]' (LD) to 'ins_memi_0/I_STORAGE_reg[206][1]'
+INFO: [Synth 8-3886] merging instance 'ins_memi_0/I_STORAGE_reg[205][0]' (LD) to 'ins_memi_0/I_STORAGE_reg[205][1]'
+INFO: [Synth 8-3886] merging instance 'ins_memi_0/I_STORAGE_reg[204][0]' (LD) to 'ins_memi_0/I_STORAGE_reg[204][1]'
+INFO: [Synth 8-3886] merging instance 'ins_memi_0/I_STORAGE_reg[203][0]' (LD) to 'ins_memi_0/I_STORAGE_reg[203][1]'
+INFO: [Synth 8-3886] merging instance 'ins_memi_0/I_STORAGE_reg[202][0]' (LD) to 'ins_memi_0/I_STORAGE_reg[202][1]'
+INFO: [Synth 8-3886] merging instance 'ins_memi_0/I_STORAGE_reg[201][0]' (LD) to 'ins_memi_0/I_STORAGE_reg[201][1]'
+INFO: [Synth 8-3886] merging instance 'ins_memi_0/I_STORAGE_reg[200][0]' (LD) to 'ins_memi_0/I_STORAGE_reg[200][1]'
+INFO: [Synth 8-3886] merging instance 'ins_memi_0/I_STORAGE_reg[199][0]' (LD) to 'ins_memi_0/I_STORAGE_reg[199][1]'
+INFO: [Synth 8-3886] merging instance 'ins_memi_0/I_STORAGE_reg[198][0]' (LD) to 'ins_memi_0/I_STORAGE_reg[198][1]'
+INFO: [Synth 8-3886] merging instance 'ins_memi_0/I_STORAGE_reg[197][0]' (LD) to 'ins_memi_0/I_STORAGE_reg[197][1]'
+INFO: [Synth 8-3886] merging instance 'ins_memi_0/I_STORAGE_reg[196][0]' (LD) to 'ins_memi_0/I_STORAGE_reg[196][1]'
+INFO: [Synth 8-3886] merging instance 'ins_memi_0/I_STORAGE_reg[195][0]' (LD) to 'ins_memi_0/I_STORAGE_reg[195][1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ins_memi_0/\I_STORAGE_reg[194][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ins_memi_0/\I_STORAGE_reg[193][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ins_memi_0/\I_STORAGE_reg[192][0] )
+INFO: [Synth 8-3886] merging instance 'ins_memi_0/I_STORAGE_reg[191][0]' (LD) to 'ins_memi_0/I_STORAGE_reg[191][1]'
+INFO: [Synth 8-3886] merging instance 'ins_memi_0/I_STORAGE_reg[190][0]' (LD) to 'ins_memi_0/I_STORAGE_reg[190][1]'
+INFO: [Synth 8-3886] merging instance 'ins_memi_0/I_STORAGE_reg[189][0]' (LD) to 'ins_memi_0/I_STORAGE_reg[189][1]'
+INFO: [Synth 8-3886] merging instance 'ins_memi_0/I_STORAGE_reg[188][0]' (LD) to 'ins_memi_0/I_STORAGE_reg[188][1]'
+INFO: [Synth 8-3886] merging instance 'ins_memi_0/I_STORAGE_reg[187][0]' (LD) to 'ins_memi_0/I_STORAGE_reg[187][1]'
+INFO: [Synth 8-3886] merging instance 'ins_memi_0/I_STORAGE_reg[186][0]' (LD) to 'ins_memi_0/I_STORAGE_reg[186][1]'
+INFO: [Synth 8-3886] merging instance 'ins_memi_0/I_STORAGE_reg[185][0]' (LD) to 'ins_memi_0/I_STORAGE_reg[185][1]'
+INFO: [Synth 8-3886] merging instance 'ins_memi_0/I_STORAGE_reg[184][0]' (LD) to 'ins_memi_0/I_STORAGE_reg[184][1]'
+INFO: [Synth 8-3886] merging instance 'ins_memi_0/I_STORAGE_reg[183][0]' (LD) to 'ins_memi_0/I_STORAGE_reg[183][1]'
+INFO: [Synth 8-3886] merging instance 'ins_memi_0/I_STORAGE_reg[182][0]' (LD) to 'ins_memi_0/I_STORAGE_reg[182][1]'
+INFO: [Synth 8-3886] merging instance 'ins_memi_0/I_STORAGE_reg[181][0]' (LD) to 'ins_memi_0/I_STORAGE_reg[181][1]'
+INFO: [Synth 8-3886] merging instance 'ins_memi_0/I_STORAGE_reg[180][0]' (LD) to 'ins_memi_0/I_STORAGE_reg[180][1]'
+INFO: [Synth 8-3886] merging instance 'ins_memi_0/I_STORAGE_reg[179][0]' (LD) to 'ins_memi_0/I_STORAGE_reg[179][1]'
+INFO: [Synth 8-3886] merging instance 'ins_memi_0/I_STORAGE_reg[178][0]' (LD) to 'ins_memi_0/I_STORAGE_reg[178][1]'
+INFO: [Synth 8-3886] merging instance 'ins_memi_0/I_STORAGE_reg[177][0]' (LD) to 'ins_memi_0/I_STORAGE_reg[177][1]'
+INFO: [Synth 8-3886] merging instance 'ins_memi_0/I_STORAGE_reg[176][0]' (LD) to 'ins_memi_0/I_STORAGE_reg[176][1]'
+INFO: [Synth 8-3886] merging instance 'ins_memi_0/I_STORAGE_reg[175][0]' (LD) to 'ins_memi_0/I_STORAGE_reg[175][1]'
+INFO: [Synth 8-3886] merging instance 'ins_memi_0/I_STORAGE_reg[174][0]' (LD) to 'ins_memi_0/I_STORAGE_reg[174][1]'
+INFO: [Synth 8-3886] merging instance 'ins_memi_0/I_STORAGE_reg[173][0]' (LD) to 'ins_memi_0/I_STORAGE_reg[173][1]'
+INFO: [Synth 8-3886] merging instance 'ins_memi_0/I_STORAGE_reg[172][0]' (LD) to 'ins_memi_0/I_STORAGE_reg[172][1]'
+INFO: [Synth 8-3886] merging instance 'ins_memi_0/I_STORAGE_reg[171][0]' (LD) to 'ins_memi_0/I_STORAGE_reg[171][1]'
+INFO: [Synth 8-3886] merging instance 'ins_memi_0/I_STORAGE_reg[170][0]' (LD) to 'ins_memi_0/I_STORAGE_reg[170][1]'
+INFO: [Synth 8-3886] merging instance 'ins_memi_0/I_STORAGE_reg[169][0]' (LD) to 'ins_memi_0/I_STORAGE_reg[169][1]'
+INFO: [Synth 8-3886] merging instance 'ins_memi_0/I_STORAGE_reg[168][0]' (LD) to 'ins_memi_0/I_STORAGE_reg[168][1]'
+INFO: [Synth 8-3886] merging instance 'ins_memi_0/I_STORAGE_reg[167][0]' (LD) to 'ins_memi_0/I_STORAGE_reg[167][1]'
+INFO: [Synth 8-3886] merging instance 'ins_memi_0/I_STORAGE_reg[166][0]' (LD) to 'ins_memi_0/I_STORAGE_reg[166][1]'
+INFO: [Synth 8-3886] merging instance 'ins_memi_0/I_STORAGE_reg[165][0]' (LD) to 'ins_memi_0/I_STORAGE_reg[165][1]'
+INFO: [Synth 8-3886] merging instance 'ins_memi_0/I_STORAGE_reg[164][0]' (LD) to 'ins_memi_0/I_STORAGE_reg[164][1]'
+INFO: [Synth 8-3886] merging instance 'ins_memi_0/I_STORAGE_reg[163][0]' (LD) to 'ins_memi_0/I_STORAGE_reg[163][1]'
+INFO: [Synth 8-3886] merging instance 'ins_memi_0/I_STORAGE_reg[162][0]' (LD) to 'ins_memi_0/I_STORAGE_reg[162][1]'
+INFO: [Synth 8-3886] merging instance 'ins_memi_0/I_STORAGE_reg[161][0]' (LD) to 'ins_memi_0/I_STORAGE_reg[161][1]'
+INFO: [Synth 8-3886] merging instance 'ins_memi_0/I_STORAGE_reg[160][0]' (LD) to 'ins_memi_0/I_STORAGE_reg[160][1]'
+INFO: [Synth 8-3886] merging instance 'ins_memi_0/I_STORAGE_reg[159][0]' (LD) to 'ins_memi_0/I_STORAGE_reg[159][1]'
+INFO: [Synth 8-3886] merging instance 'ins_memi_0/I_STORAGE_reg[158][0]' (LD) to 'ins_memi_0/I_STORAGE_reg[158][1]'
+INFO: [Synth 8-3886] merging instance 'ins_memi_0/I_STORAGE_reg[157][0]' (LD) to 'ins_memi_0/I_STORAGE_reg[157][1]'
+INFO: [Synth 8-3886] merging instance 'ins_memi_0/I_STORAGE_reg[156][0]' (LD) to 'ins_memi_0/I_STORAGE_reg[156][1]'
+INFO: [Synth 8-3886] merging instance 'ins_memi_0/I_STORAGE_reg[155][0]' (LD) to 'ins_memi_0/I_STORAGE_reg[155][1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ins_memi_0/\I_STORAGE_reg[154][0] )
+INFO: [Synth 8-3886] merging instance 'ins_memi_0/I_STORAGE_reg[153][0]' (LD) to 'ins_memi_0/I_STORAGE_reg[153][1]'
+INFO: [Synth 8-3886] merging instance 'ins_memi_0/I_STORAGE_reg[152][0]' (LD) to 'ins_memi_0/I_STORAGE_reg[152][1]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ins_memi_0/\I_STORAGE_reg[139][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ins_memi_0/\I_STORAGE_reg[68][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ins_memi_0/\I_STORAGE_reg[65][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ins_memi_0/\I_STORAGE_reg[60][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ins_memi_0/\I_STORAGE_reg[56][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ins_memi_0/\I_STORAGE_reg[36][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ins_memi_0/\I_STORAGE_reg[24][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ins_memi_0/\I_STORAGE_reg[6][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ins_memi_0/\I_STORAGE_reg[2][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ins_memi_0/\I_STORAGE_reg[1][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ins_memi_0/\I_STORAGE_reg[0][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ins_memi_0/\I_STORAGE_reg[194][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ins_memi_0/\I_STORAGE_reg[193][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ins_memi_0/\I_STORAGE_reg[192][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ins_memi_0/\I_STORAGE_reg[154][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ins_memi_0/\I_STORAGE_reg[139][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ins_memi_0/\I_STORAGE_reg[95][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ins_memi_0/\I_STORAGE_reg[65][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ins_memi_0/\I_STORAGE_reg[2][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ins_memi_0/\I_STORAGE_reg[1][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ins_memi_0/\I_STORAGE_reg[0][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ins_memi_0/\I_STORAGE_reg[194][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ins_memi_0/\I_STORAGE_reg[193][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ins_memi_0/\I_STORAGE_reg[192][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ins_memi_0/\I_STORAGE_reg[154][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ins_memi_0/\I_STORAGE_reg[139][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ins_memi_0/\I_STORAGE_reg[65][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ins_memi_0/\I_STORAGE_reg[6][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ins_memi_0/\I_STORAGE_reg[2][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ins_memi_0/\I_STORAGE_reg[1][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ins_memi_0/\I_STORAGE_reg[194][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ins_memi_0/\I_STORAGE_reg[193][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ins_memi_0/\I_STORAGE_reg[192][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ins_memi_0/\I_STORAGE_reg[154][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ins_memi_0/\I_STORAGE_reg[139][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ins_memi_0/\I_STORAGE_reg[65][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ins_memi_0/\I_STORAGE_reg[6][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ins_memi_0/\I_STORAGE_reg[2][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ins_memi_0/\I_STORAGE_reg[1][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ins_memi_0/\I_STORAGE_reg[0][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ins_memi_0/\I_STORAGE_reg[194][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ins_memi_0/\I_STORAGE_reg[193][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ins_memi_0/\I_STORAGE_reg[192][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ins_memi_0/\I_STORAGE_reg[154][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ins_memi_0/\I_STORAGE_reg[139][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ins_memi_0/\I_STORAGE_reg[90][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ins_memi_0/\I_STORAGE_reg[65][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ins_memi_0/\I_STORAGE_reg[6][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ins_memi_0/\I_STORAGE_reg[2][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ins_memi_0/\I_STORAGE_reg[1][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ins_memi_0/\I_STORAGE_reg[0][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ins_memi_0/\I_STORAGE_reg[194][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ins_memi_0/\I_STORAGE_reg[193][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ins_memi_0/\I_STORAGE_reg[192][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ins_memi_0/\I_STORAGE_reg[154][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ins_memi_0/\I_STORAGE_reg[139][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ins_memi_0/\I_STORAGE_reg[65][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ins_memi_0/\I_STORAGE_reg[6][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ins_memi_0/\I_STORAGE_reg[2][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ins_memi_0/\I_STORAGE_reg[1][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ins_memi_0/\I_STORAGE_reg[0][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ins_memi_0/\I_STORAGE_reg[194][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ins_memi_0/\I_STORAGE_reg[193][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ins_memi_0/\I_STORAGE_reg[192][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ins_memi_0/\I_STORAGE_reg[154][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ins_memi_0/\I_STORAGE_reg[139][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ins_memi_0/\I_STORAGE_reg[70][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ins_memi_0/\I_STORAGE_reg[66][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ins_memi_0/\I_STORAGE_reg[65][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ins_memi_0/\I_STORAGE_reg[34][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ins_memi_0/\I_STORAGE_reg[20][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ins_memi_0/\I_STORAGE_reg[18][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ins_memi_0/\I_STORAGE_reg[6][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ins_memi_0/\I_STORAGE_reg[2][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ins_memi_0/\I_STORAGE_reg[1][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ins_memi_0/\I_STORAGE_reg[0][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ins_memi_0/\I_STORAGE_reg[255][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ins_memi_0/\I_STORAGE_reg[254][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ins_memi_0/\I_STORAGE_reg[253][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ins_memi_0/\I_STORAGE_reg[252][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ins_memi_0/\I_STORAGE_reg[251][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ins_memi_0/\I_STORAGE_reg[250][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ins_memi_0/\I_STORAGE_reg[249][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ins_memi_0/\I_STORAGE_reg[248][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ins_memi_0/\I_STORAGE_reg[247][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ins_memi_0/\I_STORAGE_reg[246][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ins_memi_0/\I_STORAGE_reg[245][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ins_memi_0/\I_STORAGE_reg[244][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ins_memi_0/\I_STORAGE_reg[243][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ins_memi_0/\I_STORAGE_reg[242][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ins_memi_0/\I_STORAGE_reg[241][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ins_memi_0/\I_STORAGE_reg[240][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ins_memi_0/\I_STORAGE_reg[239][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ins_memi_0/\I_STORAGE_reg[238][7] )
+INFO: [Common 17-14] Message 'Synth 8-3333' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:05 ; elapsed = 00:01:49 . Memory (MB): peak = 864.723 ; gain = 621.246
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+--------------+------------+----------+
+|      |RTL Partition |Replication |Instances |
++------+--------------+------------+----------+
+|1     |IM__GB0       |           1|      1267|
+|2     |CPU__GCB0     |           1|     15333|
+|3     |CPU__GCB1     |           1|      6439|
++------+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:07 ; elapsed = 00:01:58 . Memory (MB): peak = 864.781 ; gain = 621.305
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+--------------+------------+----------+
+|      |RTL Partition |Replication |Instances |
++------+--------------+------------+----------+
+|1     |CPU__GCB0     |           1|      8451|
++------+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:08 ; elapsed = 00:01:59 . Memory (MB): peak = 864.781 ; gain = 621.305
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:08 ; elapsed = 00:01:59 . Memory (MB): peak = 864.781 ; gain = 621.305
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:08 ; elapsed = 00:02:00 . Memory (MB): peak = 864.781 ; gain = 621.305
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:08 ; elapsed = 00:02:00 . Memory (MB): peak = 864.781 ; gain = 621.305
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:08 ; elapsed = 00:02:00 . Memory (MB): peak = 864.781 ; gain = 621.305
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:08 ; elapsed = 00:02:00 . Memory (MB): peak = 864.781 ; gain = 621.305
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     2|
+|2     |CARRY4 |    52|
+|3     |LUT1   |     3|
+|4     |LUT2   |   148|
+|5     |LUT3   |  1270|
+|6     |LUT4   |   327|
+|7     |LUT5   |   477|
+|8     |LUT6   |  4320|
+|9     |MUXF7  |  1431|
+|10    |MUXF8  |   550|
+|11    |FDRE   |  3381|
+|12    |LD     |    16|
+|13    |IBUF   |     5|
+|14    |OBUF   |    12|
++------+-------+------+
+
+Report Instance Areas: 
++------+-------------------+-------------+------+
+|      |Instance           |Module       |Cells |
++------+-------------------+-------------+------+
+|1     |top                |             | 11994|
+|2     |  adder_for_offset |Adder        |     8|
+|3     |  adder_for_pc4    |Adder_0      |    67|
+|4     |  adr              |DFF          |   111|
+|5     |  alu              |ALU          |    48|
+|6     |  bdr              |DFF_1        |  1221|
+|7     |  clock_div        |CLOCK_DIV    |    77|
+|8     |  ctrl_unit        |CU           |   407|
+|9     |    dff            |DFF_FOR_CU   |    20|
+|10    |  dff_for_alu_res  |DFF_2        |  1453|
+|11    |  dff_for_db       |DFF_3        |    64|
+|12    |  dm               |DM           |  5888|
+|13    |  fourTo7Seg       |FOUR_TO_7SEG |     7|
+|14    |  ir               |DFF_4        |   320|
+|15    |  pc               |PC           |   428|
+|16    |  rf               |RF           |  1868|
++------+-------------------+-------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:08 ; elapsed = 00:02:00 . Memory (MB): peak = 864.781 ; gain = 621.305
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 295 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:00 ; elapsed = 00:01:54 . Memory (MB): peak = 864.781 ; gain = 285.910
+Synthesis Optimization Complete : Time (s): cpu = 00:01:08 ; elapsed = 00:02:00 . Memory (MB): peak = 864.781 ; gain = 621.305
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 2054 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 16 instances were transformed.
+  LD => LDCE: 16 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+284 Infos, 140 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:09 ; elapsed = 00:02:05 . Memory (MB): peak = 864.781 ; gain = 634.355
+INFO: [Common 17-1381] The checkpoint 'E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.runs/synth_1/CPU.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file CPU_utilization_synth.rpt -pb CPU_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.059 . Memory (MB): peak = 864.781 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Wed Dec 25 20:36:26 2024...

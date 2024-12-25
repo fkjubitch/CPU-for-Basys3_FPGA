@@ -76,7 +76,7 @@ module CU(
                     6'b000111: {ALUop,ALU_SRC_A} = 5'b0101_0; //sltu
                     6'b001000: {ALUop,ALU_SRC_A} = 5'b0100_0; //and
                     6'b001001: {ALUop,ALU_SRC_A} = 5'b0011_0; //or
-                    6'b001000: {ALUop,ALU_SRC_A} = 5'b0111_0; //xor
+                    6'b001010: {ALUop,ALU_SRC_A} = 5'b0111_0; //xor
                 endcase
             end
             6'b000010:begin

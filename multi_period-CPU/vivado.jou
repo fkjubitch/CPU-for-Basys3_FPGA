@@ -2,187 +2,138 @@
 # Vivado v2017.4 (64-bit)
 # SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
 # IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
-# Start of session at: Wed Dec 25 15:11:18 2024
-# Process ID: 5088
+# Start of session at: Wed Dec 25 18:56:17 2024
+# Process ID: 24032
 # Current directory: E:/private/GitHub/CPU_for_Basys3/multi_period-CPU
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent14288 E:\private\GitHub\CPU_for_Basys3\multi_period-CPU\multi_period-CPU.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13780 E:\private\GitHub\CPU_for_Basys3\multi_period-CPU\multi_period-CPU.xpr
 # Log file: E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/vivado.log
 # Journal file: E:/private/GitHub/CPU_for_Basys3/multi_period-CPU\vivado.jou
 #-----------------------------------------------------------
 start_gui
 open_project E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.xpr
 update_compile_order -fileset sources_1
-launch_simulation
-source CPU_sim.tcl
-add_wave {{/CPU_sim/cpu/pc/NEXT_PC}} {{/CPU_sim/cpu/pc/WR_ENABLE}} {{/CPU_sim/cpu/pc/CURR_PC}} 
-add_wave {{/CPU_sim/cpu/alu/OP1}} {{/CPU_sim/cpu/alu/OP2}} {{/CPU_sim/cpu/alu/ALUop}} {{/CPU_sim/cpu/alu/SIGN}} {{/CPU_sim/cpu/alu/ZERO}} {{/CPU_sim/cpu/alu/RESULT}} 
-restart
-run 1 us
-run 1 us
-run 1 us
-run 1 us
-run 1 us
-add_wave {{/CPU_sim/cpu/rf/WRITE_REG}} {{/CPU_sim/cpu/rf/WR_ENABLE}} {{/CPU_sim/cpu/rf/WRITE_DATA}} 
-restart
-run 1 us
-run 1 us
-run 1 us
-run 1 us
-add_wave {{/CPU_sim/cpu/ctrl_unit/dff/CURR_STATUS}} 
-restart
-run 1 us
-run 1 us
-run 1 us
-run 1 us
-close_sim
-launch_simulation
-source CPU_sim.tcl
-add_wave {{/CPU_sim/cpu/pc/NEXT_PC}} {{/CPU_sim/cpu/pc/WR_ENABLE}} {{/CPU_sim/cpu/pc/CURR_PC}} 
-add_wave {{/CPU_sim/cpu/rf/WRITE_REG}} {{/CPU_sim/cpu/rf/WR_ENABLE}} {{/CPU_sim/cpu/rf/WRITE_DATA}} 
-add_wave {{/CPU_sim/cpu/alu/OP1}} {{/CPU_sim/cpu/alu/OP2}} {{/CPU_sim/cpu/alu/ALUop}} {{/CPU_sim/cpu/alu/SIGN}} {{/CPU_sim/cpu/alu/ZERO}} {{/CPU_sim/cpu/alu/RESULT}} 
-restart
-run 1 ms
-add_wave {{/CPU_sim/cpu/ctrl_unit/dff/CURR_STATUS}} 
-restart
-run 1 ms
-add_wave {{/CPU_sim/cpu/adr/D_IN}} 
-restart
-run 1 ms
-add_wave {{/CPU_sim/cpu/ir}} 
-restart
-run 1 ms
-close_sim
-launch_simulation
-source CPU_sim.tcl
-add_wave {{/CPU_sim/cpu/alu/OP1}} {{/CPU_sim/cpu/alu/OP2}} {{/CPU_sim/cpu/alu/ALUop}} {{/CPU_sim/cpu/alu/SIGN}} {{/CPU_sim/cpu/alu/ZERO}} {{/CPU_sim/cpu/alu/RESULT}} 
-add_wave {{/CPU_sim/cpu/rf/WRITE_REG}} {{/CPU_sim/cpu/rf/WR_ENABLE}} {{/CPU_sim/cpu/rf/WRITE_DATA}} 
-add_wave {{/CPU_sim/cpu/ctrl_unit/dff/CURR_STATUS}} 
-restart
-run 1 ms
-close_sim
-launch_simulation
-source CPU_sim.tcl
-add_wave {{/CPU_sim/cpu/pc/NEXT_PC}} {{/CPU_sim/cpu/pc/CURR_PC}} 
-add_wave {{/CPU_sim/cpu/alu/OP1}} {{/CPU_sim/cpu/alu/OP2}} {{/CPU_sim/cpu/alu/ALUop}} {{/CPU_sim/cpu/alu/SIGN}} {{/CPU_sim/cpu/alu/ZERO}} {{/CPU_sim/cpu/alu/RESULT}} 
-add_wave {{/CPU_sim/cpu/ctrl_unit/dff/CURR_STATUS}} 
-add_wave {{/CPU_sim/cpu/rf/WRITE_REG}} {{/CPU_sim/cpu/rf/WR_ENABLE}} {{/CPU_sim/cpu/rf/WRITE_DATA}} 
-restart
-run 1 ms
-add_wave {{/CPU_sim/cpu/ir/D_IN}} {{/CPU_sim/cpu/ir/D_OUT}} 
-restart
-run 1 ms
-close_sim
-launch_simulation
-source CPU_sim.tcl
-add_wave {{/CPU_sim/cpu/pc/NEXT_PC}} {{/CPU_sim/cpu/pc/CURR_PC}} 
-add_wave {{/CPU_sim/cpu/alu/OP1}} {{/CPU_sim/cpu/alu/OP2}} {{/CPU_sim/cpu/alu/ALUop}} {{/CPU_sim/cpu/alu/SIGN}} {{/CPU_sim/cpu/alu/ZERO}} {{/CPU_sim/cpu/alu/RESULT}} 
-add_wave {{/CPU_sim/cpu/ctrl_unit/dff}} 
-add_wave {{/CPU_sim/cpu/ctrl_unit/dff/CURR_STATUS}} 
-add_wave {{/CPU_sim/cpu/rf/WRITE_REG}} {{/CPU_sim/cpu/rf/WR_ENABLE}} {{/CPU_sim/cpu/rf/WRITE_DATA}} 
-restart
-run 1 ms
-close_sim
-launch_simulation
-source CPU_sim.tcl
-add_wave {{/CPU_sim/cpu/alu/OP1}} {{/CPU_sim/cpu/alu/OP2}} {{/CPU_sim/cpu/alu/ALUop}} {{/CPU_sim/cpu/alu/SIGN}} {{/CPU_sim/cpu/alu/ZERO}} {{/CPU_sim/cpu/alu/RESULT}} 
-add_wave {{/CPU_sim/cpu/rf/WRITE_REG}} {{/CPU_sim/cpu/rf/WR_ENABLE}} {{/CPU_sim/cpu/rf/WRITE_DATA}} 
-restart
-run 1 ms
-close_sim
-launch_simulation
-source CPU_sim.tcl
-add_wave {{/CPU_sim/cpu/rf/WRITE_REG}} {{/CPU_sim/cpu/rf/WR_ENABLE}} {{/CPU_sim/cpu/rf/WRITE_DATA}} 
-add_wave {{/CPU_sim/cpu/alu/OP1}} {{/CPU_sim/cpu/alu/OP2}} {{/CPU_sim/cpu/alu/ALUop}} {{/CPU_sim/cpu/alu/SIGN}} {{/CPU_sim/cpu/alu/ZERO}} {{/CPU_sim/cpu/alu/RESULT}} 
-add_wave {{/CPU_sim/cpu/ctrl_unit/dff/CURR_STATUS}} 
-restart
-run 1 ms
-close_sim
-launch_simulation
-source CPU_sim.tcl
-add_wave {{/CPU_sim/cpu/alu/OP1}} {{/CPU_sim/cpu/alu/OP2}} {{/CPU_sim/cpu/alu/ALUop}} 
-add_wave {{/CPU_sim/cpu/alu/RESULT}} 
-add_wave {{/CPU_sim/cpu/rf/WRITE_REG}} {{/CPU_sim/cpu/rf/WR_ENABLE}} {{/CPU_sim/cpu/rf/WRITE_DATA}} 
-add_wave {{/CPU_sim/cpu/ctrl_unit/dff/CURR_STATUS}} 
-restart
-run 1 ms
-close_sim
-launch_simulation
-source CPU_sim.tcl
-add_wave {{/CPU_sim/cpu/rf/WRITE_REG}} {{/CPU_sim/cpu/rf/WR_ENABLE}} {{/CPU_sim/cpu/rf/WRITE_DATA}} 
-add_wave {{/CPU_sim/cpu/pc/NEXT_PC}} {{/CPU_sim/cpu/pc/CURR_PC}} 
-add_wave {{/CPU_sim/cpu/ctrl_unit/dff/CURR_STATUS}} 
-add_wave {{/CPU_sim/cpu/alu/OP1}} {{/CPU_sim/cpu/alu/OP2}} {{/CPU_sim/cpu/alu/ALUop}} {{/CPU_sim/cpu/alu/SIGN}} {{/CPU_sim/cpu/alu/ZERO}} {{/CPU_sim/cpu/alu/RESULT}} 
-restart
-run 1 ms
-close_sim
-launch_simulation
-source CPU_sim.tcl
-add_wave {{/CPU_sim/cpu/pc/NEXT_PC}} {{/CPU_sim/cpu/pc/CURR_PC}} 
-add_wave {{/CPU_sim/cpu/rf/WRITE_REG}} {{/CPU_sim/cpu/rf/WR_ENABLE}} {{/CPU_sim/cpu/rf/WRITE_DATA}} 
-add_wave {{/CPU_sim/cpu/alu/OP1}} {{/CPU_sim/cpu/alu/OP2}} {{/CPU_sim/cpu/alu/ALUop}} {{/CPU_sim/cpu/alu/SIGN}} {{/CPU_sim/cpu/alu/ZERO}} {{/CPU_sim/cpu/alu/RESULT}} 
-restart
-run 1 ms
-add_wave {{/CPU_sim/cpu/ctrl_unit/OP}} 
-add_wave {{/CPU_sim/cpu/ctrl_unit/dff/CURR_STATUS}} 
-restart
-run 1 ms
-close_sim
-launch_simulation
-source CPU_sim.tcl
-restart
-run 1 ms
-add_wave {{/CPU_sim/cpu/pc/NEXT_PC}} {{/CPU_sim/cpu/pc/CURR_PC}} 
-add_wave {{/CPU_sim/cpu/rf/WRITE_REG}} {{/CPU_sim/cpu/rf/WR_ENABLE}} {{/CPU_sim/cpu/rf/WRITE_DATA}} 
-add_wave {{/CPU_sim/cpu/alu/OP1}} {{/CPU_sim/cpu/alu/OP2}} {{/CPU_sim/cpu/alu/ALUop}} {{/CPU_sim/cpu/alu/RESULT}} 
-add_wave {{/CPU_sim/cpu/ctrl_unit/dff/CURR_STATUS}} 
-restart
-run 1 ms
-close_sim
-launch_simulation
-source CPU_sim.tcl
-add_wave {{/CPU_sim/cpu/pc/NEXT_PC}} {{/CPU_sim/cpu/pc/CURR_PC}} 
-add_wave {{/CPU_sim/cpu/rf/WRITE_REG}} {{/CPU_sim/cpu/rf/WR_ENABLE}} {{/CPU_sim/cpu/rf/WRITE_DATA}} 
-add_wave {{/CPU_sim/cpu/alu/OP1}} {{/CPU_sim/cpu/alu/OP2}} {{/CPU_sim/cpu/alu/ALUop}} 
-add_wave {{/CPU_sim/cpu/alu/RESULT}} 
-restart
-run 1 ms
-close_sim
-launch_simulation
-source CPU_sim.tcl
-add_wave {{/CPU_sim/cpu/pc/NEXT_PC}} {{/CPU_sim/cpu/pc/CURR_PC}} 
-add_wave {{/CPU_sim/cpu/rf/WRITE_REG}} {{/CPU_sim/cpu/rf/WR_ENABLE}} {{/CPU_sim/cpu/rf/WRITE_DATA}} 
-add_wave {{/CPU_sim/cpu/alu/OP1}} {{/CPU_sim/cpu/alu/OP2}} {{/CPU_sim/cpu/alu/ALUop}} 
-add_wave {{/CPU_sim/cpu/alu/SIGN}} {{/CPU_sim/cpu/alu/ZERO}} {{/CPU_sim/cpu/alu/RESULT}} 
-add_wave {{/CPU_sim/cpu/dm/ADDR}} {{/CPU_sim/cpu/dm/DATA}} {{/CPU_sim/cpu/dm/RD}} {{/CPU_sim/cpu/dm/WR}} {{/CPU_sim/cpu/dm/DATA_OUT}} 
-add_wave {{/CPU_sim/cpu/ctrl_unit/dff/CURR_STATUS}} 
-restart
-run 1 ms
-close_sim
-launch_simulation
-source CPU_sim.tcl
-restart
-run 1 ms
-add_wave {{/CPU_sim/cpu/pc/NEXT_PC}} {{/CPU_sim/cpu/pc/CURR_PC}} 
-restart
-run 1 ms
-close_sim
-launch_simulation
-source CPU_sim.tcl
-add_wave {{/CPU_sim/cpu/pc/NEXT_PC}} {{/CPU_sim/cpu/pc/CURR_PC}} 
-add_wave {{/CPU_sim/cpu/rf/WRITE_REG}} {{/CPU_sim/cpu/rf/WR_ENABLE}} {{/CPU_sim/cpu/rf/WRITE_DATA}} 
-add_wave {{/CPU_sim/cpu/alu/OP1}} {{/CPU_sim/cpu/alu/OP2}} {{/CPU_sim/cpu/alu/ALUop}} {{/CPU_sim/cpu/alu/SIGN}} {{/CPU_sim/cpu/alu/ZERO}} {{/CPU_sim/cpu/alu/RESULT}} 
-add_wave {{/CPU_sim/cpu/dm/ADDR}} {{/CPU_sim/cpu/dm/DATA}} {{/CPU_sim/cpu/dm/RD}} {{/CPU_sim/cpu/dm/WR}} {{/CPU_sim/cpu/dm/DATA_OUT}} 
-add_wave {{/CPU_sim/cpu/ctrl_unit/dff/CURR_STATUS}} 
-restart
-run 1 ms
-close_sim
-launch_simulation
-source CPU_sim.tcl
-add_wave {{/CPU_sim/cpu/pc/NEXT_PC}} {{/CPU_sim/cpu/pc/CURR_PC}} 
-add_wave {{/CPU_sim/cpu/rf/WRITE_REG}} {{/CPU_sim/cpu/rf/WR_ENABLE}} {{/CPU_sim/cpu/rf/WRITE_DATA}} 
-add_wave {{/CPU_sim/cpu/alu/OP1}} {{/CPU_sim/cpu/alu/OP2}} {{/CPU_sim/cpu/alu/ALUop}} {{/CPU_sim/cpu/alu/SIGN}} {{/CPU_sim/cpu/alu/ZERO}} {{/CPU_sim/cpu/alu/RESULT}} 
-add_wave {{/CPU_sim/cpu/dm/ADDR}} {{/CPU_sim/cpu/dm/DATA}} {{/CPU_sim/cpu/dm/RD}} {{/CPU_sim/cpu/dm/WR}} {{/CPU_sim/cpu/dm/DATA_OUT}} 
-add_wave {{/CPU_sim/cpu/ctrl_unit/dff/CURR_STATUS}} 
-restart
-run 1 ms
-close_sim
+launch_runs synth_1 -jobs 24
+wait_on_run synth_1
+launch_runs impl_1 -jobs 24
+wait_on_run impl_1
+reset_run synth_1
+launch_runs synth_1 -jobs 24
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 24
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 12
+wait_on_run synth_1
+launch_runs impl_1 -jobs 12
+wait_on_run impl_1
+open_run impl_1
+set_property IOSTANDARD LVCMOS33 [get_ports [list {DATA_SEL[1]} {DATA_SEL[0]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {POS[3]} {POS[2]} {POS[1]} {POS[0]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {SEG7[7]} {SEG7[6]} {SEG7[5]} {SEG7[4]} {SEG7[3]} {SEG7[2]} {SEG7[1]} {SEG7[0]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list CLOCK]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list MAIN_CLK]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list PC_RST]]
+place_ports {DATA_SEL[1]} R2
+place_ports {DATA_SEL[0]} T1
+place_ports {POS[3]} W4
+place_ports {POS[2]} V4
+place_ports {POS[1]} U4
+place_ports {POS[0]} U2
+place_ports {SEG7[7]} V7
+place_ports {SEG7[6]} U7
+place_ports {SEG7[5]} V5
+place_ports {SEG7[4]} U5
+place_ports {SEG7[3]} V8
+place_ports {SEG7[2]} U8
+place_ports {SEG7[1]} W6
+place_ports {SEG7[0]} W7
+place_ports CLOCK W5
+place_ports MAIN_CLK T17
+place_ports PC_RST V17
+file mkdir E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/constrs_1/new
+close [ open E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/constrs_1/new/CPU_cons.xdc w ]
+add_files -fileset constrs_1 E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/constrs_1/new/CPU_cons.xdc
+set_property target_constrs_file E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/constrs_1/new/CPU_cons.xdc [current_fileset -constrset]
+save_constraints -force
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.runs/impl_1/CPU.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.runs/impl_1/CPU.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.runs/impl_1/CPU.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.runs/impl_1/CPU.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+close [ open E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/DEBOUNCER.v w ]
+add_files E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sources_1/new/DEBOUNCER.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+wait_on_run impl_1
+reset_run impl_1 -prev_step 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -jobs 12
+wait_on_run impl_1
+refresh_design
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.runs/impl_1/CPU.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.runs/impl_1/CPU.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+set_property STEPS.WRITE_BITSTREAM.ARGS.BIN_FILE true [get_runs impl_1]
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+wait_on_run impl_1
+create_hw_cfgmem -hw_device [lindex [get_hw_devices xc7a35t_0] 0] [lindex [get_cfgmem_parts {s25fl032p-spi-x1_x2_x4}] 0]
+set_property PROGRAM.BLANK_CHECK  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]]
+set_property PROGRAM.ERASE  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]]
+set_property PROGRAM.CFG_PROGRAM  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]]
+set_property PROGRAM.VERIFY  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]]
+set_property PROGRAM.CHECKSUM  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROGRAM.ADDRESS_RANGE  {use_file} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]]
+set_property PROGRAM.FILES [list "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.runs/impl_1/CPU.bin" ] [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]]
+set_property PROGRAM.PRM_FILE {} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]]
+set_property PROGRAM.UNUSED_PIN_TERMINATION {pull-none} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]]
+set_property PROGRAM.BLANK_CHECK  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]]
+set_property PROGRAM.ERASE  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]]
+set_property PROGRAM.CFG_PROGRAM  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]]
+set_property PROGRAM.VERIFY  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]]
+set_property PROGRAM.CHECKSUM  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]]
+startgroup 
+if {![string equal [get_property PROGRAM.HW_CFGMEM_TYPE  [lindex [get_hw_devices xc7a35t_0] 0]] [get_property MEM_TYPE [get_property CFGMEM_PART [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]]]]] }  { create_hw_bitstream -hw_device [lindex [get_hw_devices xc7a35t_0] 0] [get_property PROGRAM.HW_CFGMEM_BITFILE [ lindex [get_hw_devices xc7a35t_0] 0]]; program_hw_devices [lindex [get_hw_devices xc7a35t_0] 0]; }; 
+program_hw_cfgmem -hw_cfgmem [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]]
+endgroup

@@ -22,7 +22,7 @@
 
 module CPU(
     CLOCK, //系统时钟
-    MAIN_CLK, //手动开关时钟，模拟时钟周期
+    MAIN_CLK_RAW, //手动开关时钟，模拟时钟周期
     PC_RST, //PC重置信号
     DATA_SEL, //输出数据选择
     SEG7, //七段数码管
@@ -30,7 +30,7 @@ module CPU(
     );
     
     input CLOCK;
-    input MAIN_CLK;
+    input MAIN_CLK_RAW;
     input PC_RST;
     input DATA_SEL;
     output SEG7;
@@ -38,7 +38,7 @@ module CPU(
     
     //烧板相关
     wire CLOCK; //系统时钟
-    wire MAIN_CLK; //主时钟
+    wire MAIN_CLK_RAW; //主时钟
     wire PC_RST; //PC重置信号
     wire [1:0] DATA_SEL; //输出数据的选择
     wire [7:0] SEG7; //七段数码管
@@ -55,6 +55,7 @@ module CPU(
     //wires
     //CLK
     wire CLK; //分频后的系统时钟
+    wire MAIN_CLK; //减震后的主时钟
     //PC
     wire [31:0] PC_;
     wire [31:0] PC4; //PC+4  
@@ -129,6 +130,8 @@ module CPU(
     //创建组分和连接
     //CLK
     CLOCK_DIV clock_div( CLOCK , CLK ); //分频时钟
+    //DEB
+    DEBOUNCER deb( MAIN_CLK_RAW , CLOCK , MAIN_CLK ); //减震器
     //PC
     PC pc( MAIN_CLK , PC_RST , NEXT_PC , PC_EN , PC_ ); //PC计数器
     Adder adder_for_pc4( PC_ , 4 , PC4 ); //PC+4的adder

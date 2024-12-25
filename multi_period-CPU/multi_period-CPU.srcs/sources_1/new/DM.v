@@ -40,7 +40,7 @@ module DM(
     end
     
     // 读操作一直保持着
-    always @(*) begin
+    always @(posedge CLOCK) begin
         if(RD == 1) begin
             DATA_OUT = {MEMORYs[ADDR+3],MEMORYs[ADDR+2],MEMORYs[ADDR+1],MEMORYs[ADDR]};
         end
