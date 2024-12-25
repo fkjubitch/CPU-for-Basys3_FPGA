@@ -55,10 +55,10 @@ module CU(
     //一些通用的信号
     always @(*) begin
         DM_RD = 1;
-        PC_EN = ~STATUS[2] & ~STATUS[1] & ~STATUS[0];
+        PC_EN = ~STATUS[2] & ~STATUS[1] & ~STATUS[0] & ~(OP[5]&OP[4]&OP[3]&OP[2]&OP[1]&OP[0]);
         IM_RW = 1;
-        RF_WR_EN = STATUS[2] & ~STATUS[1] & ~STATUS[0];
-        IR_WR_EN = ~STATUS[2] & ~STATUS[1] & STATUS[0];
+        RF_WR_EN = (STATUS[2] & ~STATUS[1] & ~STATUS[0]) | ((~OP[5]&~OP[4]&OP[3]&~OP[2]&~OP[1]&~OP[0]) & (~STATUS[2] & ~STATUS[1] & STATUS[0])) ;
+        IR_WR_EN = (~STATUS[2] & ~STATUS[1] & ~STATUS[0]) | (STATUS[2] & ~STATUS[1] & STATUS[0]);
     end
     
     //其他信号，在特定情况下特定考虑

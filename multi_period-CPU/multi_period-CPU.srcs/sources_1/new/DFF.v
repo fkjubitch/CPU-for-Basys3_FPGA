@@ -30,7 +30,7 @@ module DFF(
     initial D_OUT = 0;
     
     always @(posedge CLOCK) begin
-        if(EN) D_OUT <= D_IN;
+        if(EN) D_OUT = D_IN;
     end
     
 endmodule

@@ -30,6 +30,7 @@ wire [7:0] SEG7;
 wire [3:0] POS;
 
 initial begin
+    #50;
     count = 0;
     CLOCK = 0;
     MAIN_CLK = 0;
@@ -42,7 +43,7 @@ initial begin
             #30;
         end
         MAIN_CLK = 1;
-        #30;
+        #120;
         MAIN_CLK = 0;
     end
 end

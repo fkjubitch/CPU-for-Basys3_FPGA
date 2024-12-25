@@ -32,5 +32,3 @@ INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/mu
 INFO: [VRFC 10-311] analyzing module RF
 INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.srcs/sim_1/new/CPU_sim.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module CPU_sim
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/private/GitHub/CPU_for_Basys3/multi_period-CPU/multi_period-CPU.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module glbl

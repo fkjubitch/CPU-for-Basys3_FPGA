@@ -65,7 +65,7 @@ module ALU(
                     RESULT = OP1 > OP2;
             end
             3'b111 : begin // “ÏªÚ
-                RESULT = OP1 ^ OP2;
+                RESULT = OP1 ^ OP2; //????????????????
             end
         endcase
         // ∑˚∫≈∫Õ¡„≈–∂œ

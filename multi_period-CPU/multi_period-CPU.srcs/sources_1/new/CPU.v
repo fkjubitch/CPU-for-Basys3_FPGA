@@ -122,7 +122,7 @@ module CPU(
          immi/offset IR_OUT_DATA[15:0]
          j_offset IR_OUT_DATA[25:0]
         
-         J_OFFSET {PC_[3:0],IR_OUT_DATA[25:0],2'b00}
+         J_OFFSET {PC4[31:28],IR_OUT_DATA[25:0],2'b00}
          BRANCH_OFFSET {EXTed_DATA[29:0],2'b00} + PC4
     */
     
@@ -133,7 +133,7 @@ module CPU(
     PC pc( MAIN_CLK , PC_RST , NEXT_PC , PC_EN , PC_ ); //PC计数器
     Adder adder_for_pc4( PC_ , 4 , PC4 ); //PC+4的adder
     Adder adder_for_offset( PC4 , {EXTed_DATA[29:0] , 2'b00} , BRANCH_OFFSET ); //PC+4+4*offset的adder
-    MUX_2bits_32 mux_for_pc_src( PC_SRC , PC4 , BRANCH_OFFSET , RF_RD1 , {PC4[31:28] , IR_OUT_DATA[27:2] , 2'b00} , NEXT_PC ); //PC源的选择器
+    MUX_2bits_32 mux_for_pc_src( PC_SRC , PC4 , BRANCH_OFFSET , RF_RD1 , {PC4[31:28] , 2'b00 , IR_OUT_DATA[25:0]} , NEXT_PC ); //PC源的选择器
     //IM
     IM ins_mem( IM_RW , PC_ , IM_WR_DATA , IM_OUT_DATA ); //指令存储器
     //IR

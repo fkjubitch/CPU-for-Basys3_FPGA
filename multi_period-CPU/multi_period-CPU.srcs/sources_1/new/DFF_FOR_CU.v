@@ -30,13 +30,13 @@ module DFF_FOR_CU(
     reg [2:0] DFF;
     
     initial begin
-        CURR_STATUS = 3'b000;
-        DFF = 3'b000;
+        CURR_STATUS = 3'b101;
+        DFF = 3'b001;
     end
     
     always @(*) begin
         if(RESET==1) begin
-            CURR_STATUS = 3'b000;
+            DFF = 3'b101;
         end
     end
     
@@ -47,12 +47,12 @@ module DFF_FOR_CU(
                 DFF = 3'b001;
             end
             3'b001:begin
-                if(OP == 6'b111111) DFF = 3'b000;
+                if(OP == 6'b111111 || OP == 6'b000111 || OP == 6'b001000 || OP == 6'b001001) DFF = 3'b000;
                 else DFF = 3'b010;
             end
             3'b010:begin
                 if(OP == 6'b000101 || OP == 6'b000110) DFF = 3'b011;
-                else if(OP == 6'b000010 || OP == 6'b000011 || OP == 6'b000100 || OP == 6'b000111) DFF = 3'b000;
+                else if(OP == 6'b000010 || OP == 6'b000011 || OP == 6'b000100) DFF = 3'b000;
                 else DFF = 3'b100;
             end
             3'b011:begin
@@ -61,6 +61,9 @@ module DFF_FOR_CU(
             end
             3'b100:begin
                 DFF = 3'b000;
+            end
+            3'b101:begin // Initial Status
+                DFF = 3'b001;
             end
         endcase
     end

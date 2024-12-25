@@ -26,6 +26,8 @@ using namespace std;
             e.g. halt
                 OP rs (Imple: OP rs 000...)
             e.g. jr 31 (jr $31)
+                OP rs offset (Imple: OP rs 00000 offset)
+            e.g. blez 12 -2 (blez $12,-2)
                 OP rd rt sa (Imple: OP 00000 rt rd sa 000000)
             e.g. sll 2 3 1 (sll $2,$3,1)
 */
@@ -42,10 +44,10 @@ class Asm{
                 {"add","000000"},{"sub","000010"},{"slt","000110"},{"and","001000"},{"or","001001"},{"xor","001010"},{"addu","000001"},{"subu","000011"},{"sltu","000111"}
             };
             Type_map={
-                {"add",'R'},{"sub",'R'},{"sll",'R'},{"slt",'R'},{"and",'R'},{"or",'R'},{"xor",'R'},{"addu",'R'},{"subu",'R'},{"sltu",'R'},
+                {"add",'R'},{"sub",'R'},{"slt",'R'},{"and",'R'},{"or",'R'},{"xor",'R'},{"addu",'R'},{"subu",'R'},{"sltu",'R'},
                 {"addi",'I'},{"subi",'I'},{"slti",'I'},{"andi",'I'},{"ori",'I'},{"xori",'I'},{"addiu",'I'},{"subiu",'I'},{"sltiu",'I'},
-                {"beq",'I'},{"bne",'I'},{"blez",'I'},{"sw",'I'},{"lw",'I'},{"j",'J'},{"jal",'J'},
-                {"jr",'S'},{"sll",'S'},{"halt",'S'}
+                {"beq",'I'},{"bne",'I'},{"sw",'I'},{"lw",'I'},{"j",'J'},{"jal",'J'},
+                {"jr",'S'},{"sll",'S'},{"blez",'S'},{"halt",'S'}
             };
         }
         void addAsmCode(string assembly){
@@ -103,6 +105,13 @@ class Asm{
                         binaryCode+=decToBin(rd,5);
                         binaryCode+=decToBin(sa,5);
                         binaryCode+="000000";
+                    }
+                    else if(opTemp=="blez"){
+                        string rs,offset;
+                        ss>>rs>>offset;
+                        binaryCode+=decToBin(rs,5);
+                        binaryCode+="00000";
+                        binaryCode+=decToBin(offset,16);
                     }
                     else if(opTemp=="halt"){
                         binaryCode+="00000000000000000000000000"; //26 0's
